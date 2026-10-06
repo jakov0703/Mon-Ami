@@ -1,0 +1,802 @@
+{
+  "type": "result",
+  "key": "v2:e725c7e0cddcfe688d6fdcca3045de35907df1fd913c43c6ef348e0840180987",
+  "agentId": "a64b262f439730961",
+  "result": {
+    "source": "Full crawl of https://www.monami.hr/ (restoran Mon Ami, Trg kralja Tomislava 26, Velika Gorica) — homepage, /o-nama/, /kontakt/, /galerija/ (+ /galerija/nggallery/page/2), /novosti/, /online-narucivanje/, plus the WordPress REST API (/wp-json/wp/v2/pages, /posts, /media), 404-probes for /jelovnik/ /meni/ /rezervacije/ /booking/ /vina/, the orphaned menu PDFs in wp-content/uploads, and the linked Restaumatic ordering platform at https://mon-ami.skubacz.pl/restauracja/mon-ami (the real live menu source). WebFetch refused verbatim reproduction, so pages were pulled with curl (note: curl needed -k on this machine — the host fails revocation checking; https://www.monami.hr also 301-redirects from http and www/non-www both resolve) and text extracted from raw HTML, so all Croatian below is byte-exact from the source.",
+    "summary": "Mon Ami runs WordPress 6.8.10 on the commercial \"Fortunato Pro\" theme (v2.0.2), brand accent #b22047, fonts Fira Sans + Nanum Myeongjo. The site is only six real pages: Naslovnica, Online naručivanje, O nama, Novosti, Galerija, Kontakt. It is a shell: the homepage's entire content body is literally `<p></p>` — the page is nothing but a parallax hero photo, logo and nav, with no headline, no intro, no hours, no menu, no call to action. Novosti is equally empty and the REST API returns `[]` for posts, so the \"news\" section has never had a single entry since it was created 27/03/2020. A stock WordPress \"Sample Page\" (id 3149) is still published.\n\nAll the genuinely good copy lives on one page, /o-nama/, which carries three strong sections — \"Tradicija duga 25 godina\", \"Ugodan ambijent\", \"Vaše zadovoljstvo nama je na prvom mjestu\" — naming chef Goran Marko Beus, a 70-seat room, a 10-person separe, their own gold-medal olive oil from a grove in Skradin, a 60-label wine list, their own cuvée Chardonnay-Graševina from Vukomeričke gorice, and recommendations from the Michelin Guide and TripAdvisor. That page was last edited 13/01/2021.\n\nKontakt is the only page with hard facts and is the most current (modified 02/03/2024): full address, landline, mobile, email, real opening hours, a Google Maps embed, and a Bolt e-scooter promo. Hours are stated only here and nowhere else on the site.\n\nThe single worst structural failure: there is no menu page. /jelovnik/ and /meni/ both 404. Two full menu PDFs sit in the media library (Dec 2023, May 2024) completely unlinked from any page. The real, current, priced menu — 60 dishes in 11 categories with EUR prices and Croatian+English names and dish photography — exists only inside a third-party Restaumatic iframe on /online-narucivanje/, invisible to Google and unusable as site content.",
+    "facts": [
+      {
+        "label": "Restaurant name",
+        "value": "Mon Ami (site/logo brands it as \"Monami\"; WP site title \"Monami\", tagline \"restoran\")",
+        "confidence": "high"
+      },
+      {
+        "label": "Address",
+        "value": "Trg kralja Tomislava 26, 10410 Velika Gorica",
+        "confidence": "high"
+      },
+      {
+        "label": "Phone (landline)",
+        "value": "Tel +385 1 6213 333 (footer writes it as \"Phone: 01 6213 333\")",
+        "confidence": "high"
+      },
+      {
+        "label": "Mobile",
+        "value": "Mob 091 5444 715",
+        "confidence": "high"
+      },
+      {
+        "label": "Email",
+        "value": "monamihr@gmail.com (a free Gmail address, not a domain mailbox)",
+        "confidence": "high"
+      },
+      {
+        "label": "Opening hours",
+        "value": "11:00 - 23:00 svaki dan osim nedjelje i blagdana; 11:00 - 16:30 ponedjeljkom. Stated ONLY on /kontakt/ — absent from homepage, footer and every other page.",
+        "confidence": "high"
+      },
+      {
+        "label": "Closed",
+        "value": "Sundays and public holidays (implied by \"svaki dan osim nedjelje i blagdana\"); Mondays short day to 16:30",
+        "confidence": "high"
+      },
+      {
+        "label": "Chef",
+        "value": "Goran Marko Beus — \"Kuhinju vodi chef Goran Marko Beus.\" Only named person on the whole site.",
+        "confidence": "high"
+      },
+      {
+        "label": "Owner",
+        "value": "Not named anywhere on the site",
+        "confidence": "high"
+      },
+      {
+        "label": "Seating capacity",
+        "value": "70 sjedećih mjesta, plus an odvojeni \"separe\" for 10 people for closed business meetings",
+        "confidence": "high"
+      },
+      {
+        "label": "Tradition claim",
+        "value": "\"Tradicija duga 25 godina\" — written on a page last modified 13/01/2021, so by 2026 the claim is stale and understated (would be ~30 years)",
+        "confidence": "high"
+      },
+      {
+        "label": "Awards / recognition",
+        "value": "\"preporuku od Croatia Michelin Restaurants – The Michelin Guide i Trip Advisora\" (a recommendation/listing, NOT a Michelin star); own olive oil \"nagrađivano zlatnim medaljama\" (gold medals, body not named)",
+        "confidence": "high"
+      },
+      {
+        "label": "Own olive oil",
+        "value": "Extra djevičansko maslinovo ulje from their own maslinik in Skradin; also sell hrvatske zelene masline and čaj od maslina",
+        "confidence": "high"
+      },
+      {
+        "label": "Wine",
+        "value": "Vinska karta of 60 etiketa, mostly Croatian producers; own house cuvée Chardonnay-Graševina from podregija Pokuplje, vinogorje Vukomeričke gorice",
+        "confidence": "high"
+      },
+      {
+        "label": "Location pitch",
+        "value": "Centre of Velika Gorica, near Međunarodna zračna luka Zagreb (Zagreb Airport); 3 min walk from Velika Gorica main bus station, airport bus every 35 min, ~2 EUR",
+        "confidence": "high"
+      },
+      {
+        "label": "Events catered",
+        "value": "poslovna druženja, svadbe, pričesti, krizme, krštenja; also tematske večere and dani posvećeni domaćim sezonskim namirnicama",
+        "confidence": "high"
+      },
+      {
+        "label": "Social media",
+        "value": "Facebook only — https://www.facebook.com/monamihr/ (header + footer). No Instagram, no TripAdvisor link, no Google Business link anywhere.",
+        "confidence": "high"
+      },
+      {
+        "label": "Footer text",
+        "value": "\"Trg kralja Tomislava 26, 10410 Velika Gorica • Phone: 01 6213 333 • E-mail: monamihr@gmail.com   Copyright © 2020 Monami. Sva prava pridržana\" — copyright frozen at 2020",
+        "confidence": "high"
+      },
+      {
+        "label": "Navigation (6 items)",
+        "value": "Naslovnica (/) | Online naručivanje (/online-narucivanje/) | O nama (/o-nama) | Novosti (/novosti) | Galerija (/galerija) | Kontakt (/kontakt) — note 4 of 6 nav links omit the trailing slash, causing an extra redirect hop",
+        "confidence": "high"
+      },
+      {
+        "label": "Platform",
+        "value": "WordPress 6.8.10, theme \"Fortunato Pro\" v2.0.2, jQuery 3.7.1 + jquery-migrate, NextGEN Gallery, Advanced Floating Content Lite plugin",
+        "confidence": "high"
+      },
+      {
+        "label": "Brand colour / type",
+        "value": "Accent #b22047 (deep raspberry/claret), text #333333; headings Nanum Myeongjo (serif), body Fira Sans — both loaded from Google Fonts",
+        "confidence": "high"
+      },
+      {
+        "label": "Logo file",
+        "value": "https://www.monami.hr/wp-content/uploads/2019/11/sp.png (uploaded Nov 2019)",
+        "confidence": "high"
+      },
+      {
+        "label": "Online ordering",
+        "value": "/online-narucivanje/ is a bare iframe to https://mon-ami.skubacz.pl/restauracje (redirects to /restauracja/mon-ami), Restaumatic platform, account 37380. Page created 13/01/2021 — a COVID-era addition.",
+        "confidence": "high"
+      },
+      {
+        "label": "Live menu size",
+        "value": "60 dishes across 11 categories with EUR prices, Croatian + English names, and dish photography — but ONLY inside the third-party iframe, not on monami.hr itself",
+        "confidence": "high"
+      },
+      {
+        "label": "Price range",
+        "value": "From €1,50 (file inćuna / domaći kruh) to €96,00 (Škampi sa žara / Škampi na buzaru). Mains mostly €13-27; beefsteak €39-42; Riblja plata za dvoje €42,00",
+        "confidence": "high"
+      },
+      {
+        "label": "Orphaned menu PDF #1",
+        "value": "https://www.monami.hr/wp-content/uploads/2024/05/jelovnik-11.05.2024.b.pdf — HTTP 200, 3.1 MB, 15 pages, scanned/image-based (no selectable text). Linked from NO page.",
+        "confidence": "high"
+      },
+      {
+        "label": "Orphaned menu PDF #2",
+        "value": "https://www.monami.hr/wp-content/uploads/2023/12/jelovnik-12.12.2023.B.pdf — HTTP 200, 4.5 MB. Also linked from NO page.",
+        "confidence": "high"
+      },
+      {
+        "label": "Gallery",
+        "value": "NextGEN gallery DOES work: 40 photos at /wp-content/gallery/monami/01.jpg … 40.jpg, split across 2 paginated pages, 240x160 thumbs. Images are large unoptimised JPEGs (500-900 KB each).",
+        "confidence": "high"
+      },
+      {
+        "label": "Gallery quality problem",
+        "value": "Every image has empty alt=\"\" and a meaningless title/caption (\"01\", \"02\" … \"40\") — zero SEO value and inaccessible to screen readers",
+        "confidence": "high"
+      },
+      {
+        "label": "Blog posts",
+        "value": "ZERO. /wp-json/wp/v2/posts returns []. The Novosti page has never had a single article.",
+        "confidence": "high"
+      },
+      {
+        "label": "Total pages",
+        "value": "8 in WordPress, of which only 6 are in nav: home-page, o-nama, kontakt, galerija, novosti, online-narucivanje, plus cookie-policy-eu and an un-deleted stock \"Sample Page\"",
+        "confidence": "high"
+      },
+      {
+        "label": "Last content activity",
+        "value": "Homepage modified 26/08/2024; kontakt 02/03/2024; galerija 01/11/2023; o-nama 13/01/2021. Newest media upload Aug 2024. Site effectively dormant ~2 years.",
+        "confidence": "high"
+      },
+      {
+        "label": "E-scooters",
+        "value": "Bolt city e-scooters available near the restaurant; page shows a QR image and links https://bolt.eu/hr-hr/scooters/",
+        "confidence": "high"
+      },
+      {
+        "label": "Maps",
+        "value": "Google Maps iframe embed on /kontakt/, coordinates approx 45.711345, 16.077799, pinned \"Mon Ami\"; embed URL timestamped 2020 (1582142989838)",
+        "confidence": "high"
+      },
+      {
+        "label": "Author account",
+        "value": "All pages authored by \"mpecko\" (https://www.monami.hr/author/mpecko/) — an external web contractor, not restaurant staff",
+        "confidence": "medium"
+      }
+    ],
+    "verbatimCroatian": [
+      "Tradicija duga 25 godina",
+      "Neka Vaša nepca dožive jedinstveni gastronomski užitak mediteranskih specijaliteta u srcu Turopolja. Kušajte naše delicije poput kvarnerskih škampi, jastoga, školjki, carpaccia od tune s crnim tartufom ili gavuna prženih na maslinovom ulju. U Mon Amiju vas očekuje dnevno svježa i divlja bijela riba, crni rižoto od sipe, jadranska lignja i hobotnica na salatu, dimljene dagnje. Uz morska jela možete uživati i u beefsteaku s roštilja u umaku od tartufate i crnog tartufa. Također, nudimo vegetarijanska i jela bez glutena.",
+      "Kušajte naše extra djevičansko maslinovo ulje iz vlastitog maslinika u Skradinu, nagrađivano zlatnim medaljama. Shodno tome u ponudi imamo hrvatske zelene masline, te čaj od maslina.",
+      "Imamo vinsku kartu od 60 etiketa, poglavito vina hrvatskih proizvođača. Također proizvodimo svoje vino kuće cuvee Chardonnay Graševina iz podregije Pokuplje, vinogorje Vukomeričke gorice.",
+      "Ugodan ambijent",
+      "Nalazimo se u središtu Velike Gorice, ali i u blizini Međunarodne zračne luke Zagreb, tako da u našem ugodnom ambijentu može uživati svatko, od usputnog prolaznika do putnika koji između dva leta želi nešto dobro pojesti.",
+      "Organiziramo tematske večere i dane posvećene domaćim sezonskim namirnicama. Restoran ima 70 sjedećih mjesta. Odvojeni „separe“ za 10 osoba namijenjen je poslovnim sastancima zatvorenog tipa. Interijer je sadržan od prirodnih materijala koji predstavljaju naš pristup življenju i poslovanju.",
+      "Vaše zadovoljstvo nama je na prvom mjestu",
+      "Mon Ami je idealno mjesto za poslovna druženja, svadbe, pričesti, krizme i krštenja.",
+      "Imamo preporuku od Croatia Michelin Restaurants – The Michelin Guide i Trip Advisora, a naša najvažnija preporuka su naši gosti.",
+      "Kuhinju vodi chef Goran Marko Beus.",
+      "Prepustite se našem osoblju koje će vas oduševiti svojom kreativnošću i ljubaznošću.",
+      "Adresa",
+      "Trg kralja Tomislava 26, 10410 Velika Gorica",
+      "Tel +385 1 6213 333",
+      "Mob  091 5444 715",
+      "Email monamihr@gmail.com",
+      "Radno vrijeme",
+      "11:00 – 23:00 svaki dan osim nedjelje i blagdana",
+      "11:00 – 16:30 ponedjeljkom",
+      "Kontaktirajte nas ukoliko vas zanimaju bilo kakve informacije.",
+      "U neposrednoj blizini restorana postoji mogućnost korištenja gradskih električnih romobila.",
+      "Skenirajte QR kôd ili kliknite na link za instaliranje aplikacije.",
+      "Trg kralja Tomislava 26, 10410 Velika Gorica • Phone: 01 6213 333 • E-mail: monamihr@gmail.com",
+      "Copyright © 2020 Monami. Sva prava pridržana",
+      "Naslovnica",
+      "Online naručivanje",
+      "O nama",
+      "Novosti",
+      "Galerija",
+      "Kontakt",
+      "restoran",
+      "NEW: For airport travelers there are bus lines that drives from Airport to Velika Gorica main station every 35 minutes. We are 3 minutes walk from main bus station. Welcome and travel to us and back to airport with public transportation for aproximately  2 euros from morning to evening.",
+      "In the immediate vicinity of the restaurant, it is possible to use the city's electric scooters.",
+      "Scan the QR code or click on the link below to install the application."
+    ],
+    "dishes": [
+      {
+        "nameHr": "File brancina uz ražnjić od škampa s blitvom i krumpirom",
+        "nameEn": "Grilled bas filet with scampi on stick",
+        "price": "€26,50",
+        "category": "BEST BUY"
+      },
+      {
+        "nameHr": "Lignje sa žara paket (blitva-krumpir, kruh)",
+        "nameEn": "Grilled squid package (swiss chard with potatoes)",
+        "price": "€16,60",
+        "category": "BEST BUY"
+      },
+      {
+        "nameHr": "Riblja plata Mon Ami (za dvoje) roštilj-jadranska riba, lignje, kozice, blitva s krumpirom",
+        "nameEn": "Sea plate \"Mon Ami\" (for two): grilled fish, grilled squid, grilled shrimps, swiss chard with potatoes",
+        "price": "€42,00",
+        "category": "BEST BUY",
+        "note": "Signature sharing dish"
+      },
+      {
+        "nameHr": "Pržene lignje paket (pommes fries, tartar, kruh)",
+        "nameEn": "Fried squid package (pommes fries and tartar sauce)",
+        "price": "€14,90",
+        "category": "BEST BUY"
+      },
+      {
+        "nameHr": "Istarski fuži s beefsteakom i crnim tartufom",
+        "nameEn": "Beefsteak salad",
+        "price": "€27,50",
+        "category": "BEST BUY",
+        "note": "English translation on the ordering platform is wrong/mismatched"
+      },
+      {
+        "nameHr": "Ramsteak sa žara",
+        "price": "€23,50",
+        "category": "BEST BUY"
+      },
+      {
+        "nameHr": "Losos sa žara glaziran terriyaki umakom s pireom od celera i povrćem kuhanim na pari",
+        "price": "€23,00",
+        "category": "BEST BUY"
+      },
+      {
+        "nameHr": "Pačji batak i zabatak s pireom od češnjaka na redukciji od naranče i crnog vina",
+        "price": "€26,00",
+        "category": "BEST BUY"
+      },
+      {
+        "nameHr": "Carpacio od tune s crnim tartufom",
+        "nameEn": "Carpaccio of tuna",
+        "price": "€18,50",
+        "category": "Hladna predjela",
+        "note": "Spelled \"Carpacio\" on ordering platform, \"carpaccia\" in the O nama text"
+      },
+      {
+        "nameHr": "Pršut 50g",
+        "nameEn": "Prshutto",
+        "price": "€5,20",
+        "category": "Hladna predjela"
+      },
+      {
+        "nameHr": "Istarska kobasica s ružmarinom 50g",
+        "nameEn": "Istrian sausage with rosemary",
+        "price": "€3,75",
+        "category": "Hladna predjela"
+      },
+      {
+        "nameHr": "Paški sir Gligora 50g",
+        "nameEn": "Island Pag cheese",
+        "price": "€7,25",
+        "category": "Hladna predjela"
+      },
+      {
+        "nameHr": "Težački sir Gligora 50g",
+        "nameEn": "Gligora cheese",
+        "price": "€3,40",
+        "category": "Hladna predjela"
+      },
+      {
+        "nameHr": "Dimljene dagnje na rikoli",
+        "nameEn": "Smoked mussels on rikola salad",
+        "price": "€14,50",
+        "category": "Hladna predjela"
+      },
+      {
+        "nameHr": "File inćuna (slani)",
+        "nameEn": "Anchovy fillet",
+        "price": "€1,50",
+        "category": "Hladna predjela"
+      },
+      {
+        "nameHr": "Pašteta od kozica",
+        "nameEn": "Shrimps pate",
+        "price": "€9,50",
+        "category": "Hladna predjela"
+      },
+      {
+        "nameHr": "Bijeli rižoto s kozicama",
+        "nameEn": "Risotto with shrimps",
+        "price": "€13,80",
+        "category": "Topla predjela, tjestenine i rižota"
+      },
+      {
+        "nameHr": "Pljukanci od špinata sa škampima, pestom od sušenih rajčica i tostiranim pistacijom",
+        "nameEn": "Shrimps",
+        "price": "€22,80",
+        "category": "Topla predjela, tjestenine i rižota"
+      },
+      {
+        "nameHr": "Pohane kozice s tartar umakom",
+        "nameEn": "Breadcrumbed shrimps",
+        "price": "€17,50",
+        "category": "Topla predjela, tjestenine i rižota"
+      },
+      {
+        "nameHr": "Prženi gavuni",
+        "nameEn": "Fried cackerels",
+        "price": "€12,00",
+        "category": "Topla predjela, tjestenine i rižota"
+      },
+      {
+        "nameHr": "Crni rižoto od sipe",
+        "nameEn": "Cuttle-fish risotto",
+        "price": "€14,80",
+        "category": "Topla predjela, tjestenine i rižota"
+      },
+      {
+        "nameHr": "Zeleni rezanci s kozicama na temeljcu od škampa",
+        "nameEn": "Noodles with shrimps",
+        "price": "€14,00",
+        "category": "Topla predjela, tjestenine i rižota"
+      },
+      {
+        "nameHr": "Fuži s tartufatom, tartufima i pršutom",
+        "nameEn": "\"Fuzi\" with truffles and dal.smoked ham",
+        "price": "€17,80",
+        "category": "Topla predjela, tjestenine i rižota"
+      },
+      {
+        "nameHr": "Pljukanci s kozicama",
+        "nameEn": "Pljukanci domestic pasta with shrimps",
+        "price": "€15,00",
+        "category": "Topla predjela, tjestenine i rižota"
+      },
+      {
+        "nameHr": "Domaći kruh, 3 kriške",
+        "nameEn": "Home made bread, slice",
+        "price": "€1,50",
+        "category": "Kruh i umaci"
+      },
+      {
+        "nameHr": "Tartar umak",
+        "nameEn": "Tartar sauce",
+        "price": "€2,20",
+        "category": "Kruh i umaci"
+      },
+      {
+        "nameHr": "Umak od šampinjona",
+        "nameEn": "Mushroom sauce",
+        "price": "€5,00",
+        "category": "Kruh i umaci"
+      },
+      {
+        "nameHr": "Umak od vrganja",
+        "nameEn": "Boletus sauce",
+        "price": "€6,50",
+        "category": "Kruh i umaci"
+      },
+      {
+        "nameHr": "Beefsteak u umaku od zelenog papra",
+        "nameEn": "Beefsteak in green pepper sauce",
+        "price": "€42,00",
+        "category": "Jela od mesa"
+      },
+      {
+        "nameHr": "Beefsteak sa žara",
+        "nameEn": "Beefsteak on gril",
+        "price": "€39,00",
+        "category": "Jela od mesa"
+      },
+      {
+        "nameHr": "Beefsteak u umaku od tartufa",
+        "nameEn": "Beefsteak with truffles",
+        "price": "€42,00",
+        "category": "Jela od mesa",
+        "note": "The dish highlighted in the O nama story"
+      },
+      {
+        "nameHr": "Pureći odrezak zagrebački",
+        "nameEn": "Turkey escalope Zagreb style",
+        "price": "€14,50",
+        "category": "Jela od mesa"
+      },
+      {
+        "nameHr": "Pureći odrezak Mon Ami",
+        "nameEn": "Turkey escalope Mon Ami style",
+        "price": "€14,00",
+        "category": "Jela od mesa",
+        "note": "House signature"
+      },
+      {
+        "nameHr": "Punjeni lungić",
+        "nameEn": "Stuffed filet of pork",
+        "price": "€13,50",
+        "category": "Jela od mesa"
+      },
+      {
+        "nameHr": "Mesna plata Mon Ami (za dvoje)",
+        "nameEn": "beefsteak, pileći zabatak otkošteni, lungić sa žara, puretina punjena sirom i lax kareom",
+        "price": "€39,00",
+        "category": "Jela od mesa",
+        "note": "Sharing platter; the \"English\" description is actually Croatian on the live platform"
+      },
+      {
+        "nameHr": "Lungić sa žara s krumpirovim ploškama",
+        "nameEn": "Filet of pork with homemaid french frie",
+        "price": "€14,00",
+        "category": "Jela od mesa"
+      },
+      {
+        "nameHr": "Lungić sa žara i pečeni krumpir s ružmarinom",
+        "nameEn": "Filet of pork and baked potatoes with rosemary",
+        "price": "€14,00",
+        "category": "Jela od mesa"
+      },
+      {
+        "nameHr": "Jadranske lignje sa žara",
+        "nameEn": "Grilled squid Adriatic",
+        "price": "€62,00",
+        "category": "Jela od riba",
+        "note": "Almost certainly a per-kg price — reads as an error at dish level"
+      },
+      {
+        "nameHr": "Škampi sa žara (8-12kg)",
+        "nameEn": "Grilled scampi",
+        "price": "€96,00",
+        "category": "Jela od riba",
+        "note": "Per kg; \"8-12kg\" denotes grading (pieces per kg), confusing as written"
+      },
+      {
+        "nameHr": "Škampi na buzaru",
+        "nameEn": "Scampi bouzzara",
+        "price": "€96,00",
+        "category": "Jela od riba",
+        "note": "Per kg"
+      },
+      {
+        "nameHr": "Školjke na buzaru",
+        "nameEn": "Scallops bouzzara",
+        "price": "€63,00",
+        "category": "Jela od riba",
+        "note": "Per kg"
+      },
+      {
+        "nameHr": "Domaći kroketi",
+        "nameEn": "Potato balls",
+        "price": "€6,00",
+        "category": "Prilozi"
+      },
+      {
+        "nameHr": "Domaće pržene šnite krumpira",
+        "nameEn": "Home made french frie",
+        "price": "€5,80",
+        "category": "Prilozi"
+      },
+      {
+        "nameHr": "Pommes frites",
+        "nameEn": "French frie",
+        "price": "€4,20",
+        "category": "Prilozi"
+      },
+      {
+        "nameHr": "Blitva krumpir",
+        "nameEn": "Swiss chard with potatoes",
+        "price": "€6,50",
+        "category": "Prilozi"
+      },
+      {
+        "nameHr": "Blitva",
+        "nameEn": "Swiss chard",
+        "price": "€7,00",
+        "category": "Prilozi"
+      },
+      {
+        "nameHr": "Pečeni krumpir s ružmarinom",
+        "nameEn": "Baked potatoes with rosemary",
+        "price": "€4,50",
+        "category": "Prilozi"
+      },
+      {
+        "nameHr": "Domaći njoki",
+        "nameEn": "Homemade gnocchi",
+        "price": "€5,50",
+        "category": "Prilozi"
+      },
+      {
+        "nameHr": "Povrće sa žara",
+        "nameEn": "Grilled vegetables",
+        "price": "€5,80",
+        "category": "Prilozi"
+      },
+      {
+        "nameHr": "Salata od matovilca",
+        "nameEn": "Lamb's lettuce salad",
+        "price": "€4,40",
+        "category": "Salate"
+      },
+      {
+        "nameHr": "Salata od rikole",
+        "nameEn": "Rikola salad",
+        "price": "€4,40",
+        "category": "Salate"
+      },
+      {
+        "nameHr": "Zelena salata",
+        "nameEn": "Lettuce",
+        "price": "€3,60",
+        "category": "Salate"
+      },
+      {
+        "nameHr": "Salata od zelja",
+        "nameEn": "Cabbage salad",
+        "price": "€3,60",
+        "category": "Salate"
+      },
+      {
+        "nameHr": "Miješana salata",
+        "nameEn": "Mixed salad",
+        "price": "€3,80",
+        "category": "Salate"
+      },
+      {
+        "nameHr": "Šopska salata",
+        "nameEn": "Mixed salad with cheese",
+        "price": "€6,00",
+        "category": "Salate"
+      },
+      {
+        "nameHr": "Pečena paprika",
+        "nameEn": "Baked green peppers",
+        "price": "€5,00",
+        "category": "Salate"
+      },
+      {
+        "nameHr": "Čokoladni souffle",
+        "nameEn": "Chocolate souffle",
+        "price": "€5,00",
+        "category": "Slastice"
+      },
+      {
+        "nameHr": "Skradinska torta",
+        "nameEn": "Scardona cake",
+        "price": "€4,00",
+        "category": "Slastice",
+        "note": "Ties to their Skradin olive grove — a story hook"
+      },
+      {
+        "nameHr": "Lignje Mon Ami s prosom",
+        "nameEn": "Squid on Mon Ami style with millet",
+        "price": "€16,50",
+        "category": "Jela bez glutena"
+      },
+      {
+        "nameHr": "Riba sa žara s blitvom i krumpirom",
+        "nameEn": "Adriatic fish",
+        "price": "€21,50",
+        "category": "Jela bez glutena"
+      },
+      {
+        "nameHr": "Zelene tagliatelle u umaku od šumskih gljiva",
+        "nameEn": "Noodles in boletus sauce",
+        "price": "€12,50",
+        "category": "Vegetarijanski obrok"
+      },
+      {
+        "nameHr": "Rižoto od povrća",
+        "nameEn": "Vegetable risotto",
+        "price": "€11,00",
+        "category": "Vegetarijanski obrok"
+      }
+    ],
+    "quotes": [
+      {
+        "text": "Neka Vaša nepca dožive jedinstveni gastronomski užitak mediteranskih specijaliteta u srcu Turopolja.",
+        "attribution": "Mon Ami, O nama page — opening line, the single best headline candidate on the site",
+        "lang": "hr"
+      },
+      {
+        "text": "Imamo preporuku od Croatia Michelin Restaurants – The Michelin Guide i Trip Advisora, a naša najvažnija preporuka su naši gosti.",
+        "attribution": "Mon Ami, O nama page",
+        "lang": "hr"
+      },
+      {
+        "text": "Interijer je sadržan od prirodnih materijala koji predstavljaju naš pristup življenju i poslovanju.",
+        "attribution": "Mon Ami, O nama page — \"Ugodan ambijent\"",
+        "lang": "hr"
+      },
+      {
+        "text": "Prepustite se našem osoblju koje će vas oduševiti svojom kreativnošću i ljubaznošću.",
+        "attribution": "Mon Ami, O nama page — closing line",
+        "lang": "hr"
+      },
+      {
+        "text": "Kuhinju vodi chef Goran Marko Beus.",
+        "attribution": "Mon Ami, O nama page",
+        "lang": "hr"
+      },
+      {
+        "text": "Vaše zadovoljstvo nama je na prvom mjestu",
+        "attribution": "Mon Ami, O nama section heading",
+        "lang": "hr"
+      },
+      {
+        "text": "Tradicija duga 25 godina",
+        "attribution": "Mon Ami, O nama section heading (written on a page last edited Jan 2021 — needs updating)",
+        "lang": "hr"
+      },
+      {
+        "text": "...tako da u našem ugodnom ambijentu može uživati svatko, od usputnog prolaznika do putnika koji između dva leta želi nešto dobro pojesti.",
+        "attribution": "Mon Ami, O nama page — the airport-traveller positioning",
+        "lang": "hr"
+      }
+    ],
+    "imageUrls": [
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2024/03/bg3D3-03-24.jpg",
+        "shows": "Current homepage full-width parallax hero background (593 KB, uploaded March 2024). The only styled hero on the site."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2024/08/bg3D3-08-24.jpg",
+        "shows": "Newest hero variant in the media library (Aug 2024) — uploaded but NOT actually used on the homepage; the site still serves the March version."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2021/01/0035.jpg",
+        "shows": "Plated dish / restaurant photo, 1920px, used as the first image in the O nama 'Tradicija duga 25 godina' section. Best-quality food image on the site."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/onama2.jpg",
+        "shows": "Interior/ambience photo, 1920px, illustrating the 'Ugodan ambijent' section"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/onama3.jpg",
+        "shows": "Third O nama photo, 1920px, under 'Vaše zadovoljstvo nama je na prvom mjestu'"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/onama1.jpg",
+        "shows": "Unused O nama image variant sitting in the media library"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/sp.png",
+        "shows": "Current Mon Ami logo used in the site header (uploaded Nov 2019)"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/logo-monami.png",
+        "shows": "Alternative/original Monami logo file in the media library"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/logo-tamni-200.png",
+        "shows": "Dark-variant logo ('logo tamni') — useful if the redesign needs a light-background lockup"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/monami_icon.png",
+        "shows": "Monami favicon/app icon source"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/0003.jpg",
+        "shows": "Restaurant photo in media library, unused on any page"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/0010.jpg",
+        "shows": "Restaurant photo in media library, unused on any page"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/0014.jpg",
+        "shows": "Restaurant photo in media library, unused on any page"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/01.jpg",
+        "shows": "Gallery photo 1 of 40 (771 KB full-size). Pattern continues 01.jpg through 40.jpg — all verified HTTP 200, all 500-900 KB unoptimised JPEGs, all with empty alt text."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/05.jpg",
+        "shows": "Gallery photo 5 of 40 (910 KB) — confirmed loading"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/12.jpg",
+        "shows": "Gallery photo 12 of 40 (685 KB) — confirmed loading"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/25.jpg",
+        "shows": "Gallery photo 25 of 40 (554 KB), on gallery page 2 — confirmed loading"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/40.jpg",
+        "shows": "Gallery photo 40 of 40 (536 KB), last image — confirmed loading"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/thumbs/thumbs_01.jpg",
+        "shows": "NextGEN 240x160 thumbnail for gallery image 01 (thumbs_01 … thumbs_40 all exist)"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/black.jpg",
+        "shows": "IMPORTANT WEAKNESS: a plain black placeholder image used as the header background on EVERY inner page (O nama, Kontakt, Galerija, Novosti, Online naručivanje), served stretched to 1920x99999"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2024/03/bolt.png",
+        "shows": "Bolt e-scooter QR code image on the Kontakt page (231x231)"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/on2.png",
+        "shows": "'Online naručivanje' floating sidebar button graphic"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/o-nama_bt-150x150-1.png",
+        "shows": "'O nama' floating sidebar button graphic"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/novosti_bt.png",
+        "shows": "'Novosti' floating sidebar button graphic — links to a permanently empty page"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/galerija_bt.png",
+        "shows": "'Galerija' floating sidebar button graphic"
+      },
+      {
+        "url": "https://restaumatic-production.imgix.net/uploads/accounts/37380/media_library/c89ca85d-8983-4bd3-9da7-b158ae1ce80b.jpg",
+        "shows": "'BEST BUY' category header image on the Restaumatic ordering platform (1920x1280 source) — professional food photography that never appears on monami.hr"
+      },
+      {
+        "url": "https://restaumatic-production.imgix.net/uploads/accounts/37380/media_library/04a1d756-6aa5-4897-b168-6d00d910ba73.jpg",
+        "shows": "Individual dish photograph hosted on the ordering platform — one of dozens of per-dish photos invisible to the main website"
+      },
+      {
+        "url": "https://restaumatic-production.imgix.net/uploads/accounts/37380/media_library/050637be-cea2-4817-8aed-4b7359b56611.jpg",
+        "shows": "Individual dish photograph on the ordering platform"
+      },
+      {
+        "url": "https://restaumatic-production.imgix.net/uploads/accounts/37380/media_library/1cf14ac6-bbe1-4777-a7a3-ea8f2f6becbf.jpg",
+        "shows": "Individual dish photograph on the ordering platform"
+      },
+      {
+        "url": "https://restaumatic-production.imgix.net/uploads/accounts/37380/media_library/308bdbc2-0e26-4d17-b533-881e659708c9.jpg",
+        "shows": "Individual dish photograph on the ordering platform"
+      }
+    ],
+    "gaps": [
+      "THE HOMEPAGE IS EMPTY. The entire content body of / is literally `<p></p>` — verified in raw HTML and via the REST API. A visitor landing on monami.hr sees only a hero photo, logo and nav: no headline, no welcome text, no hours, no menu, no phone CTA, no reservation prompt. Everything below the fold is blank until the footer.",
+      "NOVOSTI HAS NEVER HAD A SINGLE POST. /wp-json/wp/v2/posts returns []. The page was created 27/03/2020 (almost certainly to post COVID takeaway news), still sits in the main nav, and renders an empty content div. It advertises a dead section on every page.",
+      "THERE IS NO MENU PAGE AT ALL. /jelovnik/ and /meni/ both return HTTP 404. Nothing in the navigation leads to a menu. For a restaurant this is the single biggest failure.",
+      "TWO FULL MENU PDFs ARE ORPHANED. jelovnik-11.05.2024.b.pdf (3.1 MB, 15 pages) and jelovnik-12.12.2023.B.pdf (4.5 MB) are both live (HTTP 200) in wp-content/uploads but linked from NO page on the site. Someone uploaded them and never published a link. I could not extract their text: both are scanned/image-based PDFs with no selectable text layer, and no pdftoppm/poppler was available on this machine to OCR them — so the PDF menu content itself is unverified. The 60 priced dishes I captured come from the live Restaumatic platform, not these PDFs, and the two sources may not agree.",
+      "THE REAL MENU IS TRAPPED IN A THIRD-PARTY IFRAME. All 60 dishes, prices, photos and allergen/vegan/gluten-free tags live on mon-ami.skubacz.pl inside an iframe on /online-narucivanje/. Google cannot index it as monami.hr content, it cannot be styled, and the restaurant does not own it. The /online-narucivanje/ page itself has zero of its own words.",
+      "GALERIJA IS BARE. The 40 NextGEN photos do load, but the page has no heading text, no captions, no descriptions — every single image has empty alt=\"\" and a filename-derived title of \"01\" through \"40\". Zero SEO value, unusable with a screen reader, and split across two paginated pages instead of a modern lightbox grid.",
+      "COPYRIGHT FROZEN AT 2020. The footer on every page reads \"Copyright © 2020 Monami\" — six years stale, and the first thing that signals abandonment to a visitor.",
+      "\"TRADICIJA DUGA 25 GODINA\" IS OUT OF DATE. That heading was written on a page last modified 13/01/2021. If it was accurate then, the correct figure now is roughly 30 years. The restaurant is undercounting its own history.",
+      "OPENING HOURS APPEAR ON EXACTLY ONE PAGE. Hours exist only in a paragraph on /kontakt/. They are absent from the homepage, absent from the footer, and absent from any structured data — so Google has nothing authoritative to read.",
+      "NO RESERVATION SYSTEM AND NO BOOKING PAGE. /rezervacije/, /rezervacija/ and /booking/ all 404. The only way to book is to read a phone number off the Kontakt page. For a 70-seat restaurant that hosts weddings, communions and business dinners, there is no enquiry form anywhere on the site.",
+      "LANG ATTRIBUTE IS WRONG. The document declares <html lang=\"en-US\"> on every page while the content is Croatian. This hurts SEO and accessibility.",
+      "NO META DESCRIPTION AND NO OPEN GRAPH TAGS on the main site. Search snippets are auto-generated and any link shared to Facebook, WhatsApp or Viber renders with no title card, no description and no image.",
+      "NO STRUCTURED DATA. There is no schema.org Restaurant markup — no address, hours, price range, menu, geo or acceptsReservations. Google cannot build a rich result.",
+      "A STOCK WORDPRESS \"SAMPLE PAGE\" IS STILL PUBLISHED (page id 3149, /sample-page/, created 28/01/2019, never touched). Default WordPress boilerplate live on a commercial site.",
+      "EVERY INNER PAGE USES A BLACK PLACEHOLDER AS ITS HEADER. O nama, Kontakt, Galerija, Novosti and Online naručivanje all load /2020/02/black.jpg stretched to 1920x99999 as the masthead background. Only the homepage has a real photo. Five of six pages open on a black rectangle.",
+      "AN UPLOADED HERO IS GOING UNUSED. bg3D3-08-24.jpg (Aug 2024) is the newest image in the media library, but the homepage still serves bg3D3-03-24.jpg — someone uploaded a refresh and never switched it over.",
+      "SITE IS EFFECTIVELY DORMANT. Newest media upload is Aug 2024; homepage last modified 26/08/2024; O nama untouched since 13/01/2021. Roughly two years without a content change.",
+      "PERFORMANCE IS POOR. 40 unoptimised gallery JPEGs at 500-900 KB each, a ~600 KB hero, no WebP/AVIF anywhere, full jQuery plus jquery-migrate, render-blocking Google Fonts, plus a full-screen preloader animation that delays first paint.",
+      "ONLY ONE SOCIAL CHANNEL. Facebook alone (facebook.com/monamihr). No Instagram link despite this being a seafood restaurant with strong plating — and no link out to the TripAdvisor or Michelin Guide listings the O nama text explicitly boasts about.",
+      "FREE GMAIL ADDRESS. Contact is monamihr@gmail.com rather than something like info@monami.hr, which undercuts credibility at this price point (beefsteak €42, scampi €96/kg).",
+      "MIXED AND BROKEN LANGUAGE. The Kontakt page drops an untranslated English paragraph starting \"NEW: For airport travelers...\" containing typos (\"aproximately\", \"bus lines that drives\") into otherwise Croatian copy. The nav says \"Naslovnica\" but the page's own H1 is the English word \"Home\". On the ordering platform, English names are wrong or missing (\"Istarski fuži s beefsteakom i crnim tartufom\" is translated as \"Beefsteak salad\"; several dishes have no English at all; \"Mesna plata\" has a Croatian string in the English field; typos \"Prshutto\", \"french frie\", \"homemaid\", \"cackerels\", \"bouzzara\"). There is no real language switcher.",
+      "SEAFOOD PRICES ARE AMBIGUOUS AND ALARMING AS DISPLAYED. \"Jadranske lignje sa žara €62,00\", \"Škampi sa žara (8-12kg) €96,00\", \"Školjke na buzaru €63,00\" are almost certainly per-kilogram prices, but nothing on the ordering page says so. As shown they read as the price of a single portion. The \"(8-12kg)\" grading notation will be meaningless to most guests.",
+      "NO OWNER OR TEAM PRESENCE. Chef Goran Marko Beus is named in one sentence with no photo and no bio. No owner is named anywhere. No staff photography. For a restaurant selling a 25-year family tradition, there is no human face on the site.",
+      "CLAIMS ARE UNVERIFIED AND UNLINKED. The Michelin Guide and TripAdvisor recommendations and the olive oil's \"zlatne medalje\" are asserted in prose with no logos, no links, no award body named and no year given. I could not confirm any of them from the site itself.",
+      "NO COOKIE BANNER DESPITE A COOKIE POLICY. /cookie-policy-eu/ exists (HTTP 200, created Oct 2023) but is not linked from the footer or nav, and I found no consent plugin (no Complianz/cmplz/cookie-law markup) loading on the pages — while a Google Maps iframe is embedded on Kontakt. Likely a GDPR gap, though I did not audit this exhaustively.",
+      "NAV LINKS ARE INCONSISTENT. Four of six menu items (/o-nama, /novosti, /galerija, /kontakt) omit the trailing slash while the canonical URLs include it, forcing an extra redirect on most navigation clicks.",
+      "I COULD NOT ASSESS ACTUAL MOBILE RENDERING. A responsive viewport meta tag and a Fortunato Pro hamburger toggle (.menu-toggle, breakpoint 1025px) are present, so the theme is nominally responsive, but I had no browser or screenshot capability here — I cannot confirm how the parallax hero, the 240x160 gallery grid, or the embedded Restaumatic ordering iframe actually behave on a phone. The iframe-in-a-page ordering flow is the most likely mobile problem.",
+      "I COULD NOT VERIFY DELIVERY TERMS. The ordering platform renders its delivery zone, minimum order, delivery fee and current open/closed status client-side via JavaScript, so none of that was in the fetched HTML. Whether delivery is still active at all is unconfirmed.",
+      "NO DRINKS OR WINE LIST ONLINE. The O nama text boasts a 60-label wine list and a house cuvée, but /vina/ 404s and the ordering platform carries no beverage categories at all. Not one wine, and not one price for one, is published anywhere on the site.",
+      "SITE AUTHORSHIP SUGGESTS AN ABSENT CONTRACTOR. Every page is authored by the account \"mpecko\" with a public author archive at /author/mpecko/. This looks like an external web developer rather than restaurant staff, which likely explains why nothing has been updated since 2024 — but I could not confirm who mpecko is.",
+      "TLS/CERTIFICATE WARNING. Fetching https://www.monami.hr from this machine failed certificate revocation checking (CRYPT_E_NO_REVOCATION_CHECK) and required curl -k to proceed. This may be a local Windows/schannel quirk rather than a genuine server fault, but it is worth testing the certificate chain (and any missing intermediate) during the rebuild."
+    ]
+  }
+}

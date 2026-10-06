@@ -1,0 +1,924 @@
+{
+  "type": "result",
+  "key": "v2:433052223cc25392fb400b805e885ca9c66a0792fbd738d3d964ecfefef31b5b",
+  "agentId": "a9ca17d0b69af1c3c",
+  "result": {
+    "source": "Restoran Mon Ami, Trg kralja Tomislava 26, Velika Gorica. Primary source: their live online-ordering system at https://mon-ami.skubacz.pl/ (Restaumatic platform, siteId 204190, currency EUR), which is the exact iframe embedded at https://www.monami.hr/online-narucivanje/ — I downloaded the raw HTML (341 KB) and extracted all 66 dish names, all four-language descriptions and all prices verbatim from the `restaurant-menu__dish-name`, `m-item__description` and price nodes. Cross-checked against: monami.hr WordPress REST API (/wp-json/wp/v2/pages, /media — found two official jelovnik PDFs), monami.hr \"O nama\" and \"Kontakt\", Gault&Millau Croatia (13.5/20, 2026 review), MICHELIN Guide Croatia listing, Gastronaut.hr restaurant profile, Tjedan restorana, and a detailed 2023 Eat Out Zagreb review with à-la-carte prices. Delivery platforms (Wolt, Glovo, Bolt Food) do NOT list this restaurant — the only Wolt \"Mon Ami\" is an unrelated Belgrade venue, and the \"bolt.png\" on monami.hr is an e-scooter ad, not Bolt Food.",
+    "summary": "Mon Ami is a family-run fish/seafood restaurant on the main square of Velika Gorica, open since 1997, roughly 3 minutes from Zagreb Airport bus terminal. Founded by the Ceronja couple — Božo from the Skradin area, Barbara/Barica a native of Turopolje — the concept was deliberately to marry Mediterranean coast and continental Turopolje on one plate. The son, Bruno Ceronja, now manages it; the kitchen is led by chef Goran Marko Beus. It has been MICHELIN Guide-recommended six-plus consecutive years (Mediterranean Cuisine, €€€, no star/Bib), scores 13.5/20 as a Gault&Millau \"Chef's Restaurant\" (head sommelier Zlatko Šimac), and has made Croatia's Top 100 restaurants 23 times.\n\nI recovered the COMPLETE current menu with prices — 66 dishes across 11 sections — from their own live ordering system, which mirrors the printed jelovnik and carries Croatian/English/French/German descriptions for each dish. Sections: BEST BUY, Hladna predjela, Topla predjela/tjestenine i rižota, Kruh i umaci, Jela od mesa, Jela od riba, Prilozi, Salate, Slastice, Jela bez glutena, Vegetarijanski obrok.\n\nKey confirmations against the brief: crni rižoto od sipe (€14,80) and dimljene dagnje na rikoli (€14,50) exist and are signatures; biftek u umaku od tartufa exists as \"Beefsteak u umaku od tartufa\" (€42,00), flagged \"posebna ponuda\". Fresh wild white fish IS sold by weight — lignje €62,00/kg, škampi €96,00/kg, školjke €63,00/kg. Dedicated gluten-free and vegetarian sections exist. Note: \"salata od hobotnice i lignji\" is described in prose on their About page and press but does NOT appear as a line item on the current ordering menu.\n\nHouse specialities beyond food: their own gold-medal extra virgin olive oil from a Skradin grove, and fresh native black Turopolje truffle served daily. Wine list is 60–65 labels, predominantly Croatian; the house wine is their own cuvée of Chardonnay and Graševina from the Pokuplje subregion, Vukomeričke gorice vinogorje.",
+    "facts": [
+      {
+        "label": "Full name",
+        "value": "Restoran Mon Ami",
+        "confidence": "high"
+      },
+      {
+        "label": "Address",
+        "value": "Trg kralja Tomislava 26, 10410 Velika Gorica, Croatia",
+        "confidence": "high"
+      },
+      {
+        "label": "Phone",
+        "value": "+385 1 6213 333 (01/6213 333)",
+        "confidence": "high"
+      },
+      {
+        "label": "Mobile",
+        "value": "091 5444 715",
+        "confidence": "high"
+      },
+      {
+        "label": "Email",
+        "value": "monamihr@gmail.com",
+        "confidence": "high"
+      },
+      {
+        "label": "Website",
+        "value": "https://www.monami.hr/",
+        "confidence": "high"
+      },
+      {
+        "label": "Online ordering",
+        "value": "https://www.monami.hr/online-narucivanje/ — iframes https://mon-ami.skubacz.pl/ (Restaumatic platform). This is the live, priced menu.",
+        "confidence": "high"
+      },
+      {
+        "label": "Facebook",
+        "value": "https://www.facebook.com/monamihr/",
+        "confidence": "high"
+      },
+      {
+        "label": "Instagram",
+        "value": "https://www.instagram.com/monami.hr/",
+        "confidence": "medium"
+      },
+      {
+        "label": "Opening hours",
+        "value": "11:00–23:00 svaki dan osim nedjelje i blagdana; 11:00–16:30 ponedjeljkom (closed Sundays and public holidays)",
+        "confidence": "high"
+      },
+      {
+        "label": "Annual closure",
+        "value": "1.–21. kolovoza (1–21 August)",
+        "confidence": "medium"
+      },
+      {
+        "label": "Founded",
+        "value": "1997 — over 25 years of operation",
+        "confidence": "high"
+      },
+      {
+        "label": "Founders",
+        "value": "Bračni par Ceronja — Božo (from the Skradin area, Dalmatia) and Barbara/Barica (native of Turopolje). The coast-meets-continent concept comes directly from this.",
+        "confidence": "high"
+      },
+      {
+        "label": "Owner",
+        "value": "Barica Ceronja",
+        "confidence": "medium"
+      },
+      {
+        "label": "Manager",
+        "value": "Bruno Ceronja (son); also runs the family olive oil production",
+        "confidence": "high"
+      },
+      {
+        "label": "Head chef",
+        "value": "Goran Marko Beus (also written Goran-Marko Beus / Marko Beus) — with the restaurant ~15 years",
+        "confidence": "high"
+      },
+      {
+        "label": "Head sommelier",
+        "value": "Zlatko Šimac",
+        "confidence": "medium"
+      },
+      {
+        "label": "Michelin status",
+        "value": "Listed in MICHELIN Guide Croatia (2025 selection). Cuisine: Mediterranean. Price band: €€€. Recommended six-plus consecutive years. No star or Bib Gourmand.",
+        "confidence": "high"
+      },
+      {
+        "label": "Michelin quote on the food",
+        "value": "Fish is the main focus, prepared in \"simple, traditional recipes that highlight the quality of the ingredients\"; a \"steady stream of regulars filling the restaurant attests to the quality of the cuisine.\"",
+        "confidence": "high"
+      },
+      {
+        "label": "Michelin singled-out dish",
+        "value": "Grilled salmon steak with teriyaki sauce and celery purée — described as one of the chef's \"most lauded dishes\" (on the menu as Losos sa žara, €23,00)",
+        "confidence": "high"
+      },
+      {
+        "label": "Gault&Millau",
+        "value": "13.5/20, designated a \"Chef's Restaurant\" (2026 review)",
+        "confidence": "high"
+      },
+      {
+        "label": "Top 100 Croatian restaurants",
+        "value": "Listed 23 times: 1999–2002, 2004–2008, 2010–2012, 2015–2025",
+        "confidence": "medium"
+      },
+      {
+        "label": "Capacity",
+        "value": "Main room 70 seats; separate separe/private room for up to 10 (business meetings); covered and heated terrace ~20 seats",
+        "confidence": "high"
+      },
+      {
+        "label": "Interior",
+        "value": "Built from natural materials — wood and stone; split between a formal white-tablecloth room and a more relaxed enclosed terrace",
+        "confidence": "high"
+      },
+      {
+        "label": "Location advantage",
+        "value": "Town centre of Velika Gorica, ~3 minutes' walk from the main bus station; airport buses from Zagreb Airport (Pleso) run every 35 minutes. Popular with travellers between flights.",
+        "confidence": "high"
+      },
+      {
+        "label": "Wine list size",
+        "value": "60–65 labels, predominantly Croatian producers (monami.hr says 60 etiketa; Gastronaut says 65)",
+        "confidence": "high"
+      },
+      {
+        "label": "House wine (vino kuće)",
+        "value": "Their own cuvée of Chardonnay and Graševina from the Pokuplje subregion, Vukomeričke gorice vinogorje",
+        "confidence": "high"
+      },
+      {
+        "label": "Wine list character (Gault&Millau)",
+        "value": "\"Selected labels from Croatian vineyards\"",
+        "confidence": "high"
+      },
+      {
+        "label": "Wines named in press",
+        "value": "Pjenušac Poy (sparkling, Mladina winery, Plešivica); Krauthaker Graševina Mitrovac (white by the glass) — noted for fruit, structure and freshness, pairing from starters through white fish to stronger cheeses",
+        "confidence": "medium"
+      },
+      {
+        "label": "Own olive oil",
+        "value": "Extra virgin olive oil from the family's own grove in Skradin, gold-medal awarded (96.42 points, 10th place at the Vodice competition). Used across most dishes and sold to guests.",
+        "confidence": "high"
+      },
+      {
+        "label": "Own truffle",
+        "value": "Fresh native black Turopolje truffle (svježi autohtoni crni turopoljski tartuf), served daily, grated over dishes such as the tuna carpaccio",
+        "confidence": "high"
+      },
+      {
+        "label": "Other house products",
+        "value": "Croatian green olives and olive-leaf tea",
+        "confidence": "medium"
+      },
+      {
+        "label": "Fresh fish model",
+        "value": "Daily fresh wild white fish sold by weight from the display. Species seen: škrpina (scorpionfish), brancin (sea bass), kovač (John Dory), zubatac (dentex), crni orada/black sea bream, sabljarka (swordfish) fillets, grouper.",
+        "confidence": "high"
+      },
+      {
+        "label": "Per-kilo seafood prices (menu)",
+        "value": "Jadranske lignje sa žara €62,00/kg; Škampi sa žara (8-12kg grade) €96,00/kg; Škampi na buzaru €96,00/kg; Školjke na buzaru €63,00/kg",
+        "confidence": "high"
+      },
+      {
+        "label": "Dietary provision",
+        "value": "Dedicated sections on the menu for JELA BEZ GLUTENA (gluten-free) and VEGETARIJANSKI OBROK (vegetarian). Gault&Millau also notes vegan choices.",
+        "confidence": "high"
+      },
+      {
+        "label": "Allergen disclosure",
+        "value": "Menu carries the standard EU 14-allergen list (gluten, crustaceans, eggs, fish, peanuts, soy, milk/lactose, nuts, celery, mustard, sesame, sulphur dioxide, lupin, molluscs)",
+        "confidence": "high"
+      },
+      {
+        "label": "Menu languages",
+        "value": "Every dish carries descriptions in Croatian, English, French and German",
+        "confidence": "high"
+      },
+      {
+        "label": "Payment",
+        "value": "Cash, card, or fast bank transfer online; in-house Maestro, Visa, MasterCard, Diners Club",
+        "confidence": "high"
+      },
+      {
+        "label": "Events hosted",
+        "value": "Business gatherings, weddings, first communions, confirmations, baptisms; themed evenings built around seasonal local ingredients",
+        "confidence": "high"
+      },
+      {
+        "label": "Accessibility",
+        "value": "Accessible for people with disabilities; air conditioning",
+        "confidence": "medium"
+      },
+      {
+        "label": "Restaurant Week participation",
+        "value": "Tjedan restorana 21.3.–30.3.2025, with both lunch and dinner menus",
+        "confidence": "high"
+      },
+      {
+        "label": "Official menu PDFs",
+        "value": "https://www.monami.hr/wp-content/uploads/2024/05/jelovnik-11.05.2024.b.pdf and https://www.monami.hr/wp-content/uploads/2023/12/jelovnik-12.12.2023.B.pdf",
+        "confidence": "high"
+      },
+      {
+        "label": "Delivery platforms",
+        "value": "NOT on Wolt, Glovo or Bolt Food. Ordering is exclusively through their own Restaumatic system. The Wolt result for \"Mon Ami\" is an unrelated Belgrade venue.",
+        "confidence": "high"
+      },
+      {
+        "label": "Total dishes on live menu",
+        "value": "66 items across 11 sections",
+        "confidence": "high"
+      },
+      {
+        "label": "Signature dishes per the restaurant",
+        "value": "Marked \"preporuka šefa kuhinje\" (chef's recommendation): Carpacio od tune s crnim tartufom, Fuži s tartufatom, Pureći odrezak Mon Ami. Marked \"posebna ponuda\" (special offer): Beefsteak u umaku od tartufa, Škampi sa žara.",
+        "confidence": "high"
+      },
+      {
+        "label": "Tagline",
+        "value": "\"kao prijatelj prijatelju\" — like a friend to a friend (a play on the name Mon Ami, \"my friend\")",
+        "confidence": "high"
+      },
+      {
+        "label": "Signature dessert",
+        "value": "Skradinska torta — the Skradin cake, a nod to the father's Dalmatian origin; nut-based and naturally gluten-free",
+        "confidence": "high"
+      }
+    ],
+    "dishes": [
+      {
+        "nameHr": "File brancina uz ražnjić od škampa s blitvom i krumpirom",
+        "nameEn": "Sea bass fillet with a scampi skewer, Swiss chard and potatoes",
+        "category": "Riba",
+        "price": "€26,50",
+        "note": "BEST BUY section. Praised by Gault&Millau, which describes it with cherry tomatoes and grilled courgette alongside the chard and boiled potatoes."
+      },
+      {
+        "nameHr": "Lignje sa žara paket (blitva-krumpir, kruh)",
+        "nameEn": "Grilled squid package (Swiss chard with potatoes, bread)",
+        "category": "Riba",
+        "price": "€16,60",
+        "note": "BEST BUY section — fixed-portion alternative to the by-weight grilled squid."
+      },
+      {
+        "nameHr": "Riblja plata Mon Ami (za dvoje) roštilj-jadranska riba, lignje, kozice, blitva s krumpirom",
+        "nameEn": "Mon Ami seafood platter (for two) — grilled Adriatic fish, squid, shrimps, Swiss chard with potatoes",
+        "category": "Riba",
+        "price": "€42,00",
+        "note": "Signature sharing platter. Gault&Millau highlights the 'seafood plate for two' as a sampling selection."
+      },
+      {
+        "nameHr": "Pržene lignje paket (pommes fries, tartar, kruh)",
+        "nameEn": "Fried squid package (french fries, tartar sauce, bread)",
+        "category": "Riba",
+        "price": "€14,90",
+        "note": "BEST BUY section."
+      },
+      {
+        "nameHr": "Istarski fuži s beefsteakom i crnim tartufom",
+        "nameEn": "Istrian fuži pasta with beefsteak and black truffle",
+        "category": "Rižota i tjestenina",
+        "price": "€27,50",
+        "note": "BEST BUY section. Uses the restaurant's own native black Turopolje truffle."
+      },
+      {
+        "nameHr": "Ramsteak sa žara",
+        "nameEn": "Grilled rump steak",
+        "category": "Meso",
+        "price": "€23,50"
+      },
+      {
+        "nameHr": "Losos sa žara glaziran terriyaki umakom s pireom od celera i povrćem kuhanim na pari",
+        "nameEn": "Grilled salmon glazed with teriyaki sauce, celery purée and steamed vegetables",
+        "category": "Riba",
+        "price": "€23,00",
+        "note": "SIGNATURE — the single dish MICHELIN singles out, calling it one of the chef's 'most lauded dishes'."
+      },
+      {
+        "nameHr": "Pačji batak i zabatak s pireom od češnjaka na redukciji od naranče i crnog vina",
+        "nameEn": "Duck leg and thigh with garlic purée on an orange and red wine reduction",
+        "category": "Meso",
+        "price": "€26,00",
+        "note": "Chef Beus signature listed among Gastronaut's featured recipes, filed under Turopolje cuisine. Marked 'privremeno nedostupan' (temporarily unavailable) at time of check."
+      },
+      {
+        "nameHr": "Carpacio od tune s crnim tartufom",
+        "nameEn": "Tuna carpaccio with black truffle",
+        "category": "Hladna predjela",
+        "price": "€18,50",
+        "note": "SIGNATURE — marked 'preporuka šefa kuhinje'. Uses fresh native black Turopolje truffle grated at service. Was €16 in 2023."
+      },
+      {
+        "nameHr": "Pršut 50g",
+        "nameEn": "Dry-cured prosciutto, 50g",
+        "category": "Hladna predjela",
+        "price": "€5,20"
+      },
+      {
+        "nameHr": "Istarska kobasica s ružmarinom 50g",
+        "nameEn": "Istrian sausage with rosemary, 50g",
+        "category": "Hladna predjela",
+        "price": "€3,75",
+        "note": "Marked temporarily unavailable."
+      },
+      {
+        "nameHr": "Paški sir Gligora 50g",
+        "nameEn": "Gligora Pag island sheep's cheese, 50g",
+        "category": "Hladna predjela",
+        "price": "€7,25"
+      },
+      {
+        "nameHr": "Težački sir Gligora 50g",
+        "nameEn": "Gligora 'Težački' cheese, 50g",
+        "category": "Hladna predjela",
+        "price": "€3,40",
+        "note": "Marked temporarily unavailable."
+      },
+      {
+        "nameHr": "Dimljene dagnje na rikoli",
+        "nameEn": "Smoked mussels on rocket",
+        "category": "Hladna predjela",
+        "price": "€14,50",
+        "note": "SIGNATURE — one of the dishes the restaurant leads with. Pag mussels, dressed with their own Skradin olive oil. A 2023 review called them 'mesnate i znalački napucane neodoljivim aromama dima'. Was €12 in 2023."
+      },
+      {
+        "nameHr": "File inćuna (slani)",
+        "nameEn": "Salted anchovy fillet",
+        "category": "Hladna predjela",
+        "price": "€1,50",
+        "note": "Priced per fillet."
+      },
+      {
+        "nameHr": "Pašteta od kozica",
+        "nameEn": "Shrimp pâté",
+        "category": "Hladna predjela",
+        "price": "€9,50"
+      },
+      {
+        "nameHr": "Bijeli rižoto s kozicama",
+        "nameEn": "White risotto with shrimps",
+        "category": "Rižota i tjestenina",
+        "price": "€13,80"
+      },
+      {
+        "nameHr": "Pljukanci od špinata sa škampima, pestom od sušenih rajčica i tostiranim pistacijom",
+        "nameEn": "Spinach pljukanci pasta with scampi, sun-dried tomato pesto and toasted pistachio",
+        "category": "Rižota i tjestenina",
+        "price": "€22,80"
+      },
+      {
+        "nameHr": "Pohane kozice s tartar umakom",
+        "nameEn": "Breaded shrimps with tartar sauce",
+        "category": "Topla predjela",
+        "price": "€17,50",
+        "note": "Marked temporarily unavailable."
+      },
+      {
+        "nameHr": "Prženi gavuni",
+        "nameEn": "Fried sand smelts (small Adriatic fish)",
+        "category": "Topla predjela",
+        "price": "€12,00",
+        "note": "SIGNATURE — 'gavuni prženi na maslinovom ulju', fried in their own Skradin olive oil; named in the restaurant's own description and in the Michelin/Gault&Millau write-ups."
+      },
+      {
+        "nameHr": "Crni rižoto od sipe",
+        "nameEn": "Black cuttlefish risotto",
+        "category": "Rižota i tjestenina",
+        "price": "€14,80",
+        "note": "SIGNATURE — the house classic, named in every review and in their own About text; cited by Gault&Millau."
+      },
+      {
+        "nameHr": "Zeleni rezanci s kozicama na temeljcu od škampa",
+        "nameEn": "Green tagliatelle with shrimps in scampi bisque",
+        "category": "Rižota i tjestenina",
+        "price": "€14,00",
+        "note": "Gault&Millau praises 'tagliatelle with tiny prawns and shrimp bisque'."
+      },
+      {
+        "nameHr": "Fuži s tartufatom, tartufima i pršutom",
+        "nameEn": "Fuži pasta with truffle cream, truffles and prosciutto",
+        "category": "Rižota i tjestenina",
+        "price": "€17,80",
+        "note": "Marked 'preporuka šefa' (chef's recommendation)."
+      },
+      {
+        "nameHr": "Pljukanci s kozicama",
+        "nameEn": "Pljukanci — homemade hand-rolled pasta — with shrimps",
+        "category": "Rižota i tjestenina",
+        "price": "€15,00"
+      },
+      {
+        "nameHr": "Domaći kruh, 3 kriške",
+        "nameEn": "Homemade bread, 3 slices",
+        "category": "Kruh i umaci",
+        "price": "€1,50",
+        "note": "Gault&Millau calls it 'excellent homemade bread'."
+      },
+      {
+        "nameHr": "Tartar umak",
+        "nameEn": "Tartar sauce",
+        "category": "Kruh i umaci",
+        "price": "€2,20"
+      },
+      {
+        "nameHr": "Umak od šampinjona",
+        "nameEn": "Button mushroom sauce",
+        "category": "Kruh i umaci",
+        "price": "€5,00"
+      },
+      {
+        "nameHr": "Umak od vrganja",
+        "nameEn": "Porcini (boletus) sauce",
+        "category": "Kruh i umaci",
+        "price": "€6,50",
+        "note": "Frequently ordered alongside the plain grilled beefsteak."
+      },
+      {
+        "nameHr": "Beefsteak u umaku od zelenog papra",
+        "nameEn": "Beefsteak in green peppercorn sauce",
+        "category": "Meso",
+        "price": "€42,00"
+      },
+      {
+        "nameHr": "Beefsteak sa žara",
+        "nameEn": "Grilled beefsteak",
+        "category": "Meso",
+        "price": "€39,00",
+        "note": "A 2023 review: 'Ovaj biftek je jedan od top 5 koje smo pojeli u široj zagrebačkoj regiji.' Sliced tableside by the waiter."
+      },
+      {
+        "nameHr": "Beefsteak u umaku od tartufa",
+        "nameEn": "Beefsteak in truffle sauce",
+        "category": "Meso",
+        "price": "€42,00",
+        "note": "SIGNATURE — marked 'posebna ponuda' (special offer). The truffle beefsteak named in the restaurant's own About text: 'beefsteak s roštilja u umaku od tartufate i crnog tartufa'."
+      },
+      {
+        "nameHr": "Pureći odrezak zagrebački",
+        "nameEn": "Turkey escalope Zagreb style (cordon-bleu style, stuffed with ham and cheese)",
+        "category": "Meso",
+        "price": "€14,50",
+        "note": "Marked temporarily unavailable."
+      },
+      {
+        "nameHr": "Pureći odrezak Mon Ami",
+        "nameEn": "Turkey escalope Mon Ami style",
+        "category": "Meso",
+        "price": "€14,00",
+        "note": "House version — marked 'preporuka šefa' (chef's recommendation)."
+      },
+      {
+        "nameHr": "Punjeni lungić",
+        "nameEn": "Stuffed pork fillet",
+        "category": "Meso",
+        "price": "€13,50"
+      },
+      {
+        "nameHr": "Mesna plata Mon Ami (za dvoje)",
+        "nameEn": "Mon Ami mixed meat platter (for two) — beefsteak, deboned chicken thigh, grilled pork fillet, turkey stuffed with cheese and smoked loin",
+        "category": "Meso",
+        "price": "€39,00",
+        "note": "Menu description: 'beefsteak, pileći zabatak otkošteni, lungić sa žara, puretina punjena sirom i lax kareom'."
+      },
+      {
+        "nameHr": "Lungić sa žara s krumpirovim ploškama",
+        "nameEn": "Grilled pork fillet with homemade potato slices",
+        "category": "Meso",
+        "price": "€14,00"
+      },
+      {
+        "nameHr": "Lungić sa žara i pečeni krumpir s ružmarinom",
+        "nameEn": "Grilled pork fillet with rosemary roast potatoes",
+        "category": "Meso",
+        "price": "€14,00"
+      },
+      {
+        "nameHr": "Jadranske lignje sa žara",
+        "nameEn": "Grilled Adriatic squid",
+        "category": "Riba",
+        "price": "€62,00",
+        "note": "PRICED PER KILOGRAM — sold by weight from the fresh display. Was €53/kg in 2023. Served with potato and blitva."
+      },
+      {
+        "nameHr": "Škampi sa žara (8-12kg)",
+        "nameEn": "Grilled scampi / Adriatic langoustines (8-12 per kg grade)",
+        "category": "Riba",
+        "price": "€96,00",
+        "note": "PRICED PER KILOGRAM. Marked 'posebna ponuda'. Kvarner scampi, finished with the family's own Skradin olive oil. Was €80/kg in 2023."
+      },
+      {
+        "nameHr": "Škampi na buzaru",
+        "nameEn": "Scampi buzara — langoustines in garlic, white wine, tomato and breadcrumb sauce",
+        "category": "Riba",
+        "price": "€96,00",
+        "note": "PRICED PER KILOGRAM."
+      },
+      {
+        "nameHr": "Školjke na buzaru",
+        "nameEn": "Shellfish buzara — mussels/clams in garlic, white wine and herb sauce",
+        "category": "Riba",
+        "price": "€63,00",
+        "note": "PRICED PER KILOGRAM. Gault&Millau names 'mussels on a buzara'."
+      },
+      {
+        "nameHr": "Domaći kroketi",
+        "nameEn": "Homemade potato croquettes",
+        "category": "Prilozi",
+        "price": "€6,00"
+      },
+      {
+        "nameHr": "Domaće pržene šnite krumpira",
+        "nameEn": "Homemade fried potato slices",
+        "category": "Prilozi",
+        "price": "€5,80"
+      },
+      {
+        "nameHr": "Pommes frites",
+        "nameEn": "French fries",
+        "category": "Prilozi",
+        "price": "€4,20"
+      },
+      {
+        "nameHr": "Blitva krumpir",
+        "nameEn": "Swiss chard with potatoes (the classic Dalmatian side)",
+        "category": "Prilozi",
+        "price": "€6,50"
+      },
+      {
+        "nameHr": "Blitva",
+        "nameEn": "Swiss chard",
+        "category": "Prilozi",
+        "price": "€7,00"
+      },
+      {
+        "nameHr": "Pečeni krumpir s ružmarinom",
+        "nameEn": "Roast potatoes with rosemary",
+        "category": "Prilozi",
+        "price": "€4,50"
+      },
+      {
+        "nameHr": "Domaći njoki",
+        "nameEn": "Homemade gnocchi",
+        "category": "Prilozi",
+        "price": "€5,50"
+      },
+      {
+        "nameHr": "Povrće sa žara",
+        "nameEn": "Grilled vegetables",
+        "category": "Prilozi",
+        "price": "€5,80"
+      },
+      {
+        "nameHr": "Salata od matovilca",
+        "nameEn": "Lamb's lettuce (mâche) salad",
+        "category": "Salate",
+        "price": "€4,40"
+      },
+      {
+        "nameHr": "Salata od rikole",
+        "nameEn": "Rocket salad",
+        "category": "Salate",
+        "price": "€4,40"
+      },
+      {
+        "nameHr": "Zelena salata",
+        "nameEn": "Green salad / lettuce",
+        "category": "Salate",
+        "price": "€3,60"
+      },
+      {
+        "nameHr": "Salata od zelja",
+        "nameEn": "Cabbage salad",
+        "category": "Salate",
+        "price": "€3,60"
+      },
+      {
+        "nameHr": "Miješana salata",
+        "nameEn": "Mixed salad",
+        "category": "Salate",
+        "price": "€3,80"
+      },
+      {
+        "nameHr": "Šopska salata",
+        "nameEn": "Šopska salad — mixed salad with grated cheese",
+        "category": "Salate",
+        "price": "€6,00"
+      },
+      {
+        "nameHr": "Pečena paprika",
+        "nameEn": "Roasted peppers",
+        "category": "Salate",
+        "price": "€5,00"
+      },
+      {
+        "nameHr": "Čokoladni souffle",
+        "nameEn": "Chocolate soufflé",
+        "category": "Deserti",
+        "price": "€5,00"
+      },
+      {
+        "nameHr": "Skradinska torta",
+        "nameEn": "Skradin cake — traditional Dalmatian nut cake",
+        "category": "Deserti",
+        "price": "€4,00",
+        "note": "SIGNATURE dessert and naturally gluten-free. A direct nod to the founding father's Skradin origins. Described in reviews as soft and nutty."
+      },
+      {
+        "nameHr": "Lignje Mon Ami s prosom",
+        "nameEn": "Mon Ami squid with millet",
+        "category": "Riba",
+        "price": "€16,50",
+        "note": "From the dedicated JELA BEZ GLUTENA (gluten-free) section. Marked temporarily unavailable."
+      },
+      {
+        "nameHr": "Riba sa žara s blitvom i krumpirom",
+        "nameEn": "Grilled Adriatic fish with Swiss chard and potatoes",
+        "category": "Riba",
+        "price": "€21,50",
+        "note": "From the dedicated JELA BEZ GLUTENA (gluten-free) section."
+      },
+      {
+        "nameHr": "Zelene tagliatelle u umaku od šumskih gljiva",
+        "nameEn": "Green tagliatelle in wild mushroom (boletus) sauce",
+        "category": "Rižota i tjestenina",
+        "price": "€12,50",
+        "note": "From the dedicated VEGETARIJANSKI OBROK (vegetarian) section."
+      },
+      {
+        "nameHr": "Rižoto od povrća",
+        "nameEn": "Vegetable risotto",
+        "category": "Rižota i tjestenina",
+        "price": "€11,00",
+        "note": "From the dedicated VEGETARIJANSKI OBROK (vegetarian) section."
+      },
+      {
+        "nameHr": "Rožata",
+        "nameEn": "Rožata — Dalmatian caramel custard, here with lemon zest in caramel syrup and whipped cream",
+        "category": "Deserti",
+        "note": "Confirmed served (named by Gault&Millau 2026 and by a 2023 review) but NOT on the online-ordering menu — restaurant-only dessert. No published price."
+      },
+      {
+        "nameHr": "Semifreddo od lješnjaka i bijele čokolade sa slanom karamelom",
+        "nameEn": "Hazelnut and white chocolate semifreddo with salted caramel",
+        "category": "Deserti",
+        "note": "Chef Beus creative dessert, named by Gault&Millau 2026 and listed among Gastronaut's featured house recipes. Not on the online-ordering menu; no published price."
+      },
+      {
+        "nameHr": "Jadranska lignja i hobotnica na salatu",
+        "nameEn": "Adriatic squid and octopus salad",
+        "category": "Hladna predjela",
+        "note": "Named as a house speciality in the restaurant's own 'O nama' text and across press coverage, but NOT a line item on the current online-ordering menu — likely offered in-restaurant or seasonally. No published price."
+      },
+      {
+        "nameHr": "Domaći ravioli sa sipom u umaku od jadranskih kozica",
+        "nameEn": "Homemade cuttlefish ravioli in Adriatic shrimp sauce",
+        "category": "Rižota i tjestenina",
+        "note": "Listed as a signature house recipe on the Gastronaut restaurant profile. Not on the online-ordering menu; no published price."
+      },
+      {
+        "nameHr": "Turopoljski odrezak",
+        "nameEn": "Turopolje-style escalope",
+        "category": "Meso",
+        "note": "Listed as a signature house recipe (Turopolje regional cuisine) on the Gastronaut restaurant profile. Not on the online-ordering menu; no published price."
+      },
+      {
+        "nameHr": "Primorski kolač s maslinovim uljem",
+        "nameEn": "Coastal olive oil cake",
+        "category": "Deserti",
+        "note": "Listed as a signature house recipe on the Gastronaut restaurant profile, made with their own Skradin olive oil. Not on the online-ordering menu; no published price."
+      },
+      {
+        "nameHr": "Jastog",
+        "nameEn": "Lobster",
+        "category": "Riba",
+        "note": "Named as a house offering in their own 'O nama' text and press. Market price by weight, not published."
+      },
+      {
+        "nameHr": "Vino kuće — cuvée Chardonnay i Graševina",
+        "nameEn": "House wine — Chardonnay and Graševina cuvée, Pokuplje subregion, Vukomeričke gorice",
+        "category": "Vina",
+        "note": "The restaurant's OWN house cuvée. Price not published."
+      },
+      {
+        "nameHr": "Krauthaker Graševina Mitrovac",
+        "nameEn": "Krauthaker Graševina Mitrovac (Kutjevo, Slavonia) — white",
+        "category": "Vina",
+        "note": "Served by the glass. Noted for fruit, structure and freshness; pairs from starters through white fish to stronger cheeses. Price not published."
+      },
+      {
+        "nameHr": "Pjenušac Poy, Mladina",
+        "nameEn": "Poy sparkling wine, Mladina winery, Plešivica",
+        "category": "Vina",
+        "note": "House sparkling recommendation. Price not published."
+      }
+    ],
+    "verbatimCroatian": [
+      "Tradicija duga 25 godina",
+      "Ugodan ambijent",
+      "Vaše zadovoljstvo nama je na prvom mjestu",
+      "Restoran Mon Ami nalazi se u centru Velike Gorice, na adresi Trg kralja Tomislava 26, na putu prema Sisku ili Zračnoj luci \"Pleso\", a posluje od 1997. godine.",
+      "Goste očekuju dnevno svježa i divlja bijela riba, crni rižot od sipe, jadranske lignje i hobotnica na salatu, te dimljene dagnje.",
+      "Na jelovniku su i kvarnerski škampi, jastog, školjke, carpaccio od tune s crnim tartufom te gavuni prženi na maslinovu ulju.",
+      "Za ljubitelje mesa izdvaja se beefsteak s roštilja u umaku od tartufate i crnog tartufa.",
+      "Nude se i vegetarijanska jela te jela bez glutena.",
+      "Vlastito ekstra djevičansko maslinovo ulje iz maslinika u Skradinu, nagrađivano zlatnim medaljama.",
+      "Svježi autohtoni crni turopoljski tartuf koji se svakodnevno poslužuje gostima.",
+      "Vinska karta broji 60 etiketa, poglavito vina hrvatskih proizvođača.",
+      "Vino kuće je cuvee Chardonnay i Graševina iz podregije Pokuplje, vinogorje Vukomeričke gorice.",
+      "Interijer uređen prirodnim materijalima.",
+      "Restoran raspolaže s 70 mjesta, uz odvojenu prostoriju za 10 osoba pogodnu za zatvorena poslovna druženja.",
+      "Mon Ami je mjesto za poslovna druženja, vjenčanja, prve pričesti, krizme i krštenja.",
+      "Radno vrijeme: 11:00 – 23:00 svaki dan osim nedjelje i blagdana. 11:00 – 16:30 ponedjeljkom.",
+      "Trg kralja Tomislava 26, 10410 Velika Gorica",
+      "Perfektna usluga, čestitamo.",
+      "Ovaj biftek je jedan od top 5 koje smo pojeli u široj zagrebačkoj regiji.",
+      "Usluga je, dakle, ovdje na razini restorana kakvog hotela s pet zvjezdica.",
+      "Dimljene dagnje su mesnate i znalački napucane neodoljivim aromama dima.",
+      "Bračni par Ceronja, Božo i Barbara, otvorili su restoran 1997. godine.",
+      "Novost! Plati gotovinom, karticom ili brzim prijenosom!",
+      "Autobusi voze od zračne luke do glavnog kolodvora u Velikoj Gorici svakih 35 minuta, a restoran je udaljen oko tri minute hoda."
+    ],
+    "quotes": [
+      {
+        "text": "kao prijatelj prijatelju",
+        "attribution": "Mon Ami's own tagline, via Tjedan restorana — a play on the restaurant's name",
+        "lang": "hr"
+      },
+      {
+        "text": "Ovaj biftek je jedan od top 5 koje smo pojeli u široj zagrebačkoj regiji.",
+        "attribution": "Eat Out Zagreb review, 2023",
+        "lang": "hr"
+      },
+      {
+        "text": "Usluga je, dakle, ovdje na razini restorana kakvog hotela s pet zvjezdica.",
+        "attribution": "Eat Out Zagreb review, 2023",
+        "lang": "hr"
+      },
+      {
+        "text": "Perfektna usluga, čestitamo.",
+        "attribution": "Eat Out Zagreb review, 2023",
+        "lang": "hr"
+      },
+      {
+        "text": "A steady stream of regulars filling the restaurant attests to the quality of the cuisine.",
+        "attribution": "MICHELIN Guide",
+        "lang": "en"
+      },
+      {
+        "text": "Fish is the main focus, prepared in simple, traditional recipes that highlight the quality of the ingredients.",
+        "attribution": "MICHELIN Guide",
+        "lang": "en"
+      },
+      {
+        "text": "Service deserves special praise.",
+        "attribution": "Gault&Millau Croatia, 2026 review (13.5/20)",
+        "lang": "en"
+      },
+      {
+        "text": "Daily-catch fish — grouper, sea bass, black sea bream, dentex, shrimp — all grilled perfectly.",
+        "attribution": "Gault&Millau Croatia, 2026 review",
+        "lang": "en"
+      },
+      {
+        "text": "Selected labels from Croatian vineyards.",
+        "attribution": "Gault&Millau Croatia, on the Mon Ami wine list",
+        "lang": "en"
+      },
+      {
+        "text": "At Mon Ami, hospitality isn't just a duty; it's a passion.",
+        "attribution": "Luxury Living Croatia feature",
+        "lang": "en"
+      },
+      {
+        "text": "Gastronomy is elevated to an art form where tradition meets innovation with exquisite precision.",
+        "attribution": "Luxury Living Croatia feature",
+        "lang": "en"
+      },
+      {
+        "text": "Michelin recommendation for six consecutive years.",
+        "attribution": "Luxury Living Croatia feature",
+        "lang": "en"
+      }
+    ],
+    "imageUrls": [
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/Restoran-Mon-Ami-1-COpy-scaled.jpg",
+        "shows": "Restaurant exterior / lead hero image of Mon Ami"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175128_810-1024x768.jpg",
+        "shows": "Tuna carpaccio with black Turopolje truffle — the signature cold starter"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175126_291-1024x768.jpg",
+        "shows": "Smoked mussels on rocket — signature dish"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175145_103-1024x768.jpg",
+        "shows": "Grilled Adriatic scampi (four large langoustines)"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175147_619-1024x768.jpg",
+        "shows": "Grilled Adriatic squid with potato and Swiss chard"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175152_045-1024x768.jpg",
+        "shows": "Grilled beefsteak with porcini sauce and rosemary potatoes"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175154_841-1024x768.jpg",
+        "shows": "Beefsteak sliced tableside, cooked medium rare"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175730_627-1024x768.jpg",
+        "shows": "The fresh fish display — whole wild white fish sold by weight (scorpionfish, sea bass, John Dory, swordfish)"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175733_453-1024x768.jpg",
+        "shows": "Dessert — Skradin cake and rožata"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175735_641-1024x768.jpg",
+        "shows": "Second dessert plate"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175118_761-1024x768.jpg",
+        "shows": "Bruno Ceronja, the manager (son of the founders)"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175111_910-1024x768.jpg",
+        "shows": "The Michelin recommendation plaque on the wall"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/62dfee3c960a6e29c8df8b06/65f2ca432df34b0d945aa04c_Luxury%20Living%20Croatia%20Mon%20Ami%20Restaurant%20meal%20served%20on%20plate.webp",
+        "shows": "Plated main course — official restaurant photo (credit: Mon Ami)"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/62dfee3c960a6e29c8df8b06/65f2ca292df34b0d945a83d9_Luxury%20Living%20Croatia%20Mon%20Ami%20Restaurant%20duck.webp",
+        "shows": "Duck leg dish — official restaurant photo"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/62dfee3c960a6e29c8df8b06/65f2cadad350b389c51f1b79_Luxury%20Living%20Croatia%20Mon%20Ami%20Restaurant%20wine.webp",
+        "shows": "Wine service — official restaurant photo, usable for the wine-list section"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/62dfee3c960a6e29c8df8b06/65f2cae152bde7e67e9ca9e0_Luxury%20Living%20Croatia%20Mon%20Ami%20Restaurant%20dessert.webp",
+        "shows": "Dessert — official restaurant photo"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/62dfee3c960a6e29c8df8b06/65f2caeb80f9e724f76baad3_Luxury%20Living%20Croatia%20Mon%20Ami%20Restaurant%20cake.webp",
+        "shows": "Cake (likely Skradinska torta) — official restaurant photo"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/62dfee3c960a6e29c8df8b06/65f2caf2dcbbd0d15d05a74e_Luxury%20Living%20Croatia%20Mon%20Ami%20Restaurant%20terrace%20surrounded%20by%20flowers.webp",
+        "shows": "The terrace surrounded by flowers — good hero/ambience image"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/62dfee3c960a6e29c8df8b06/65f2caf8dcbbd0d15d05af2c_Luxury%20Living%20Croatia%20Mon%20Ami%20Restaurant%20meat%20with%20vegetables.webp",
+        "shows": "Meat course with vegetables — official restaurant photo"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/onama1.jpg",
+        "shows": "Official 'O nama' interior/ambience photo from the restaurant's own site"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/onama2.jpg",
+        "shows": "Official 'O nama' photo from the restaurant's own site"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/onama3.jpg",
+        "shows": "Official 'O nama' photo from the restaurant's own site"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2021/01/0035.jpg",
+        "shows": "Gallery photo from the restaurant's own site"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2024/08/bg3D3-08-24.jpg",
+        "shows": "Full-width 1920x1080 hero background image used on monami.hr homepage (most recent version)"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/cropped-logo-monami.png",
+        "shows": "Mon Ami logo (light version)"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/cropped-logo-tamni-200.png",
+        "shows": "Mon Ami logo (dark version)"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/monami_icon.png",
+        "shows": "Mon Ami favicon/icon"
+      }
+    ],
+    "gaps": [
+      "WINE LIST: I could NOT obtain the actual 60–65 label list or a single wine price. The wine list is not published anywhere online — not on monami.hr, not in the ordering system (the Restaumatic menu has no drinks/pića/vina section at all), and not on Michelin, Gault&Millau or Gastronaut. Only three specific wines are recoverable, all from press mentions and all WITHOUT prices: the house cuvée (Chardonnay + Graševina, Pokuplje/Vukomeričke gorice), Krauthaker Graševina Mitrovac (by the glass), and Poy sparkling from Mladina, Plešivica. Sources disagree on list size: monami.hr says 60 etiketa, Gastronaut says 65. Anyone needing the list must phone +385 1 6213 333.",
+      "NO DRINKS PRICES AT ALL: no soft drinks, coffee, spirits, beer or water prices are published anywhere.",
+      "The two official jelovnik PDFs on monami.hr (jelovnik-11.05.2024.b.pdf, 3MB, and jelovnik-12.12.2023.B.pdf) exist and are the printed in-restaurant menu, but I could not extract their text — the PDF content streams are Flate-compressed and no PDF text-extraction tooling (poppler/pdftoppm, python) was available in this environment. These PDFs may well contain the wine list. That is the single highest-value unexplored lead.",
+      "'Salata od hobotnice i lignji' (octopus and squid salad) — one of the signature dishes named in the brief — is confirmed as a house speciality in the restaurant's OWN 'O nama' text and repeatedly in press, but it is NOT a line item on the current online-ordering menu and has NO published price.",
+      "Rožata, hazelnut/white-chocolate semifreddo, cuttlefish ravioli, Turopolje escalope, olive oil cake, and lobster are all confirmed as served but are absent from the online menu and have no published prices. The à-la-carte restaurant menu is broader than the delivery/takeaway menu.",
+      "Fresh wild white fish is sold by weight from a daily display and the per-kg price for individual species (škrpina, brancin, kovač, zubatac, sabljarka) is NOT published — it varies by catch. Only the four standing by-weight items have listed prices (lignje €62/kg, škampi €96/kg, školjke €63/kg).",
+      "DELIVERY PLATFORMS: Mon Ami Velika Gorica is not on Wolt, Glovo or Bolt Food. I checked — the 'Mon Ami' on Wolt is an unrelated Belgrade restaurant, and the bolt.png asset on monami.hr is an ad for Bolt e-scooters, not Bolt Food. So no third-party platform menu exists to cross-check prices against.",
+      "The Tjedan restorana 2025 page has empty price fields ('Cijena ručka: €' / 'Cijena večere: €') and its menu is only a PDF placeholder — I could not recover the Restaurant Week set-menu courses or prices.",
+      "PRICE VOLATILITY WARNING: prices come from the live ordering system as of 27 Sept 2026, but several dishes are flagged 'privremeno nedostupan'. The 2023 review shows meaningful drift (tuna carpaccio €16→€18,50; mussels €12→€14,50; squid €53→€62/kg; scampi €80→€96/kg), so treat all figures as current-but-moving and worth re-verifying before publishing.",
+      "I did not access Google Maps' menu tab or the Facebook menu tab directly (both require JS rendering / login); any dishes exclusive to those surfaces are unconfirmed.",
+      "Croatian verbatim copy: I have accurate sentences from the site and press, but WebFetch summarised rather than reproduced the 'O nama' page word-for-word in places, so a few of the verbatimCroatian strings are faithful reconstructions of the source phrasing rather than guaranteed character-exact transcriptions. Verify against https://www.monami.hr/o-nama/ before using as literal site copy."
+    ]
+  }
+}

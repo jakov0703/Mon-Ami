@@ -1,0 +1,90 @@
+{
+  "type": "result",
+  "key": "v2:c25a63d16316953989be1c247c5a917aa2fefb24b6a87b8ebd9359ff2ff709de",
+  "agentId": "ae29a7533d5e17142",
+  "result": {
+    "lens": "Guest on a 390px phone — two hours between flights at Zagreb Airport, or booking an anniversary dinner. Five tasks, 15-second budget: (1) what is this place, (2) see the food, (3) find today's hours, (4) know how to get there, (5) book or call. Everything else is friction.",
+    "scores": [
+      {
+        "conceptName": "CONCEPT 1 — Dvije Obale / Mon Ami kao tiskani list (broadsheet editorial)",
+        "score": 5,
+        "strengths": [
+          "The per-day hours <table> with today's row marked aria-current + 'danas' tag, driven by the same JS function as the header chip, directly kills the Monday-evening locked-door bug — the single most damaging thing on the current site.",
+          "Reservation dialog generates 30-minute slots from the real day's hours, so Monday never offers 19:00. That is a booking that cannot lie to me.",
+          "The 'po kg' hairline pill next to €96 and the 'Ribu iz vitrine vagamo pred vama' line turn the scariest number on the menu into the most trustworthy one.",
+          "Four honest menu footnotes, including 'Za alergene pitajte osoblje — vodimo evidenciju svih 14 skupina' — the only concept that tells an allergic guest anything actionable.",
+          "No Google Maps iframe; static AVIF map plus a text link. Faster and no cookie banner between me and the address."
+        ],
+        "weaknesses": [
+          "'Type before photograph' is a deliberate, proud decision to show me a blank cream screen for the first 34vh. On a phone that is an entire thumb-swipe of nothing before I see food. My single most important question — what does this place cook — is answered last.",
+          "The menu is section 7 of 13. Between the hero and the prices sit an intro statement, a 42vh full-bleed band of pure letterspaced awards type, and a 180-word sticky-column story. That is four to five screens of scrolling on 390px.",
+          "No persistent mobile action bar. 'Rezerviraj' lives only in a 3.5rem sticky header that must also hold a roundel, wordmark, a live-status sentence ('Danas zatvoreno · otvaramo u utorak u 11:00'), an HR|EN toggle and an 'Izbornik' button. At 390px that bar either wraps or the booking button shrinks below a comfortable target.",
+          "The TARTUF panel — a whole screen whose content is the word TARTUF at 18% opacity behind copy — is the purest example of design admiring itself. A guest scrolling for prices pays a full screen for a gap in the photo library.",
+          "Bodoni at --step-h2 for pull quotes and section heads, plus a 132px masthead, eats enormous vertical space on a narrow screen for very little information per screen.",
+          "Posjet (hours, address, how to get here) sits at position 12. The airport guest's second question is answered near the bottom of a very long document.",
+          "The persistent 5/12 hairline — the concept's signature — is hidden below 64rem, so the organising idea is invisible to exactly the visitor being judged here."
+        ]
+      },
+      {
+        "conceptName": "CONCEPT 2 — Dvije obale / Two Shores (limewash cream, meridian)",
+        "score": 7,
+        "strengths": [
+          "Fixed mobile bottom bar carrying exactly two actions, 'Rezerviraj' and 'Nazovi 01 6213 333', with env(safe-area-inset-bottom) and matching body padding. Booking and calling are always one thumb-reach away — the correct answer to my fifth task.",
+          "Hero answers who/what/where/standing/hours/two CTAs before any scrolling: the distinction rule as plain text, the live 'Danas otvoreno do 23:00' pill with the exact line beneath, primary book + secondary tel.",
+          "One JS hours object renders the table, computes the pill, and emits openingHoursSpecification — hours can never contradict themselves again.",
+          "Decoding '8–12 kom/kg označava veličinu: osam do dvanaest škampa čini kilogram' is the single clearest sentence in any of the three concepts. It explains a price notation nobody explains.",
+          "Menu category chips have visible prev/next buttons rather than swipe-only — the only concept that gets 2.5.7 right on the rail.",
+          "Real Croatian alt text on every gallery image, replacing forty empty alts.",
+          "Species chips (škrpina · brancin · kovač · zubatac) read fast on a narrow screen — far better than a two-column list."
+        ],
+        "weaknesses": [
+          "DARK MODE: n/a. A full-bleed limewash-cream screen at oklch(0.972) is a flashbang at 22:40 in an airport gate lounge, which is precisely when I am deciding where to eat. This is a straight loss against both rivals.",
+          "The per-kilogram honesty lives in its own three-card block inside the #ulov band — but the anxiety happens later, when I hit '96,00 €' in the actual dish list. The explanation is not where the fear is.",
+          "Menu is section 5, behind the story and the catch band. Better than Concept 1, still not first-class.",
+          "The meridian — a hairline with labelled coordinates 43,81° N / 45,71° N — degrades on mobile to a 2px scroll-progress rule. The entire brand argument becomes a progress bar, so I pay for the concept and receive nothing.",
+          "Maslinik, Kopno (three named OPGs) and Vino are three consecutive story bands. Lovely for the owner, three more screens between me and the exit for a guest with a boarding time.",
+          "Menu grid minmax(21rem, 1fr) is fine at 390px but the dish list carries name + dotted leader + price + italic English line + chips per row; with 60 dishes and no diet filtering, finding the gluten-free options means scrolling the whole thing or trusting a category chip.",
+          "Hero lede at 46ch plus three inline distinction items plus pill plus two CTAs plus a 3/2 image — on a 390px screen the food photo is pushed below the fold despite this being the warmer, more appetising direction."
+        ]
+      },
+      {
+        "conceptName": "CONCEPT 3 — Otvoreno (conversion-first, live status chip as spine)",
+        "score": 9,
+        "strengths": [
+          "Named and structured around exactly my five tasks, in my order. The hero alone delivers cuisine, address, airport distance, the guide badges, live open/closed with closing time, and both CTAs — over a real photograph of grilled squid, not a blank page.",
+          "The utility strip sits immediately under the hero: hours, both phone numbers as tel: links, selectable address with directions link, capacity. Four of my five questions answered without a single tap, and it is the second thing on the page.",
+          "The menu is section 4 and it is the best menu in the set: cream paper island in both themes (a dark-on-light price column genuinely scans faster), sticky 11-chip rail that auto-tracks, subgrid alignment across name/tags/price, and CSS-only :has() diet filters so 'Bez glutena' is one tap and zero lag. On a phone this is the difference between browsing and hunting.",
+          "The per-kilogram defuser is placed exactly where the fear is — on the €96 row itself: a 'po kilogramu' pill and a tap-to-open weight slider reading '0,45 kg je oko 43,20 €'. Best single idea across all three concepts.",
+          "Mobile action bar: two 48px buttons, safe-area padding, scroll-padding at both ends so keyboard focus never hides under it. Book or call from any scroll position.",
+          "Reservation dialog populates its time select from the real hours object and disables Sunday, submits as an explicit 'zahtjev' with the phone number visible at every step — honest about a restaurant that books by phone.",
+          "Dolazak answers the airport guest literally: 8–12 min by car, bus every 35 min for ~€2 plus a 3-minute walk, scooters, self-hosted static map, copy-to-clipboard address. No Maps iframe, no consent wall.",
+          "One hours object feeds the chip, the footer, the booking dropdown and the JSON-LD. Only three fonts' worth of ambition is spent on things a guest touches."
+        ],
+        "weaknesses": [
+          "Three font families (Instrument Serif + Schibsted Grotesk + Geist Mono) at ~60–80KB of woff2 on top of a full-bleed dark hero photo is the heaviest payload of the three — and this is the concept whose entire value proposition is speed. Geist Mono should be first to go on a tight LCP budget.",
+          "The hero stack on a 390px screen — three badge pills, a two-line serif H1 at 40px, a two-clause subline, the status chip, then two 52px buttons — risks overflowing 100svh and pushing the CTAs under the fold. It needs a hard mobile budget test.",
+          "The mobile action bar hides on downward scroll. Momentary, recoverable, but it is friction invented for elegance; there was no reason to take the button away.",
+          "Eleven category chips plus four diet chips is two sticky rows under a sticky header — a lot of chrome on a small screen.",
+          "No allergen-policy sentence anywhere (Concept 1 has one), and no decode of the '8–12 kom/kg' notation (Concept 2 has one) — two cheap trust lines it leaves on the table.",
+          "The cream-island-on-dark-page is one gimmick that survived; it happens to be functionally correct, but it is the one place the concept designs for the screenshot."
+        ]
+      }
+    ],
+    "winner": "CONCEPT 3 — Otvoreno",
+    "bestIdeasToGraft": [
+      "FROM C2 — the '8–12 kom/kg' decode, verbatim: 'osam do dvanaest škampa čini kilogram. Veći škamp, manje komada.' Put it inside the per-kg popover, directly under the weight slider. It is the sentence that converts a number into a mental picture.",
+      "FROM C1 — the allergen footnote: 'Za alergene pitajte osoblje — vodimo evidenciju svih 14 skupina.' Pin it at the foot of the menu island beside the 'zadnji put ažurirano' stamp. A guest with a coeliac partner books on that one line.",
+      "FROM C2 — visible prev/next BUTTONS on the sticky category rail, not swipe-only (WCAG 2.5.7). C3's rail is scroll-snap plus observer only; add the two buttons.",
+      "FROM C2 — never hide the mobile action bar. Drop C3's hide-on-scroll-down entirely; the two buttons stay put at all times. This is the one place C2 is strictly better.",
+      "FROM C2 — a genuine warm-cream light theme (Sol oklch(0.972 0.010 84) with Kamen ink), not a mechanical inversion. C3's light mode is the daytime and airport-lounge-by-a-window mode and deserves the same care as its dark default.",
+      "FROM C1 — the honest gloss 'Selected — preporuka, bez zvjezdice' next to the MICHELIN badge pill. Costs four words, buys total credibility, and removes any risk of me arriving expecting a starred room.",
+      "FROM C1 — the fish honesty line: 'Vrste ovise o danu — pitajte osoblje što je jutros stiglo.' Place it in the pinned seasonal note at the top of Jela od riba.",
+      "FROM C1 — the events capacity table as plain facts with aligned numerals: 'Glavna dvorana 70 · Separe 10 (zatvoreni sastanci) · Natkrivena terasa 20 (grijana)'. C3's Prigode section states capacity in prose; the table answers an anniversary or christening enquiry in one glance.",
+      "FROM C2 — an empty seasonal-notice slot in the hours object for the unverified 1–21 August closure, so the owner can fill it by phone without touching layout. A guest booking in July must not find a locked door in August.",
+      "FROM C2 — the boxed caveat that the Skradin grove and its gold medal are the restaurant's own claim, distinct from the MICHELIN listing. Reads as confidence, not hedging, and keeps the provenance cards legally clean.",
+      "FROM C2 — the two-line Skradinska torta note under Slastice ('bez brašna, s bademima, narančom i orasima — po kraju iz kojeg dolazi obitelj'). One dessert that carries the whole family story; cheap, and it is what I will order.",
+      "FROM C1 — the discipline rule that display serif is never used below 20px and never for running copy. C3's Instrument Serif italic English dish names at --step-small (13–14px) violate exactly this; set them in Schibsted Grotesk instead or the 60-row menu gets hard to read at arm's length on a phone."
+    ],
+    "verdict": "Concept 3 wins and it is not close. It is the only one of the three that treats my five tasks as the product rather than as obligations to be satisfied after the art direction has had its say. The hero shows me food and tells me you are open until 23:00; the utility strip answers hours, phone, address and capacity as the second thing on the page; the menu arrives fourth, on a cream island where a price column actually scans, with one-tap diet filtering that costs zero lag and a weight slider that defuses €96 at the exact row where the panic happens. Booking and calling are permanently within thumb reach. Concept 2 is the honourable runner-up — its bottom action bar, its kom/kg decode and its single hours object are genuinely excellent — but it has no dark mode, which is disqualifying for a restaurant whose real trade is evening service and whose guest is often deciding in a dim gate lounge, and it buries prices behind three story bands. Concept 1 is the most beautiful document and the worst website. It opens with 34vh of blank paper, spends a full screen on the word TARTUF at 18% opacity, hides its own organising hairline below 64rem, puts the menu seventh and the hours twelfth, and gives a phone user no persistent way to book. Its craft is real and its honesty details are the best in the set — which is why six of them should be lifted straight into Concept 3 — but as an instrument for a guest with a boarding time it fails. Build Otvoreno, graft the twelve items above, and hold two hard rules at build: a mobile hero-height budget so both CTAs survive above the fold at 390px, and drop Geist Mono to tabular-nums if LCP is tight."
+  }
+}

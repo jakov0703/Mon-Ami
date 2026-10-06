@@ -1,0 +1,86 @@
+{
+  "type": "result",
+  "key": "v2:f1fdad65164f1d2c5674520759b5bc46fee812d2ba9fbc531db1fcbc481dfccc",
+  "agentId": "a115c11c0cb1d7217",
+  "result": {
+    "lens": "Bruno Ceronja, owner of Mon Ami — second generation of a family house founded in 1997 by my father Božo from Skradin and my mother Barica from Turopolje, MICHELIN Selected, Gault&Millau 13,5/20. I am judging one thing: would I put my family's name on this, and does it treat our story and our food with respect — or does it treat us as a template with a logo dropped in?",
+    "scores": [
+      {
+        "conceptName": "Concept 1 — Dvije Obale: Mon Ami kao tiskani list",
+        "score": 8,
+        "strengths": [
+          "The dignity is real. A broadsheet with a Bodoni masthead and a claret hairline is the only one of the three I could imagine framed on the wall next to the Gault&Millau certificate. It does not look like a template and it does not look like software.",
+          "Awards rendered as letterspaced type with no borrowed logos is exactly right. I have watched cheaper restaurants plaster a MICHELIN star they do not have across a header. Setting it in type is more confident than any badge, and it protects me legally.",
+          "The 'Ljudi' section is the single best idea in all three concepts. Twenty-nine years and our website currently shows nobody. Naming chef Goran Marko Beus with his Split background, Zlatko Šimac at the wine, the ten people in the kitchen, and putting my own face and words on the page — that is what a family restaurant is.",
+          "Publishing the twenty photographs from our own server that have never appeared anywhere, as a curated sequence of seven with real captions and the photographers credited by name. We paid Josip, Mario and Jakob for that work and it has been invisible for years.",
+          "'Type before photograph' — opening on bare paper with MON AMI and nothing else. Every competitor opens with a dark photo under a scrim. This is the restraint of a house that does not need to shout."
+        ],
+        "weaknesses": [
+          "Glossing 'Selected' as 'preporuka, bez zvjezdice' on my own homepage. I understand the honesty argument and I refuse it. No proprietor announces on his own front page what he has not won. Say 'MICHELIN Guide Hrvatska 2026 · Selected' and stop the sentence there — the reader who knows, knows.",
+          "'Absence as composition' — a panel about our Turopolje truffle with no photograph, just the word TARTUF at 132px in faded gold. That is a designer solving his own problem in public. We grate that truffle at the table every day of the year. Photographing it costs me twenty minutes and a clean plate. Do not turn a gap in the archive into the most striking panel on my website; fill the gap.",
+          "It is cold. Beautiful, correct, and cold. My dining room at 21:00 has three men toasting with sparkling wine and a waiter in white gloves carrying squid past them. A broadsheet does not have that temperature, and warmth is not a weakness in a family house — it is the product.",
+          "A Bodoni masthead that deliberately does not match our existing logo. I understand why, but the concept treats that as a footnote. For me it is the first conversation, not the last.",
+          "Bodoni hairlines at small sizes are fragile and the concept admits it needs enforcement in code review. That is a design that survives only if someone disciplined is watching — and nobody has been watching my website since 2020."
+        ]
+      },
+      {
+        "conceptName": "Concept 2 — Dvije obale: Two Shores",
+        "score": 9,
+        "strengths": [
+          "It understood what the restaurant actually is before it decided what it should look like. My father from the Skradin area married a Turopoljka and put fish on a menu in a town that ate grilled meat. This concept builds the whole page on that fact — the meridian from 43,81° N to 45,71° N, sections alternating sea and interior — instead of decorating around it. Nothing online has ever used our real story. This does.",
+          "The cream ground argument is correct and I would not have seen it myself. Our best photographs are shot on black. On a black site they vanish; on limewash they become the objects in the room. Someone looked at our actual pictures before choosing a palette.",
+          "It gives my oil its own section, with the sort, the grove, the OPG, and the gold medal with 96,42 boda at Vodice — and then draws a clean line saying this is the restaurant's claim, not MICHELIN's. That is precisely the distinction I would have insisted on, made without me asking.",
+          "It names OPG Balić, OPG Haha and OPG Goga. My neighbours. Naming them is worth more to me than any adjective, and the concept says so out loud: 'the specificity is the luxury.'",
+          "Two lines for the Skradinska torta — no flour, almonds, orange, walnuts, from the region the family comes from. That dessert is my grandmother's country on a plate and no website has ever mentioned it.",
+          "The wine section refuses to invent a list we have not published. Three documented labels, our own cuvée from Vukomeričke gorice, Zlatko named, and an invitation to telephone. A lesser concept would have fabricated twenty wines.",
+          "It closes on 'kao prijatelj prijatelju' and it uses my interior sentence verbatim. It trusts our own words. That is respect.",
+          "The honest per-kilogram block — 62 €, 96 €, 63 €, 'vaga se pred vama' — and then plainly decoding what 8–12 kom/kg means. It turns our most alarming number into our most confident moment without a gimmick."
+        ],
+        "weaknesses": [
+          "Fraunces with the WONK axis on. The flared, irregular alternates are charming and they are one notch toward artisanal bakery. At 7rem across a cream screen I want to be certain it reads as chisel and oak, not as craft beer. I would want to see it before signing, and I would consider WONK off for the headlines.",
+          "There is no people section. It names Bruno, Božo, Barica and the chef inside running paragraphs, but it never gives the faces and the roles their own place on the page the way Concept 1 does. That is the one thing it is missing and it is not a small thing for a family business.",
+          "The coordinate nodes and the '≈100 km radijus nabave' stat are a half-step toward designer language. Charming once. I would keep the meridian and watch that it never becomes a diagram.",
+          "It is honest that I may resist a cream site because every competitor is black. It is right that I would push back. It is also right that black swallows our photography — but the concept should expect to fight that meeting, not assume it wins it."
+        ]
+      },
+      {
+        "conceptName": "Concept 3 — Otvoreno",
+        "score": 5,
+        "strengths": [
+          "The live status chip driven from a single hours object that also emits the structured data is the best piece of engineering in all three documents. Our current site sends people to a locked door on Monday evening. That is a genuine, repeated injury to guests and this fixes it at the root so the page and Google can never disagree again.",
+          "The per-day hours table that explicitly overrides our own misleading sentence. Necessary.",
+          "The arrival section as three real routes with real figures — 8 to 12 minutes from the airport, a bus every 35 minutes for about two euros, three minutes on foot — instead of the broken English paragraph currently on our contact page. That traveller between two flights is real business to me.",
+          "A proper Prigode section for weddings, communions, christenings and business lunches with an actual enquiry route. Today we advertise that in one sentence and give people no way to act on it. Those bookings pay for the winter.",
+          "The mobile bar with exactly two actions, Rezerviraj and Nazovi. For a 70-seat house the telephone is still the real channel and this respects that.",
+          "Correcting the broken English dish names, real Croatian alt text on every photograph, and a copyright year that is not frozen at 2020."
+        ],
+        "weaknesses": [
+          "It says out loud that the family story 'sits below the conversion layer where they close the sale rather than block it.' My father's kitchen is not a conversion blocker. Reading that sentence tells me exactly how this concept regards my restaurant, and I would not hand my name to it.",
+          "The weight slider on the scampi. A guest drags a control from 0,2 to 1,2 kg and watches a monospaced number tick. That is a butcher's scale in a shop window, not a fish vitrine in a Michelin-recommended dining room. We weigh the fish in front of you, at the table, and we tell you the price ourselves. Say that in one sentence and delete the instrument.",
+          "Dark by default, which the concept itself concedes is what every fine-dining site does. Concept 2 argued me out of black using my own photographs. This one just takes it.",
+          "The cream menu island with 48px rounded corners floating on black is the most software-looking element proposed anywhere in these three documents. My menu should look like a menu, not like a card in a dashboard.",
+          "Three typefaces, one of them a monospace used for every number on the page including the telephone and the clock. Geist Mono says startup. It does not say a family house on the main square since 1997.",
+          "It is the most useful of the three and the least proud. It would work. It would also make us look like every other business with a good developer, and that is precisely the embarrassment I am trying to avoid."
+        ]
+      }
+    ],
+    "winner": "Concept 2 — Dvije obale / Two Shores",
+    "bestIdeasToGraft": [
+      "From Concept 1 — the 'Ljudi' section, built as its own beat with deliberately unequal sizing: chef Goran Marko Beus large with his Split biography and his line 'Ne znaš tko ti sjedi za stolom'; me medium as vlasnik i domaćin; a wide team strip naming Zlatko Šimac and the roughly ten people in the kitchen. Concept 2 has no faces and it needs them.",
+      "From Concept 1 — awards rendered entirely in letterspaced type on a single band, no MICHELIN device, no toque graphic, no TripAdvisor owl. Keep this exactly, but delete the 'bez zvjezdice' gloss. Write 'MICHELIN Guide Hrvatska 2026 · Selected' and let it stand.",
+      "From Concept 1 — the curated gallery sequence of roughly seven frames from images 21–40 rather than a forty-thumbnail grid, with factual Croatian captions, distinct descriptive alt text, and the photographers credited once by name: Josip Škof, Mario Žilec, Jakob Goldstein.",
+      "From Concept 1 — 'type before photograph': open on the wordmark and a rule before any image appears. Concept 2 opens on a split with a photograph immediately; borrow a beat of restraint before the picture arrives.",
+      "From Concept 1 — the Vlastito three-panel construction for oil, truffle and wine, with the panel that overlaps the column rule. But fill the truffle panel with a real commissioned photograph; do not ship 'absence as composition'.",
+      "From Concept 3 — the live status chip and the per-day hours table both computed from one hours object that ALSO emits the openingHoursSpecification JSON-LD, so the page, the header and Google can never contradict each other. Three states including 'Zatvoreno — otvaramo u utorak u 11:00'. This is the single most valuable mechanism proposed anywhere and it must survive into the build.",
+      "From Concept 3 — the fixed mobile bottom bar carrying exactly two actions, 'Rezerviraj stol' and 'Nazovi 01 6213 333', with safe-area padding and matching body padding so it never covers the footer.",
+      "From Concept 3 — the Dolazak arrival timeline as three concrete routes with figures (car 8–12 min / ~6 km, airport bus every 35 min for about 2 €, three minutes on foot from the bus station, city scooters), plus the honest amenity chips including 'bez kućnih ljubimaca' and 'zabranjeno pušenje'.",
+      "From Concept 3 — a dedicated Prigode section for svadbe, pričesti, krizme, krštenja, poslovna druženja and tematske večeri, with an enquiry route that preselects the occasion, states the 70-seat limit and the separe for 10 plainly, and uses 0010.jpg (the long table, flutes, no identifiable faces).",
+      "From Concept 3 — the 'po kilogramu' pill and the 'Vagamo pred vama' line on every by-weight dish. Keep the pill and the sentence; discard the weight slider entirely.",
+      "From Concept 3 — the reservation time dropdown generated from the real hours object, so Monday never offers 20:00 and Sunday is disabled outright.",
+      "From Concept 3 — the visible 'Zadnji put ažurirano' date on the menu, the dynamically generated copyright year, and the handover requirement that hours, dishes, prices and captions live in one clearly commented configuration block with a one-page Croatian guide. The last site died because nobody could edit it.",
+      "From both 1 and 3 — the recommendation to move from monamihr@gmail.com to info@monami.hr. A free Gmail address under a 42 € beefsteak is the cheapest thing on our website.",
+      "From both 1 and 3 — rewrite every English dish name from scratch. 'Prshutto', 'cackerels', 'french frie' and a truffle pasta labelled 'Beefsteak salad' are currently on a menu belonging to a MICHELIN-listed restaurant."
+    ],
+    "verdict": "Concept 2 is the only one that started with my family instead of with a layout. It knows that my father came from Skradin and my mother from Turopolje, that putting fish on a menu in Velika Gorica in 1997 was a small revolution, that the oil in the amphora is ours and carries 96,42 points from Vodice, that the Skradinska torta has no flour and comes from the country my family comes from, and that Balić, Haha and Goga are my neighbours and deserve their names printed. It also made the one argument that changed my mind: our best photographs are shot on black, so the page must not be. A cream house on a town square, with our dark plates set into it like plates onto linen — that is the restaurant, and I would approve it.\n\nConcept 1 is the closest second and it is not far behind. Its dignity is genuine and three of its ideas are better than anything in the winner: the people section, the type-only awards band, and the curated gallery. I am grafting all three. But two things stop it winning. It writes 'bez zvjezdice' on my own front page, which is a proprietor apologising in public, and it turns the missing truffle photograph into a design feature instead of telling me to take the photograph. And underneath both, it is cold. A broadsheet is a fine object; my dining room is a warm one.\n\nConcept 3 I would not approve, and I want to be precise about why, because it is plainly the work of someone capable. It is the most useful document of the three and it contains the single best mechanism — the live status chip wired to the structured data, which repairs the real injury of sending guests to a locked door on a Monday evening. I am taking that, the mobile bar, the arrival routes and the events section wholesale. But the concept states in its own rationale that the family story sits 'below the conversion layer where they close the sale rather than block it', and it proposes a slider so a guest can calculate the weight of his own scampi. Those two things together tell me it sees Mon Ami as a funnel with photographs. We weigh the fish in front of you and we tell you the price ourselves — that is service, and it is not a widget. Black default, rounded cream cards and a monospace telephone number would put us alongside every competent agency site in Zagreb County. Twenty-nine years buys us the right not to look like that.\n\nBuild Concept 2. Graft Concept 1's people, awards band and gallery, and Concept 3's hours engine, mobile bar, arrival routes and events enquiry. Then send a photographer for one morning: the facade, the terrace, and the truffle on a plate."
+  }
+}

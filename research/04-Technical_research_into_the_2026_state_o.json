@@ -1,0 +1,396 @@
+{
+  "type": "result",
+  "key": "v2:8b1572b2fa1e89da92d47c416d222c19631e943d9db0c26e5949a523e7ebcac9",
+  "agentId": "acccc6a0656179844",
+  "result": {
+    "source": "Technical research into the 2026 state of the art for building a single-page website for a Michelin-recommended Croatian fine-dining fish restaurant. Verified against primary sources: raw mdn/browser-compat-data JSON on GitHub (animation-timeline, field-sizing, @starting-style, Document.activeViewTransition), caniuse.com feature tables (oklch, :has, subgrid, light-dark, container queries, container style queries, backdrop-filter, popover, @property, text-wrap balance vs pretty, AVIF, size-adjust, contrast-color, scheduler.yield, view-transitions), web.dev (Baseline May 2026 digest, optimize-lcp, optimize-inp), W3C WCAG 2.2 Understanding docs (2.5.8 Target Size, 2.4.11 Focus Not Obscured, 1.4.3 Contrast Minimum, 1.4.11 Non-text Contrast), MDN (prefers-contrast, View Transition API), Google Search Central (LocalBusiness structured data, review-snippet self-serving policy, localized-versions/hreflang), and Michelin Guide Croatia 2026 coverage.",
+    "summary": "Covers seven areas with code-level specifics. MODERN CSS splits into three tiers. Safe with no fallback (all >89% global, all four engines): oklch() 94.25%, :has() 94.82%, container queries 94.87%, subgrid 93.48%, @property 95.01%, backdrop-filter 96.36% (keep -webkit- prefix), light-dark() 89.86%, @starting-style, popover 92.51%, text-wrap:balance 92.73%, same-document View Transitions 91.75% (Firefox 144), AVIF 95.36%, size-adjust 94.4%, plus @layer, nesting, color-mix(), <dialog>, scroll-snap, container query units. Anchor positioning newly Baseline Jan 2026 (Firefox 147). Two widely-misreported corrections: scroll-driven animations are NOT Baseline — raw BCD lists Firefox version_added as the literal string \"preview\" (Nightly only, flag layout.css.scroll-driven-animations.enabled in stable), ~82% global; and text-wrap:pretty is absent from Firefox entirely (87.05%) while balance is fine. contrast-color() at 78.3% and scheduler.yield() at 74% (no Safari at all) are too new to rely on. field-sizing only reached Firefox 152 / Safari 26.2. FLUID TYPE gives the slope/intercept clamp() derivation with a worked 320-1440px scale and the critical rule that a bare vw preferred value breaks browser text-zoom. ACCESSIBILITY details 2.5.8 (24px, rounded corners can disqualify, five exceptions), 2.4.11 (sticky bars are failure F110, fix is scroll-padding technique C43 on both block-start and block-end), exact contrast ratios (4.5:1 normal, 3:1 large = 18pt/24px or 14pt/18.66px bold, not rounded, 3:1 non-text). PERFORMANCE covers unchanged 2026 thresholds at CrUX p75, the LCP four-subpart budget, never lazy-loading the LCP image, fetchpriority on one image only, and size-adjust font fallbacks with latin-ext subsetting for Croatian diacritics. SEO gives the full Restaurant JSON-LD and the rule that self-serving aggregateRating makes the page ineligible for star results. UX names eight exemplary sites and the sticky mobile bar pattern. DATED lists PDF menus, carousels, parallax, hamburger-only desktop nav, scroll-jacking.",
+    "facts": [
+      {
+        "label": "scroll-driven animations Baseline status",
+        "value": "NOT Baseline. Raw mdn/browser-compat-data for css.properties.animation-timeline lists firefox version_added as the literal string \"preview\" (Nightly only; flag layout.css.scroll-driven-animations.enabled in stable as of Firefox 152). Chrome 115, Safari 26, ~82.6% global. MDN labels it 'Limited availability'. Many 2026 blog posts falsely claim Firefox 126/132+. MUST be progressive-enhancement only: never put opacity:0 in the base rule or Firefox users see permanently invisible content. Guard with @supports (animation-timeline: view()).",
+        "confidence": "high"
+      },
+      {
+        "label": "text-wrap: pretty vs balance",
+        "value": "They are NOT equivalent. balance = Chrome 130, Firefox 121, Safari 17.5, 92.73% global (Baseline, safe). pretty = Chrome 117, Safari 26.0, NOT SUPPORTED IN FIREFOX at any version including 157-159; 87.05% global. Both fail safe so no @supports needed. Different jobs: balance evens line lengths on short headings (Chromium caps at ~6 lines), pretty fixes orphans in body copy.",
+        "confidence": "high"
+      },
+      {
+        "label": "animation-duration with scroll/view timelines",
+        "value": "animation-duration is IGNORED when animation-timeline is set to scroll() or view(). Duration is controlled by animation-range instead (e.g. animation-range: entry 10% cover 35%).",
+        "confidence": "high"
+      },
+      {
+        "label": "oklch() support",
+        "value": "Chrome 111, Firefox 113, Safari 15.4, Edge 111, Samsung 22. 94.25% global. Safe as primary color space. Key benefit: perceptually uniform lightness means color-mix(in oklch, ...) for hover/tint states avoids the muddy grey sRGB mixing produces.",
+        "confidence": "high"
+      },
+      {
+        "label": ":has() support",
+        "value": "Chrome 105, Firefox 121, Safari 15.4, Edge 105, Opera 91, Samsung 20. 94.82% global. Safe.",
+        "confidence": "high"
+      },
+      {
+        "label": "Container queries (size) support",
+        "value": "Chrome 106, Firefox 110, Safari 16.0, Edge 106, Samsung 20. 94.87% global. Safe. Container query units cqi/cqw/cqb ship with them.",
+        "confidence": "high"
+      },
+      {
+        "label": "Container STYLE queries support",
+        "value": "Only PARTIAL in Chromium and Safari (custom properties only) — Chrome 111 partial, Safari 18.0 partial. Firefox 151 is the only FULL support. 91.7% combined but partial-heavy. Reached Baseline Newly available May 2026. Do not rely on beyond custom-property queries.",
+        "confidence": "high"
+      },
+      {
+        "label": "subgrid support",
+        "value": "Chrome 117, Firefox 71 (earliest), Safari 16.0. 93.48% global. Safe. Ideal for aligning dish name/description/price across independent menu cards.",
+        "confidence": "high"
+      },
+      {
+        "label": "@property support",
+        "value": "Chrome 85, Firefox 128, Safari 16.4, Edge 85, Samsung 14. 95.01% global — highest of the modern features. Safe.",
+        "confidence": "high"
+      },
+      {
+        "label": "light-dark() support",
+        "value": "Chrome 123, Firefox 120, Safari 17.5, Edge 123, Opera 109, Samsung 27. 89.86% global. Safe, but REQUIRES color-scheme to be declared on :root or it does nothing.",
+        "confidence": "high"
+      },
+      {
+        "label": "@starting-style support",
+        "value": "Chrome 117, Firefox 129, Safari 17.5. Safe. Pair with transition-behavior: allow-discrete on display AND overlay — the overlay entry is what prevents top-layer elements vanishing instantly on exit.",
+        "confidence": "high"
+      },
+      {
+        "label": "popover attribute support",
+        "value": "Chrome 114, Firefox 125, Safari 17.0, Edge 114, Opera 100, Samsung 23. 92.51% global. Safe.",
+        "confidence": "high"
+      },
+      {
+        "label": "popover vs dialog for reservations",
+        "value": "Use <dialog> with showModal() for the reservation form — it gives focus trapping and inertness for free. popover is light-dismiss and non-modal, correct for a nav menu or dish-detail card but wrong for a booking form.",
+        "confidence": "high"
+      },
+      {
+        "label": "View Transitions API (same-document) support",
+        "value": "Chrome 111, Firefox 144, Safari 18.0, Edge 111, Opera 97, Samsung 23. 91.75% global. Safe for same-document. Cross-document (@view-transition at-rule) is tracked separately and is newer. Document.activeViewTransition: Chrome 142, Firefox 147, Safari 26.2. :active-view-transition reached Baseline Jan 2026.",
+        "confidence": "high"
+      },
+      {
+        "label": "Anchor positioning support",
+        "value": "Baseline as of January 2026. Chrome/Edge 125 (May 2024), Safari 26 (Sept 2025), Firefox 147 (13 Jan 2026). Firefox 148 (Feb 2026) added position-try-order and viewport clamping fixes. Very recent — guard with @supports (anchor-name: --x) if targeting long-tail browsers. Known Firefox gap: ::-moz-range-thumb not usable as an anchor (bug 1993699).",
+        "confidence": "high"
+      },
+      {
+        "label": "field-sizing support",
+        "value": "Chrome 123, Firefox 152, Safari 26.2 — the latter two shipped within the last year. Purely cosmetic (auto-growing textarea), fails safe, no fallback strictly needed.",
+        "confidence": "high"
+      },
+      {
+        "label": "backdrop-filter support",
+        "value": "Chrome 76, Firefox 103, Safari 9, Edge 17. 96.36% global — the highest here. Still include -webkit-backdrop-filter for older Safari/iOS. Spec status is still UNOFF.",
+        "confidence": "high"
+      },
+      {
+        "label": "contrast-color() support",
+        "value": "Chrome 147, Firefox 146, Safari 26.0, Edge 147, Opera 131. 78.3% global. NO Samsung Internet support (4-30). Reached Baseline Newly available April 2026. Too new — do not use it to guarantee contrast; hard-code color pairs.",
+        "confidence": "high"
+      },
+      {
+        "label": "scheduler.yield() support",
+        "value": "Chrome 129, Edge 129, Firefox 142, Opera 115, Samsung 28. 74.01% global. NOT supported in Safari at any version through 27.2 (TP unknown). Feature-detect and fall back to setTimeout.",
+        "confidence": "high"
+      },
+      {
+        "label": "AVIF support",
+        "value": "Chrome 85, Firefox 93, Safari 16.4 (16.1-16.3 partial), Edge 121, Safari iOS 16.0, Samsung 14. 95.36% global. Safe inside <picture> with WebP and JPEG fallback sources.",
+        "confidence": "high"
+      },
+      {
+        "label": "size-adjust @font-face descriptor support",
+        "value": "Chrome 92, Firefox 92, Safari 17.0, Edge 92, Samsung 16. 94.4% global. Combined with ascent-override/descent-override/line-gap-override this reduces font-swap CLS to near zero. Derive values with Fontaine or a fallback generator, do not guess.",
+        "confidence": "high"
+      },
+      {
+        "label": "clamp() fluid type formula",
+        "value": "slope = (maxSize - minSize) / (maxVw - minVw); intercept = minSize - slope * minVw; font-size: clamp(minSize, interceptRem + slope*100 vw, maxSize). All viewport values converted to rem (divide px by 16). Credited to Pedro Rodriguez via Utopia.",
+        "confidence": "high"
+      },
+      {
+        "label": "clamp() text-zoom accessibility trap",
+        "value": "A vw-based preferred value does not respond to browser text-zoom settings. A user at 200% text size can hit your max and get no further scaling. Fix (per Adrian Roselli): ALWAYS include a rem term in the preferred value. Never write clamp(1rem, 4vw, 2rem) with a bare vw. Test at 200% text zoom at 1440px width.",
+        "confidence": "high"
+      },
+      {
+        "label": "WCAG 2.2 SC 2.5.8 Target Size (Minimum), Level AA",
+        "value": "A solid 24x24 CSS px axis-aligned square must fit entirely inside the target. Rounded corners can disqualify a target outright. Five exceptions: (1) Spacing — 24px-diameter circles centered on each undersized target's bounding box must not intersect another target or another such circle; (2) Equivalent — same function reachable via a conforming control on the same page; (3) Inline — target within a sentence or constrained by line-height of non-target text; (4) User Agent Control — unmodified native controls, but restyling a scrollbar forfeits this; (5) Essential. Zoom does NOT count toward compliance. Does not apply to targets temporarily obscured by dialogs/cookie banners, but DOES apply to that newly appearing content itself. Recommend 44px in practice.",
+        "confidence": "high"
+      },
+      {
+        "label": "WCAG 2.2 SC 2.4.11 Focus Not Obscured (Minimum), Level AA",
+        "value": "A component receiving keyboard focus must not be ENTIRELY hidden by author-created content (partial obscuring passes at AA; full visibility is the AAA variant). Sticky headers/footers overlapping focused items is failure technique F110. Sufficient technique C43 = CSS scroll-padding. For a site with both a sticky header and a sticky mobile reserve bar you need scroll-padding-block-start AND scroll-padding-block-end. Correctly built modal dialogs always pass. Caution: semi-transparent/blurred overlays may pass 2.4.11 yet still fail 1.4.11.",
+        "confidence": "high"
+      },
+      {
+        "label": "WCAG 2.2 SC 2.5.7 Dragging Movements, Level AA",
+        "value": "Any function using a dragging movement must have a single-pointer alternative. Drag-scrub galleries and swipe-only carousels need prev/next buttons. Simplest compliance route is to avoid drag-only interactions entirely.",
+        "confidence": "high"
+      },
+      {
+        "label": "WCAG SC 1.4.3 Contrast (Minimum), Level AA — exact values",
+        "value": "4.5:1 for normal text. 3:1 for large text, defined as at least 18pt or 14pt bold. Page states 1pt = 1.333px, so 14pt and 18pt equal approximately 18.5px and 24px. Ratios must NOT be rounded — 4.499:1 fails. Exceptions: incidental text (inactive UI components, pure decoration, invisible text, or text that is part of a picture containing significant other visual content) and logotypes.",
+        "confidence": "high"
+      },
+      {
+        "label": "WCAG SC 1.4.11 Non-text Contrast, Level AA — exact values",
+        "value": "3:1 against adjacent colors (2.999:1 fails). Applies to (a) visual information needed to identify UI components and states, (b) focus indicators — compared against the page background if outside the component, component colors if inside, both if on the border, (c) parts of graphics required to understand content, including text characters used as symbols like X for close. Exceptions: inactive components, user-agent default appearance, essential graphics (logos, flags, photographs, screenshots, heat maps), graphics not required for understanding, and hover treatments. Logo exemption only holds if brand guidelines genuinely mandate the colors — an author's aesthetic choice is NOT 'essential'.",
+        "confidence": "high"
+      },
+      {
+        "label": "prefers-contrast media query",
+        "value": "Accepts no-preference | more | less | custom. The custom value matches the palette specified by users of forced-colors: active. no-preference evaluates false in a Boolean context. Baseline widely available since May 2022.",
+        "confidence": "high"
+      },
+      {
+        "label": "Core Web Vitals thresholds 2026",
+        "value": "Unchanged. LCP good <=2.5s, poor >4.0s. INP good <=200ms, poor >500ms. CLS good <=0.1, poor >0.25. Measured at 75th percentile of real users over a rolling 28-day CrUX window, split mobile/desktop. You pass a metric only when >=75% of real page views hit 'good'.",
+        "confidence": "high"
+      },
+      {
+        "label": "FID is fully dead",
+        "value": "INP replaced FID in March 2024; Chrome fully deprecated FID on 9 September 2024. Any guidance still listing FID is out of date. INP is still the newest Core Web Vital — no newer replacement exists in 2026.",
+        "confidence": "high"
+      },
+      {
+        "label": "LCP/INP measurement APIs now Baseline",
+        "value": "As of Safari 26.2 (12 December 2025), LCP and INP became Baseline Newly available — every major browser now supports the APIs to measure them. This means Safari/iOS field data is now collectable, which matters for a fine-dining audience skewed to iPhone.",
+        "confidence": "high"
+      },
+      {
+        "label": "LCP four-subpart budget",
+        "value": "Time to First Byte ~40%, Resource load delay <10%, Resource load duration ~40%, Element render delay <10%. The two delay buckets should trend toward zero. These are relative guidelines, not absolute millisecond budgets — do not convert the percentages into ms targets. Benchmark: the LCP image should begin loading at roughly the same moment as the page's very first resource.",
+        "confidence": "high"
+      },
+      {
+        "label": "LCP image rules",
+        "value": "NEVER lazy-load the LCP image — it always causes unnecessary load delay because the browser must wait for layout to confirm viewport position. Watch JS lazy-load libraries that stash URLs in data-src/data-srcset: these hide the image from the preload scanner entirely. fetchpriority=\"high\" on ONE image only — applying it to more than one or two destroys the signal. Use fetchpriority=\"low\" to demote offscreen early-markup images. A CSS background hero needs an explicit <link rel=\"preload\" as=\"image\" fetchpriority=\"high\" type=\"image/avif\">.",
+        "confidence": "high"
+      },
+      {
+        "label": "LCP render-delay blockers",
+        "value": "Render-blocking stylesheets slower than the image; synchronous scripts in <head> (almost never necessary — use async/defer); client-side rendering; long tasks (images render on the main thread in all current browsers); A/B testing code that keeps the element hidden. Compression traps: shrinking the image just relocates time into render delay if the element stays hidden pending JS.",
+        "confidence": "high"
+      },
+      {
+        "label": "INP interaction latency structure",
+        "value": "Total = input delay (user initiates until event callbacks begin) + processing duration (callbacks run to completion) + presentation delay (until browser paints the resulting frame). Measure across ALL event entries in the same frame (pointerup, mouseup, click) rather than per-entry — this is what the web-vitals library does. Each browsing context including every <iframe> has its own main thread.",
+        "confidence": "high"
+      },
+      {
+        "label": "INP mitigation for restaurant sites",
+        "value": "Main risk is third-party reservation widgets (OpenTable/Tock/SevenRooms) and analytics, not your own code. Load the booking iframe only when the user opens the dialog. Use content-visibility: auto with contain-intrinsic-size on long menu sections. Keep the DOM small — rendering cost scales non-linearly with DOM size. Avoid layout thrashing (style write then read in the same task). Roughly 43% of sites still fail INP, making it the most commonly failed CWV.",
+        "confidence": "high"
+      },
+      {
+        "label": "Croatian font subsetting",
+        "value": "Croatian requires č ć đ š ž. Subsetting to 'latin' alone will break the restaurant's own name — you must include latin-ext. Preload only the 1-2 faces used above the fold, with crossorigin on the preload link.",
+        "confidence": "high"
+      },
+      {
+        "label": "Google self-serving aggregateRating policy — CRITICAL",
+        "value": "Direct quote: \"If the entity that's being reviewed controls the reviews about itself, their pages that use LocalBusiness or any other type of Organization structured data are ineligible for star review feature.\" This covers both direct structured data and embedded third-party review widgets. Applies to LocalBusiness/Organization types (Restaurant inherits). Does NOT cover reviews nested in Product, Recipe, Book, Movie. Also prohibited: aggregating reviews from other sites, fabricated reviews, undisclosed incentivized reviews. Ratings must be sourced directly from users; no human editors curating ratings for local businesses.",
+        "confidence": "high"
+      },
+      {
+        "label": "Restaurant structured data required vs recommended",
+        "value": "REQUIRED by Google: name, address (PostalAddress). RECOMMENDED: aggregateRating (but see self-serving rule), department, geo, geo.latitude/longitude, menu (URL), openingHoursSpecification (+opens/closes/dayOfWeek/validFrom/validThrough), priceRange, review, servesCuisine, telephone, url. Note acceptsReservations and hasMenu are valid schema.org but are NOT in Google's documented property table — Google documents 'menu'. Include both. Use the most specific subtype (Restaurant); additionalType is not supported; multiple types go in an array.",
+        "confidence": "high"
+      },
+      {
+        "label": "openingHoursSpecification edge cases",
+        "value": "Standard year-round: omit validFrom/validThrough. Past midnight: ONE spec (Saturday opens 18:00 closes 03:00). Open 24 hours: opens 00:00, closes 23:59. Closed all day: opens AND closes both 00:00. Seasonal: combine validFrom + validThrough (YYYY-MM-DD). Times in hh:mm:ss format. dayOfWeek accepts full schema.org URLs or short names.",
+        "confidence": "high"
+      },
+      {
+        "label": "geo and priceRange precision rules",
+        "value": "geo.latitude/longitude precision must be at least 5 decimal places. priceRange must be under 100 characters or no price range is displayed; accepts numerical range ($10-15) or currency signs ($$$).",
+        "confidence": "high"
+      },
+      {
+        "label": "hreflang rules for Croatian/English bilingual site",
+        "value": "Return links MUST be reciprocal — if X points to Y, Y must point back to X, or annotations are ignored entirely. Every version lists itself AND all others. Use hr or hr-HR for Croatian (hr-DE would be Croatian for users in Germany); en as generic catchall. Region-only codes are INVALID — bare 'be' means Belarusian, not Belgium. Reserved codes EU, UN, UK are ignored (use GB). URLs must be fully qualified with protocol — not //example.com or /foo. x-default needs no language code. Do not combine hreflang with other attributes like media in one <link>. Pick ONE mechanism (head tags, HTTP headers, or sitemap) — using all three has no benefit and is harder to manage. hreflang signals variants; it does NOT set page language (Google ignores both hreflang and the HTML lang attribute for language determination). Self-canonical each language version — never canonicalize /en/ to /.",
+        "confidence": "high"
+      },
+      {
+        "label": "Michelin Guide Croatia 2026 context",
+        "value": "Presented 2026 with 20 new restaurants and 90+ total in the selection. Agli Amici Rovinj reconfirmed at two stars. Harry's Piccolo Poreč is the new one-star in Istria. 12 reconfirmed one-stars: Monte (Rovinj), Noel (Zagreb), Pelegrini (Šibenik), 360 (Dubrovnik), Boškinac (Pag), LD Restaurant (Korčula), Alfred Keller (Mali Lošinj), Nebo (Rijeka), Korak (Plešivica), Dubravkin put (Zagreb), Cap Aureo (Rovinj), Krug (Split). Plus three new Bib Gourmands and four Special Michelin awards.",
+        "confidence": "high"
+      },
+      {
+        "label": "Pelegrini Šibenik — closest local benchmark",
+        "value": "One star, seafood/Mediterranean, in the Renaissance-style Villa Pelegrini-Tambaca in Old Town Šibenik beside St. James Cathedral. Natural stone walls, some terrace tables with sea views. Chef Rudolf Štefan. Dalmatian dishes with Austro-Hungarian and Turkish influence, ingredients from small local producers including scallops and sea snails. In 2026 Michelin specifically highlighted sommelier Branimir Vukšić for a predominantly Croatian wine list traversing Dalmatia's wine regions. Michelin advises booking 3-4 weeks ahead. Site: pelegrini.hr",
+        "confidence": "high"
+      },
+      {
+        "label": "Restaurant site stakes",
+        "value": "Reportedly 77% of diners visit a restaurant's website before deciding where to eat, with roughly 7 seconds to make an impression. Guests arrive from Google, Instagram, Yelp, Reddit, maps, texts and QR codes — mobile is the primary surface, not a secondary one.",
+        "confidence": "medium"
+      },
+      {
+        "label": "Sticky mobile action bar pattern",
+        "value": "position: fixed with inset-block-end: 0; padding-block-end: max(space, env(safe-area-inset-bottom)) for the iPhone home indicator; backdrop-filter blur with -webkit- prefix; hide at >=48rem; add matching body padding-block-end so it never covers the footer; and set scroll-padding-block-end so it never obscures keyboard focus (WCAG 2.4.11). Two actions only — Reserve and Call.",
+        "confidence": "high"
+      },
+      {
+        "label": "Above-the-fold requirements (mobile, no scroll)",
+        "value": "Restaurant name; one-line positioning (cuisine + place); Michelin distinction; Reserve as a real button; today's hours with open/closed state; phone as a tel: link. One hero image showing the room in service — empty-room shots communicate studio quality, not dining experience.",
+        "confidence": "high"
+      },
+      {
+        "label": "Reservation flow best practice",
+        "value": "Button opens a <dialog>, and the third-party widget loads only on open (protects both INP and LCP). Always show the phone number alongside the widget. Provide an explicit route for large parties, same-day requests, allergies and private dining — the cases widgets handle badly. Confirm party-size limits before the user invests effort. Explain unusual service models (ticketed, prepaid, communal, no-choice tasting menu) BEFORE the booking widget.",
+        "confidence": "high"
+      },
+      {
+        "label": "Menu presentation pattern",
+        "value": "HTML always, never PDF. Group by course; dish name in Croatian with English beneath; allergen/diet icons WITH text labels (never icon-only); price as plain text aligned via subgrid. State seasonal variability honestly — true of any serious fish restaurant and it manages expectations. Separate collapsible wine section where a sommelier is part of the story.",
+        "confidence": "high"
+      },
+      {
+        "label": "Map embedding",
+        "value": "Use address as selectable text plus a link to Google Maps. Avoid an embedded Maps iframe — it is both an LCP liability and a privacy/third-party-cookie problem.",
+        "confidence": "high"
+      },
+      {
+        "label": "Lighthouse vs field data",
+        "value": "100/100/100/100 in Lighthouse is achievable for a site of this type and is worth showing the owner, but it is lab data. The number that actually determines Search treatment is CrUX p75 on mid-range Android. Per Web Almanac 2025 only ~48% of mobile sites pass all three CWV.",
+        "confidence": "medium"
+      },
+      {
+        "label": "Baseline definitions",
+        "value": "'Newly available' = works in current stable versions of Chrome, Edge, Firefox and Safari across desktop and mobile. 'Widely available' comes 30 months later. Baseline does not mean bug-free — it means available across browsers, not perfect on day one.",
+        "confidence": "high"
+      },
+      {
+        "label": "Other 2026 Baseline arrivals",
+        "value": "May 2026 Newly available: container style queries, :open pseudo-class, ToggleEvent.source, image-rendering, text-decoration-skip-ink: all, SharedWorker. May 2026 Widely available: lh and rlh units, Navigator.userActivation, clip-path, :user-invalid. Jan 2026: :active-view-transition. Feb 2026: Trusted Types. April 2026: contrast-color(). Also shape() for clip-path/offset-path. Temporal API landed in Chrome early 2026 but NOT Firefox or Safari — keep the polyfill.",
+        "confidence": "medium"
+      }
+    ],
+    "gaps": [
+      "Could not verify raw BCD JSON for @layer, CSS nesting, color-mix(), <dialog>, and scroll-snap individually — I relied on their well-established Baseline status (all Baseline since ~2023) rather than reading per-feature compat data. Support is not in genuine doubt for any of them, but I did not confirm exact version numbers.",
+      "Could not confirm whether Samsung Internet's absence from contrast-color() has since been resolved; caniuse showed no support across Samsung 4-30 at the time of reading. This reinforces the recommendation not to rely on the function regardless.",
+      "Could not verify the exact Firefox version in which scroll-driven animations will ship unflagged. BCD says 'preview'; it is a named Interop 2026 priority, so this may change during the build. Re-check before launch.",
+      "caniuse did not surface container query UNIT (cqi/cqw/cqb) support separately from container queries themselves. I treated them as shipping together, which matches the spec, but did not independently confirm.",
+      "Could not retrieve the prefers-contrast caniuse support table (the fetch returned a search-results page). I used MDN's Baseline statement — widely available since May 2022 — instead, which is sufficient for a go/no-go decision but lacks per-version detail.",
+      "The restaurant UX exemplars (Alinea, The Fat Duck, Noma, Eleven Madison Park, Dishoom, Momofuku, Fiola) come from design roundup articles rather than first-hand inspection of each live site in September 2026. Specific claims — Noma's live weather widget, Momofuku's Next.js + DatoCMS stack, Dishoom's Awwwards win — are plausible and consistently reported but were not verified against the sites themselves. Design details may have changed.",
+      "The '77% of diners visit a website before deciding' and '7 seconds to make an impression' figures are cited in marketing sources without traceable primary research. Treat as directional, not as a defensible statistic to quote to the owner.",
+      "I did not identify which specific restaurant this site is for, so the JSON-LD, address, coordinates, hours, phone and cuisine values in the example are placeholders modelled on Pelegrini Šibenik. Every one of them needs replacing with real data, and the coordinates must be regenerated to at least 5 decimal places.",
+      "Did not research Croatian-specific legal or regulatory requirements for restaurant websites (allergen disclosure under EU FIC Regulation 1169/2011, mandatory business-registration details in the footer, GDPR cookie-consent specifics for the Croatian market). These are likely to matter for a production launch.",
+      "Did not verify current pricing, embed weight, or INP impact of specific reservation platforms available in Croatia (OpenTable, Tock, SevenRooms, Resy, or local alternatives). The recommendation to defer widget loading until dialog open is sound regardless of vendor, but vendor choice itself was out of scope."
+    ],
+    "verbatimCroatian": [
+      "Rezerviraj stol",
+      "Meni se mijenja prema dnevnom ulovu",
+      "Jadranska riba, otočno povrće — Šibenik",
+      "Degustacijski meni",
+      "Brodet od jastoga",
+      "Rezervacije",
+      "Vinska karta",
+      "Radno vrijeme",
+      "Kontakt",
+      "O nama",
+      "Danas otvoreno",
+      "Trenutno zatvoreno"
+    ],
+    "quotes": [
+      {
+        "text": "Targets for pointer inputs must measure at least 24 by 24 CSS pixels.",
+        "attribution": "W3C, Understanding SC 2.5.8 Target Size (Minimum), WCAG 2.2",
+        "lang": "en"
+      },
+      {
+        "text": "When a user interface component receives keyboard focus, the component is not entirely hidden due to author-created content.",
+        "attribution": "W3C, Understanding SC 2.4.11 Focus Not Obscured (Minimum), WCAG 2.2",
+        "lang": "en"
+      },
+      {
+        "text": "Large-scale text and images of large-scale text have a contrast ratio of at least 3:1.",
+        "attribution": "W3C, Understanding SC 1.4.3 Contrast (Minimum), WCAG 2.2",
+        "lang": "en"
+      },
+      {
+        "text": "Text that is part of a logo or brand name has no contrast requirement.",
+        "attribution": "W3C, Understanding SC 1.4.3 Contrast (Minimum), WCAG 2.2",
+        "lang": "en"
+      },
+      {
+        "text": "If the entity that's being reviewed controls the reviews about itself, their pages that use LocalBusiness or any other type of Organization structured data are ineligible for star review feature.",
+        "attribution": "Google Search Central, Review snippet structured data documentation",
+        "lang": "en"
+      },
+      {
+        "text": "Never lazy-load your LCP image, as that will always lead to unnecessary resource load delay.",
+        "attribution": "web.dev, Optimize Largest Contentful Paint",
+        "lang": "en"
+      },
+      {
+        "text": "Each language version must list itself as well as all other language versions.",
+        "attribution": "Google Search Central, Localized versions of your pages",
+        "lang": "en"
+      },
+      {
+        "text": "If two pages don't both point to each other, the tags will be ignored.",
+        "attribution": "Google Search Central, Localized versions of your pages",
+        "lang": "en"
+      },
+      {
+        "text": "This feature is not Baseline because it does not work in some of the most widely-used browsers.",
+        "attribution": "MDN Web Docs, animation-timeline — the 'Limited availability' banner",
+        "lang": "en"
+      },
+      {
+        "text": "can have a knock-on effect to the maximum font-size when the user explicitly sets a browser text zoom preference",
+        "attribution": "Adrian Roselli, quoted in Utopia's clamp() article, on the accessibility risk of vw-based clamp values",
+        "lang": "en"
+      },
+      {
+        "text": "The precision must be at least 5 decimal places.",
+        "attribution": "Google Search Central, LocalBusiness structured data — on geo.latitude and geo.longitude",
+        "lang": "en"
+      },
+      {
+        "text": "prevents the collective work from becoming a long task that blocks the main thread",
+        "attribution": "web.dev, Optimize Interaction to Next Paint — on breaking work into separate tasks",
+        "lang": "en"
+      }
+    ],
+    "dishes": [
+      {
+        "nameHr": "Brodet od jastoga",
+        "nameEn": "Lobster stew, aged Grk, wild fennel",
+        "category": "Tasting Menu",
+        "note": "PLACEHOLDER — illustrative only, used in the JSON-LD hasMenu example. Not sourced from a real menu."
+      },
+      {
+        "nameHr": "Sirova kozica iz Jabučke kotline",
+        "nameEn": "Raw Jabuka Pit prawn",
+        "category": "Predjelo",
+        "note": "PLACEHOLDER — illustrative only. Replace with the restaurant's actual menu."
+      },
+      {
+        "nameHr": "Škampi na buzaru",
+        "nameEn": "Scampi buzara",
+        "category": "Glavno jelo",
+        "note": "PLACEHOLDER — a classic Dalmatian preparation, included to show the Croatian-primary / English-secondary naming pattern. Not a verified menu item."
+      },
+      {
+        "nameHr": "Kapice s Jadrana",
+        "nameEn": "Adriatic scallops",
+        "category": "Predjelo",
+        "note": "PLACEHOLDER. Note that Michelin coverage of Pelegrini Šibenik does mention scallops and sea snails among ingredients sourced from small local producers, but this exact dish name is invented."
+      }
+    ],
+    "imageUrls": []
+  }
+}

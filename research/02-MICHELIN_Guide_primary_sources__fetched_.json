@@ -1,0 +1,405 @@
+{
+  "type": "result",
+  "key": "v2:8027d13086eabbd61386a5c31fab519807f4ae296dff550c14b0d16995b31cdf",
+  "agentId": "a4d2522984d195b2e",
+  "result": {
+    "source": "MICHELIN Guide primary sources, fetched and parsed from raw HTML on 27 Sept 2026: (1) the Mon Ami restaurant listing https://guide.michelin.com/hr/en/zagreb-region/velika-gorica/restaurant/mon-ami (canonical https://guide.michelin.com/us/en/zagreb-region/velika-gorica/restaurant/mon-ami) — embedded JSON-LD Review object and GTM dataLayer inspected directly; (2) the MICHELIN feature article \"Mon Ami, Zagreb County, Croatia: Where tradition meets land and sea\" (06 Oct 2025, by Sarah Scaparone) — full body extracted verbatim; (3) the MICHELIN Guide Croatia 2026 unveiling article (ceremony 25 June 2026); (4) the Velika Gorica city listing page. Cross-referenced against the restaurant's own Croatian site monami.hr/o-nama for the Skradin olive oil and house wine (absent from MICHELIN), plus Croatian press and luxurylivingcroatia.com for the multi-year recommendation history. Croatian-language MICHELIN versions of both pages were probed (guide.michelin.com/hr/hr/... and Croatian-slug article URLs) and do not exist — MICHELIN publishes Croatia content in English only.",
+    "summary": "Mon Ami is listed in the MICHELIN Guide Croatia 2026 at the \"MICHELIN Selected\" level — the Plate. This is confirmed unambiguously: the page's own meta description reads \"Mon Ami – a restaurant in the 2026 MICHELIN Guide Croatia\", the embedded JSON-LD review carries datePublished 2026-06-25 (matching the Croatia 2026 ceremony date of 25 June 2026), and the page's analytics dataLayer sets distinction = 'plate', greenstar = 'False', award_type = 'false'. There is NO star and NO Bib Gourmand. Do not claim one. In the 2026 selection of 112 restaurants, Mon Ami is one of the 84 \"Selected\" entries. Croatian press and the restaurant itself document a run of consecutive MICHELIN recommendations going back to at least 2022, described locally as six consecutive years.\n\nGuide facts: Mediterranean Cuisine, price band €€€ (MICHELIN category \"Special occasion\"), Trg Kralja Tomislava 26, Velika Gorica 10410, +385 1 6213 333, monami.hr. Open Monday 11:00–16:30, Tuesday–Saturday 11:00–23:00, closed Sunday. Air conditioning, terrace, credit cards. The JSON-LD notes acceptsReservations \"No\" — a data artefact; the restaurant does take bookings.\n\nThe inspector's review is short and names exactly one dish: an \"excellent grilled salmon steak accompanied by teriyaki sauce and celery purée.\" Note the discrepancy worth flagging to the client: the salmon/teriyaki dish named by the inspector does not appear on the restaurant's own published menu copy.\n\nThe richer material is MICHELIN's own October 2025 feature article, which is fully quotable. It establishes: opened 1997, still run by the Ceronja family, today led by Bruno Ceronja, son of the founders; chef Goran Marko Beus, 45, Split-born, seventeen years in charge, career along the Dalmatian coast and on ships; sixty seats inside plus twenty on the terrace; oak, marble and stone interior.\n\nCritical gap: MICHELIN never mentions the Skradin olive grove, the gold-medal olive oil, or the house cuvée Chardonnay Graševina. Those come only from the restaurant's own site. Do not attribute them to MICHELIN — attribute them to the restaurant. The dessert MICHELIN calls \"Scardona cake\" is the Skradinska torta (Scardona is the Italian name for Skradin), which is the closest MICHELIN comes to the Skradin connection.",
+    "facts": [
+      {
+        "label": "Current MICHELIN distinction",
+        "value": "MICHELIN Selected (the Plate) — NOT a Star, NOT a Bib Gourmand. Page dataLayer reads distinction = 'plate', award_type = 'false', greenstar = 'False'.",
+        "confidence": "high"
+      },
+      {
+        "label": "Guide year / edition",
+        "value": "2026 MICHELIN Guide Croatia. Page meta description: 'Mon Ami – a restaurant in the 2026 MICHELIN Guide Croatia'. JSON-LD review datePublished 2026-06-25.",
+        "confidence": "high"
+      },
+      {
+        "label": "2026 Croatia ceremony date",
+        "value": "25 June 2026 — matches the review publication timestamp exactly, confirming Mon Ami was re-listed in the 2026 selection rather than carried over stale.",
+        "confidence": "high"
+      },
+      {
+        "label": "2026 Croatia selection size",
+        "value": "112 recommended restaurants total: 1 with two Stars, 13 with one Star (one new), 14 Bib Gourmands (three new), 84 Selected (sixteen new). Mon Ami is one of the 84 Selected.",
+        "confidence": "high"
+      },
+      {
+        "label": "Mon Ami was NOT a new 2026 entry",
+        "value": "It is a returning Selected restaurant, not among the sixteen new Selected entries; it is not named in the 2026 ceremony article at all.",
+        "confidence": "medium"
+      },
+      {
+        "label": "Consecutive recommendation history",
+        "value": "Croatian press confirms a MICHELIN Guide listing since at least 2022; the restaurant and Croatian outlets describe six consecutive years of MICHELIN recommendation. Michelin Plate specifically documented for 2024 and 2025, and now confirmed for 2026.",
+        "confidence": "medium"
+      },
+      {
+        "label": "Cuisine type (MICHELIN)",
+        "value": "Mediterranean Cuisine",
+        "confidence": "high"
+      },
+      {
+        "label": "Price band (MICHELIN)",
+        "value": "€€€ — MICHELIN internal price category CAT_P03, labelled 'Special occasion' / Premium",
+        "confidence": "high"
+      },
+      {
+        "label": "Address",
+        "value": "Trg Kralja Tomislava 26, Velika Gorica, 10410, Zagreb County, Croatia",
+        "confidence": "high"
+      },
+      {
+        "label": "Coordinates",
+        "value": "45.7112127, 16.0801126",
+        "confidence": "high"
+      },
+      {
+        "label": "Phone",
+        "value": "+385 1 6213 333",
+        "confidence": "high"
+      },
+      {
+        "label": "Website",
+        "value": "monami.hr",
+        "confidence": "high"
+      },
+      {
+        "label": "Opening hours (MICHELIN)",
+        "value": "Monday 11:00–16:30; Tuesday to Saturday 11:00–23:00; Sunday closed",
+        "confidence": "high"
+      },
+      {
+        "label": "Facilities (MICHELIN)",
+        "value": "Air conditioning; terrace / small outdoor area in warmer months; credit and debit cards accepted (Diners Club, Maestro, Mastercard, Visa); currency EUR",
+        "confidence": "high"
+      },
+      {
+        "label": "Tagged 'Good for'",
+        "value": "Family Friendly",
+        "confidence": "high"
+      },
+      {
+        "label": "Founded",
+        "value": "1997 — 'opened in 1997 and still run by the Ceronja family' (MICHELIN feature article). Nearly thirty years of operation as of 2026.",
+        "confidence": "high"
+      },
+      {
+        "label": "Ownership",
+        "value": "The Ceronja family. Today led by Bruno Ceronja, son of the founders, described by MICHELIN as 'an accomplished host'.",
+        "confidence": "high"
+      },
+      {
+        "label": "Chef",
+        "value": "Goran Marko Beus, aged 45, has headed the kitchen for seventeen years. Born in Split; career along the Dalmatian coast and on ships.",
+        "confidence": "high"
+      },
+      {
+        "label": "Capacity",
+        "value": "About sixty seats inside, plus some twenty more on the outdoor terrace (MICHELIN). The restaurant's own site says 70 seats plus a private separe for 10.",
+        "confidence": "high"
+      },
+      {
+        "label": "Interior",
+        "value": "Modern style with thoughtful use of local materials — fine local oak for the tables, marble and stone bringing warmth to the interior.",
+        "confidence": "high"
+      },
+      {
+        "label": "Location advantage",
+        "value": "Near Zagreb International Airport; 'well loved by locals and travelers alike' per MICHELIN.",
+        "confidence": "high"
+      },
+      {
+        "label": "Skradin olive grove and olive oil",
+        "value": "NOT mentioned by MICHELIN anywhere. Source is the restaurant's own site: extra virgin olive oil from their own olive grove in Skradin, awarded gold medals. Also Croatian green olives and olive tea. Attribute to the restaurant, never to MICHELIN.",
+        "confidence": "high"
+      },
+      {
+        "label": "House wine",
+        "value": "NOT mentioned by MICHELIN. Restaurant's own site: house cuvée Chardonnay Graševina from the Pokuplje subregion, Vukomeričke gorice wine-growing area. Wine list of 60 labels, predominantly Croatian producers.",
+        "confidence": "high"
+      },
+      {
+        "label": "Named suppliers (from MICHELIN article)",
+        "value": "OPG Balić — honey from the Žumberak Highlands; OPG Haha — hazelnuts and hazelnut paste from Turopolje; OPG Goga — pears from Turopolje.",
+        "confidence": "high"
+      },
+      {
+        "label": "MICHELIN feature article",
+        "value": "'Mon Ami, Zagreb County, Croatia: Where tradition meets land and sea', Dining Out section, published 06 October 2025, by Sarah Scaparone, in collaboration with Croatia. Hero image credit: Jakob Goldstein.",
+        "confidence": "high"
+      },
+      {
+        "label": "Croatian-language MICHELIN version",
+        "value": "Does not exist. MICHELIN publishes its Croatia content in English only; /hr/hr/ locale URLs return 404 and no Croatian hreflang alternates are declared on either page.",
+        "confidence": "high"
+      },
+      {
+        "label": "Reservations flag anomaly",
+        "value": "MICHELIN JSON-LD states acceptsReservations 'No'. This is a data-entry artefact — the restaurant takes reservations via monami.hr and reservation is recommended. Do not repeat the MICHELIN value on the website.",
+        "confidence": "medium"
+      },
+      {
+        "label": "Inspector-named dish not on restaurant menu",
+        "value": "The grilled salmon steak with teriyaki sauce and celery purée singled out by the inspector does not appear in the restaurant's own published menu copy. Worth confirming with the client before featuring it prominently.",
+        "confidence": "medium"
+      },
+      {
+        "label": "TripAdvisor standing",
+        "value": "Ranked #1 of 49 restaurants in Velika Gorica.",
+        "confidence": "medium"
+      }
+    ],
+    "dishes": [
+      {
+        "nameEn": "Grilled salmon steak with teriyaki sauce and celery purée",
+        "nameHr": "Odrezak lososa s roštilja s teriyaki umakom i pireom od celera",
+        "category": "Fish / signature",
+        "note": "THE dish MICHELIN's inspector singles out: 'Among the chef's most lauded dishes is an excellent grilled salmon steak accompanied by teriyaki sauce and celery purée.' The single most quotable dish endorsement available. Note it is not on the restaurant's own published menu — verify with client."
+      },
+      {
+        "nameEn": "Black cuttlefish risotto",
+        "nameHr": "Crni rižot od sipe",
+        "category": "Signature",
+        "note": "Named by MICHELIN as a signature dish, and listed on the restaurant's own menu as 'crni rižoto od sipe'. Appears in both sources — safest hero dish."
+      },
+      {
+        "nameEn": "Octopus salad",
+        "nameHr": "Hobotnica na salatu",
+        "category": "Signature",
+        "note": "Named by MICHELIN as a signature dish; also on the restaurant's own menu."
+      },
+      {
+        "nameEn": "Dry-aged beef steaks from the local region",
+        "nameHr": "Suho zrijani odresci govedine iz lokalne regije",
+        "category": "Signature / meat",
+        "note": "MICHELIN signature. The restaurant's own menu lists 'beefsteak s roštilja u umaku od tartufate i crnog tartufa' (grilled beefsteak in tartufata and black truffle sauce)."
+      },
+      {
+        "nameEn": "Fish from the Prokljan area, where the river meets the sea",
+        "nameHr": "Riba iz Prokljanskog jezera, gdje se rijeka susreće s morem",
+        "category": "Traditional highlight",
+        "note": "MICHELIN's phrasing 'where the river meets the sea' is itself a lovely piece of website copy."
+      },
+      {
+        "nameEn": "Kvarner scampi",
+        "nameHr": "Kvarnerski škampi",
+        "category": "Traditional highlight",
+        "note": "Named by MICHELIN and on the restaurant's own menu ('kvarnerskih škampi')."
+      },
+      {
+        "nameEn": "Forest mushroom soup",
+        "nameHr": "Juha od šumskih gljiva",
+        "category": "Traditional highlight",
+        "note": "Named by MICHELIN."
+      },
+      {
+        "nameEn": "Homemade pasta with black truffle",
+        "nameHr": "Domaća tjestenina s crnim tartufom",
+        "category": "Traditional highlight",
+        "note": "Named by MICHELIN."
+      },
+      {
+        "nameEn": "Scardona cake with almonds, orange and walnuts",
+        "nameHr": "Skradinska torta s bademima, narančom i orasima",
+        "category": "Dessert",
+        "note": "MICHELIN uses 'Scardona', the Italian name for Skradin — the same town as the family's olive grove. This is the closest MICHELIN comes to the Skradin thread, and a strong narrative hook linking dessert and olive grove."
+      },
+      {
+        "nameEn": "Vanilla-and-honey semifreddo with salted local hazelnut cream and pear coulis",
+        "nameHr": "Semifreddo od vanilije i meda sa slanom kremom od lješnjaka i coulisom od kruške",
+        "category": "Dessert / signature",
+        "note": "The chef's own creation and the subject of his only direct quotes in MICHELIN. Made with Žumberak Highlands honey (OPG Balić), Turopolje hazelnuts (OPG Haha) and Turopolje pears (OPG Goga). The richest storytelling dish available."
+      },
+      {
+        "nameEn": "Tuna carpaccio with black truffle",
+        "nameHr": "Carpaccio od tune s crnim tartufom",
+        "category": "Starter / seafood",
+        "note": "From the restaurant's own menu, not MICHELIN."
+      },
+      {
+        "nameEn": "Sand smelt fried in olive oil",
+        "nameHr": "Gavuni prženi na maslinovom ulju",
+        "category": "Seafood",
+        "note": "Restaurant's own menu. Fried in their own Skradin olive oil."
+      },
+      {
+        "nameEn": "Lobster",
+        "nameHr": "Jastog",
+        "category": "Seafood",
+        "note": "Restaurant's own menu."
+      },
+      {
+        "nameEn": "Shellfish",
+        "nameHr": "Školjke",
+        "category": "Seafood",
+        "note": "Restaurant's own menu."
+      },
+      {
+        "nameEn": "Daily fresh wild white fish",
+        "nameHr": "Dnevno svježa i divlja bijela riba",
+        "category": "Seafood",
+        "note": "Restaurant's own menu."
+      },
+      {
+        "nameEn": "Adriatic squid",
+        "nameHr": "Jadranska lignja",
+        "category": "Seafood",
+        "note": "Restaurant's own menu."
+      },
+      {
+        "nameEn": "Smoked mussels",
+        "nameHr": "Dimljene dagnje",
+        "category": "Seafood",
+        "note": "Restaurant's own menu."
+      },
+      {
+        "nameEn": "Vegetarian and gluten-free dishes",
+        "nameHr": "Vegetarijanska i jela bez glutena",
+        "category": "Dietary",
+        "note": "Restaurant's own menu."
+      }
+    ],
+    "quotes": [
+      {
+        "text": "The steady stream of regulars filling the restaurant attests to the quality of the cuisine, split between seafood and land-based preparations. Fish takes center stage in simple, traditional recipes that highlight the quality of the ingredients. Among the chef's most lauded dishes is an excellent grilled salmon steak accompanied by teriyaki sauce and celery purée. A small, welcoming outdoor area is available during warmer months.",
+        "attribution": "MICHELIN Guide inspector, full review, MICHELIN Guide Croatia 2026",
+        "lang": "en"
+      },
+      {
+        "text": "The steady stream of regulars filling the restaurant attests to the quality of the cuisine.",
+        "attribution": "MICHELIN Guide inspector, MICHELIN Guide Croatia 2026",
+        "lang": "en"
+      },
+      {
+        "text": "Fish takes center stage in simple, traditional recipes that highlight the quality of the ingredients.",
+        "attribution": "MICHELIN Guide inspector, MICHELIN Guide Croatia 2026",
+        "lang": "en"
+      },
+      {
+        "text": "Among the chef's most lauded dishes is an excellent grilled salmon steak accompanied by teriyaki sauce and celery purée.",
+        "attribution": "MICHELIN Guide inspector, MICHELIN Guide Croatia 2026",
+        "lang": "en"
+      },
+      {
+        "text": "Since opening nearly thirty years ago, the Ceronja family has shaped a cuisine that blends the best of Croatia's two culinary souls: coastal and inland.",
+        "attribution": "MICHELIN Guide, 'Mon Ami, Zagreb County, Croatia: Where tradition meets land and sea', 6 October 2025",
+        "lang": "en"
+      },
+      {
+        "text": "Today, Mon Ami, devoted to a harmonious balance of land and sea, is led by Bruno Ceronja, son of the founders and an accomplished host.",
+        "attribution": "MICHELIN Guide, 6 October 2025",
+        "lang": "en"
+      },
+      {
+        "text": "For travelers eager to experience the most authentic side of Croatia, where genuine flavors, heartfelt hospitality, and local traditions come together, Mon Ami is a must-visit destination in Zagreb County.",
+        "attribution": "MICHELIN Guide, 6 October 2025",
+        "lang": "en"
+      },
+      {
+        "text": "More than just a restaurant, it's a culinary journey that captures the soul of Zagreb County, offering unforgettable tastes and warm, family-style charm.",
+        "attribution": "MICHELIN Guide, 6 October 2025",
+        "lang": "en"
+      },
+      {
+        "text": "The secret lies in the ingredients, a true celebration of the land around us.",
+        "attribution": "Chef Goran Marko Beus, quoted in the MICHELIN Guide, 6 October 2025",
+        "lang": "en"
+      },
+      {
+        "text": "We make it in seasonal variations, with strawberries or pumpkin seeds, for instance, though this version remains the most popular.",
+        "attribution": "Chef Goran Marko Beus on the vanilla-and-honey semifreddo, quoted in the MICHELIN Guide, 6 October 2025",
+        "lang": "en"
+      },
+      {
+        "text": "To prepare it we use honey from the Žumberak Highlands (the producer is OPG Balić), hazelnuts and hazelnut paste from the Turopolje region (the producer is OPG Haha), and pears from the Turopolje region (the producer is OPG Goga).",
+        "attribution": "Chef Goran Marko Beus, quoted in the MICHELIN Guide, 6 October 2025",
+        "lang": "en"
+      },
+      {
+        "text": "The menu combines traditional Croatian dishes made with local ingredients, such as truffles, tomatoes, extra-virgin olive oil, meats, and fish, with more international inspirations.",
+        "attribution": "MICHELIN Guide, 6 October 2025",
+        "lang": "en"
+      },
+      {
+        "text": "Unsurprisingly, the motto here is 'from farm to table,' a true way of life, expressing native specialties and a strong culinary identity.",
+        "attribution": "MICHELIN Guide on Zagreb County, 6 October 2025",
+        "lang": "en"
+      },
+      {
+        "text": "Imamo preporuku od Croatia Michelin Restaurants – The Michelin Guide i Trip Advisora, a naša najvažnija preporuka su naši gosti.",
+        "attribution": "Mon Ami, monami.hr — 'O nama'",
+        "lang": "hr"
+      },
+      {
+        "text": "Vaše zadovoljstvo nama je na prvom mjestu",
+        "attribution": "Mon Ami, monami.hr — 'O nama'",
+        "lang": "hr"
+      }
+    ],
+    "verbatimCroatian": [
+      "Neka Vaša nepca dožive jedinstveni gastronomski užitak mediteranskih specijaliteta u srcu Turopolja.",
+      "Kušajte naše delicije poput kvarnerskih škampi, jastoga, školjki, carpaccia od tune s crnim tartufom ili gavuna prženih na maslinovom ulju.",
+      "U Mon Amiju vas očekuje dnevno svježa i divlja bijela riba, crni rižoto od sipe, jadranska lignja i hobotnica na salatu, dimljene dagnje.",
+      "Uz morska jela možete uživati i u beefsteaku s roštilja u umaku od tartufate i crnog tartufa. Također, nudimo vegetarijanska i jela bez glutena.",
+      "Kušajte naše extra djevičansko maslinovo ulje iz vlastitog maslinika u Skradinu, nagrađivano zlatnim medaljama. Shodno tome u ponudi imamo hrvatske zelene masline, te čaj od maslina.",
+      "Imamo vinsku kartu od 60 etiketa, poglavito vina hrvatskih proizvođača. Također proizvodimo svoje vino kuće cuvee Chardonnay Graševina iz podregije Pokuplje, vinogorje Vukomeričke gorice.",
+      "Nalazimo se u središtu Velike Gorice, ali i u blizini Međunarodne zračne luke Zagreb, tako da u našem ugodnom ambijentu može uživati svatko, od usputnog prolaznika do putnika koji između dva leta želi nešto dobro pojesti.",
+      "Organiziramo tematske večere i dane posvećene domaćim sezonskim namirnicama.",
+      "Restoran ima 70 sjedećih mjesta. Odvojeni „separe\" za 10 osoba namijenjen je poslovnim sastancima zatvorenog tipa.",
+      "Interijer je sadržan od prirodnih materijala koji predstavljaju naš pristup življenju i poslovanju.",
+      "Vaše zadovoljstvo nama je na prvom mjestu",
+      "Mon Ami je idealno mjesto za poslovna druženja, svadbe, pričesti, krizme i krštenja.",
+      "Imamo preporuku od Croatia Michelin Restaurants – The Michelin Guide i Trip Advisora, a naša najvažnija preporuka su naši gosti.",
+      "Kuhinju vodi chef Goran Marko Beus. Prepustite se našem osoblju koje će vas oduševiti svojom kreativnošću i ljubaznošću.",
+      "Restoran uvršten u MICHELIN Guide Croatia 2026 — oznaka MICHELIN Selected.",
+      "Michelinovi inspektori ističu da stalan priljev redovitih gostiju koji pune restoran svjedoči o kvaliteti kuhinje, podijeljene između jela s mora i s kopna.",
+      "Riba je u središtu pozornosti, pripremljena po jednostavnim, tradicionalnim receptima koji naglašavaju kvalitetu namirnica."
+    ],
+    "imageUrls": [
+      {
+        "url": "https://prod-pics.guide.michelin.com/api/public/content/ddbc1c5df59b40678ff4d5432208adbe.jpeg?format=jpeg&w=1000&h=1000",
+        "shows": "The official MICHELIN Guide listing image for Mon Ami — the single hero image attached to the restaurant's guide entry and its JSON-LD schema. Square 1000x1000 crop; drop the query string for the full-resolution original."
+      },
+      {
+        "url": "https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2025/10/06/f032a694630a491fb3ca76a3623c5ff3_1._Jakob_Goldstein_-_Mon_Ami.jpg",
+        "shows": "Hero image of the MICHELIN feature article. Credit: Jakob Goldstein — Mon Ami. The widest, most editorial shot; best candidate for a website hero banner."
+      },
+      {
+        "url": "https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2025/10/06/f7b0fd7614a34956ab5f6b58a998a443_Josip_kof-Mon_Ami_INTERIOR.jpg",
+        "shows": "Restaurant interior — the modern dining room with local oak tables, marble and stone. Credit: Josip Škof. Ideal for an 'ambience' or 'about' section."
+      },
+      {
+        "url": "https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2025/10/06/3c6758d45d2840819c57a3b379cc5a10_Josip_kof_-_Mon_Ami_CHEF.jpg",
+        "shows": "Portrait of chef Goran Marko Beus. Credit: Josip Škof. The only chef portrait MICHELIN published — use alongside his quotes."
+      },
+      {
+        "url": "https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2025/10/06/547cac24445b4f12969571a2627d5448_Josip_kof_-_Mon_Ami.jpg",
+        "shows": "Additional Mon Ami photograph from the MICHELIN feature. Credit: Josip Škof."
+      },
+      {
+        "url": "https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2025/10/06/aab757f4020a4530b9b7f42e297f442f_Mon_Ami_-_Dessert.jpg",
+        "shows": "Dessert plating — almost certainly the vanilla-and-honey semifreddo with salted hazelnut cream and pear coulis, or the Scardona/Skradinska cake. Pair with the chef's semifreddo quote."
+      },
+      {
+        "url": "https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2025/10/06/a70aaba40557430a9cbba27e8c33d7f6_Mario_ilec-Mon_Ami.jpg",
+        "shows": "Mon Ami photograph from the MICHELIN feature. Credit: Mario Žilec."
+      }
+    ],
+    "gaps": [
+      "COPYRIGHT WARNING: every image above is hosted on MICHELIN's CDN and credited to named photographers (Jakob Goldstein, Josip Škof, Mario Žilec). They are NOT licensed for reuse on a commercial restaurant website. Hotlinking or copying them risks a takedown. Ask the restaurant for the original files from the photographers, or commission new photography. Use these only as a visual reference brief.",
+      "No Croatian-language MICHELIN text exists. I probed /hr/hr/ locale URLs and Croatian-slug article URLs; both fail, and neither page declares a Croatian hreflang alternate. MICHELIN publishes its Croatia coverage in English only. Any Croatian version of the inspector's review on the website would be YOUR translation, and must not be presented as MICHELIN's own Croatian wording. The two Croatian renderings I supplied in verbatimCroatian are my translations, clearly distinct from the genuine monami.hr copy in the same list.",
+      "MICHELIN never mentions the Skradin olive grove or the gold-medal olive oil. That claim comes solely from monami.hr. Do not let website copy imply MICHELIN praised the olive oil. The only adjacent MICHELIN reference is the dessert it calls 'Scardona cake' (Scardona = the Italian name for Skradin).",
+      "MICHELIN never mentions the house wine. The cuvée Chardonnay Graševina from Pokuplje / Vukomeričke gorice and the 60-label wine list come only from the restaurant's own site. The MICHELIN article references the region's 'excellent wines' generally but names no producer or label.",
+      "The grilled salmon steak with teriyaki sauce and celery purée — the one dish the inspector singles out — does not appear on the restaurant's own published menu copy. Either it is an off-menu or seasonal plate, or the listing is out of date. Confirm with the client before making it a website centrepiece.",
+      "I could not determine Mon Ami's exact unbroken list of MICHELIN years. Confirmed: 2022 (Croatian press), 2024 and 2025 (Plate, via an aggregator), and 2026 (verified directly from the guide page). The widely repeated 'six consecutive years' claim originates with the restaurant and local media, not MICHELIN, and I could not verify each intervening year against a primary MICHELIN source. If the site states a number of years, source it to the restaurant rather than to MICHELIN.",
+      "MICHELIN's JSON-LD records acceptsReservations: 'No', which contradicts the restaurant's own booking offer and Croatian coverage advising that reservations are recommended. Treat this as a MICHELIN data error and do not reproduce it.",
+      "The MICHELIN listing page has only one photograph attached; there is no inspector photo gallery of the dining room or dishes beyond the feature article's six images.",
+      "No MICHELIN Green Star and no Special Award: the page explicitly records greenstar = 'False' and award_type = 'false'.",
+      "The 2026 ceremony article does not name Mon Ami, so I could not source a MICHELIN quote specifically celebrating its 2026 re-listing. The 2026 status rests on the guide page's own metadata and dataLayer, which is authoritative but not a narrative endorsement.",
+      "MICHELIN's stated capacity (about sixty inside, twenty on the terrace) differs from the restaurant's own figure (70 seats plus a 10-person separe). Use the restaurant's numbers for practical information and MICHELIN's only when quoting the article."
+    ]
+  }
+}

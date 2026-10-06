@@ -1,0 +1,803 @@
+{
+  "type": "result",
+  "key": "v2:478ada21532c22332a3c1002e8f7208a227ec16c16ac77e3f71c939a77ba3e50",
+  "agentId": "a8020935e26e1f0cf",
+  "result": {
+    "source": "Restaurant Mon Ami, Trg kralja Tomislava 26, Velika Gorica (Croatia). Investigated: Gault&Millau Croatia listing (hr.gaultmillau.com, including raw JSON-LD structured data for exact score/toques), MICHELIN Guide restaurant listing + MICHELIN Guide editorial feature (Oct 2025, Sarah Scaparone), Visit Zagreb County (HR + EN), Tjedan restorana HR (HR + EN), the restaurant's own site monami.hr/o-nama (raw HTML scraped for verbatim Croatian), Okusi hrvatske tradicije (okusi.hr), Gastronaut.hr, PutniKofer.hr gastro feature, Eat Out Zagreb review (Sept 2023), Kronike Velike Gorice / velikagorica.com / rvg.hr / 01portal.hr news archives, Restaurant Guru and TripAdvisor aggregates.",
+    "summary": "Mon Ami is a family-run Mediterranean/seafood restaurant in the centre of Velika Gorica, open since 1997 and still run by the Ceronja family — today by Bruno Ceronja, son of the founders, alongside his mother Barica (referred to as Barbara in one source). The founding couple combined their roots: the father was from the Skradin area, the mother a native Turopoljka, so they put Dalmatian fish cooking and continental Turopolje dishes under one roof — near-avant-garde for a town that ate grilled meat. Bruno describes the ambition as uniting \"dvije kuhinje pod istim krovom, onu mediteransku i kontinentalnu\" and calls his father's turn to fish \"prava mala revolucija\".\n\nThe kitchen is led by chef Goran Marko Beus, 45, a Split native who built his career on the Dalmatian coast and on ships; he has run the pass for roughly 16-17 years. Signature dishes: crni rižoto od sipe (black cuttlefish risotto, the best-known), octopus salad, smoked Pag mussels, tuna carpaccio with Turopolje black truffle, Kvarner scampi, dry-aged local beef (a 45-day dry-aged Posavina T-bone), grilled salmon with teriyaki and celery purée, skradinska torta and hazelnut/white chocolate semifreddo.\n\nTwo distinct guide recognitions are confirmed. Gault&Millau Croatia 2026: 13.5/20 and 2 toques (verified in the page's JSON-LD: \"2 toques Gault&Millau (2026)\"), chef listed as Marko Beus, head sommelier Zlatko Šimac. MICHELIN: recommended/Selected since 2018 and continuously thereafter (third year in 2020, fourth in 2021, sixth by 2023, retained for 2025 at the Šibeniks St. John Fortress ceremony, and again in the 2026 guide), price band €€€, Mediterranean. It also holds Restaurant Croatica 2024 (100 leading Croatian restaurants, 30th edition presented on botel Marina in Rijeka), has been in Croatia's top-100 list 23 times (1999-2002, 2004-2008, 2010-2012, 2015-2025), holds a Green Destination certificate and a Zagreb County award for sustainable restaurant, plus the \"Okusi tradicije Zagrebačkog kraja\" plaque.\n\nHouse specialities include their own gold-medal extra virgin olive oil from the family olive grove in Skradin (mostly oblica; 10th place with 96.42 points and a gold at Dani mladih maslinovih ulja in Vodice), Croatian green olives, olive tea, and a house cuvée Chardonnay-Graševina from the Pokuplje sub-region, Vukomeričke gorice, on a 60-label list (the restaurant's own site says 60; Gastronaut lists 65).",
+    "facts": [
+      {
+        "label": "Founding year",
+        "value": "1997 — \"nudi svoj bogati opus jela i pića od 1997. godine\" (restaurant's own Tjedan restorana text); confirmed by MICHELIN Guide, PutniKofer and multiple news sources. NOTE: one 2020 Kronike VG article says the family restaurant opened in 1994 and had run 25 years — treat 1997 as the canonical year.",
+        "confidence": "high"
+      },
+      {
+        "label": "Family / ownership",
+        "value": "Founded and still run by the Ceronja family. Owner: Barica Ceronja (one review names her Barbara). Manager/director: Bruno Ceronja, son of the founders. Father Božo was from the Skradin area, mother a native Turopoljka. After the father's death Bruno took over management with his mother.",
+        "confidence": "high"
+      },
+      {
+        "label": "Chef",
+        "value": "Goran Marko Beus (listed by Gault&Millau simply as Marko Beus), aged 45, born in Split, career built along the Dalmatian coast and working on ships. MICHELIN (Oct 2025) says seventeen years leading the kitchen; PutniKofer says sixteen; Eat Out Zagreb (2023) said fifteen.",
+        "confidence": "high"
+      },
+      {
+        "label": "Head sommelier",
+        "value": "Zlatko Šimac (per Gault&Millau structured data)",
+        "confidence": "high"
+      },
+      {
+        "label": "Gault&Millau score",
+        "value": "13.5/20 (bestRating 20, worstRating 1), Gault&Millau Croatia 2026 edition, review published 7 May 2026",
+        "confidence": "high"
+      },
+      {
+        "label": "Gault&Millau toques",
+        "value": "2 toques — exact value from the page's JSON-LD: \"Distinction Gault&Millau\" = \"2 toques Gault&Millau (2026)\"; page GTM payload also carries \"toques\":2",
+        "confidence": "high"
+      },
+      {
+        "label": "Gault&Millau category",
+        "value": "Listed as \"Chef's Restaurant\"; cuisine classified as Seafood",
+        "confidence": "high"
+      },
+      {
+        "label": "MICHELIN status",
+        "value": "MICHELIN Guide recommended / Selected (no star, no Bib Gourmand). Cuisine: Mediterranean. Price band: €€€. Tagged \"Family Friendly\".",
+        "confidence": "high"
+      },
+      {
+        "label": "MICHELIN — first recommendation",
+        "value": "2018. The inspector dined anonymously and revealed himself only after paying the bill.",
+        "confidence": "high"
+      },
+      {
+        "label": "MICHELIN — consecutive years",
+        "value": "3rd consecutive year reported May 2020; 4th reported Oct 2021; 6th consecutive by Sept 2023; retained in MICHELIN Guide Croatia 2025 (ceremony at Tvrđava sv. Ivana, Šibenik, July 2025); again in MICHELIN Guide Croatia 2026 (reported 25 June 2026)",
+        "confidence": "high"
+      },
+      {
+        "label": "MICHELIN — county exclusivity",
+        "value": "Until 2021 Mon Ami was the only restaurant in the whole of Zagreb County with MICHELIN status. In the 2026 guide, Zagreb County also has Korak (1 star) and newcomer Cantilly Garden (MICHELIN Selected).",
+        "confidence": "high"
+      },
+      {
+        "label": "MICHELIN editorial feature",
+        "value": "Full MICHELIN Guide article \"Mon Ami, Zagreb County, Croatia: Where tradition meets land and sea\", published 6 October 2025, written by Sarah Scaparone (sponsored content in collaboration with Croatia)",
+        "confidence": "high"
+      },
+      {
+        "label": "Restaurant Croatica award",
+        "value": "Restaurant Croatica 2024 — included among the 100 leading Croatian restaurants. Presented in the 30th edition of the book \"Restaurant Croatica – 100 vodećih hrvatskih restorana i njihovi specijaliteti 2025/26\", at a ceremony on botel Marina in Rijeka (reported 27 September 2025). The award has run since 1995, based on guest votes, hospitality-professional recommendations and a final decision by the project's Časni odbor.",
+        "confidence": "high"
+      },
+      {
+        "label": "Top-100 Croatian restaurants count",
+        "value": "Named among Croatia's top 100 restaurants 23 times: 1999-2002, 2004-2008, 2010-2012 and 2015-2025 (per Gastronaut.hr)",
+        "confidence": "medium"
+      },
+      {
+        "label": "Sustainability awards",
+        "value": "Green Destination certificate and a Zagreb County award for sustainable restaurant — confirmed by Bruno Ceronja: \"Imamo Green Destination certifikat i nagradu Zagrebačke županije za održivi restoran.\" Exact award year not published.",
+        "confidence": "medium"
+      },
+      {
+        "label": "Other recognition",
+        "value": "Plaque \"Okusi tradicije Zagrebačkog kraja\" (partner of the Okusi hrvatske tradicije programme); TripAdvisor recommendation cited on the restaurant's own site",
+        "confidence": "medium"
+      },
+      {
+        "label": "Olive grove — location",
+        "value": "The family's own olive grove is in Skradin (Dalmatian hinterland, Šibenik-Knin County), the father's home region. Mostly the oblica variety. Described as domaće, ekološko maslinovo ulje.",
+        "confidence": "high"
+      },
+      {
+        "label": "Olive oil — gold medal",
+        "value": "Extra virgin olive oil \"nagrađivano zlatnim medaljama\" (gold medals, plural, cited across all official listings). Specific result: 10th place with 96.42 points and a gold award (zlatno odličje) for young olive oil at the national Dani mladih maslinovih ulja event in Vodice.",
+        "confidence": "high"
+      },
+      {
+        "label": "Olive oil — role in the kitchen",
+        "value": "Chef Beus calls the Skradin oil the foundation of everything — he cannot imagine the kitchen without it, and defines Mediterranean cooking as quality oil, fresh fruit and vegetables, and minimal thermal processing. The team joins the olive and grape harvests together.",
+        "confidence": "high"
+      },
+      {
+        "label": "Olive products sold",
+        "value": "Croatian green olives (hrvatske zelene masline) and olive tea (čaj od maslina) are sold alongside the oil",
+        "confidence": "high"
+      },
+      {
+        "label": "House wine",
+        "value": "Own house wine: cuvée Chardonnay Graševina from the Pokuplje sub-region, Vukomeričke gorice vinogorje",
+        "confidence": "high"
+      },
+      {
+        "label": "Wine list size",
+        "value": "60 labels (\"vinska karta od 60 etiketa, poglavito vina hrvatskih proizvođača\") per the restaurant's own About page, Visit Zagreb County and okusi.hr. Gastronaut.hr lists 65 labels — likely a more recent count.",
+        "confidence": "high"
+      },
+      {
+        "label": "Capacity — total",
+        "value": "70 seats total per the restaurant's own site and Tjedan restorana. MICHELIN (2025) describes roughly sixty indoors plus about twenty on the terrace. Okusi.hr lists 60 indoor + 10 meeting room.",
+        "confidence": "high"
+      },
+      {
+        "label": "Capacity — private room",
+        "value": "A separate \"separe\" for 10 people, intended for closed-type business meetings (\"poslovnim sastancima zatvorenog tipa\")",
+        "confidence": "high"
+      },
+      {
+        "label": "Terrace",
+        "value": "Enclosed/covered and heated terrace, approx. 40 m2 with five tables seating around 20 guests, built c. 2021-2022. Gault&Millau notes the closed terrace has a slightly more casual atmosphere than the white-tablecloth formal room.",
+        "confidence": "high"
+      },
+      {
+        "label": "Interior",
+        "value": "Built from natural materials reflecting the owners' approach to living and business. MICHELIN describes regional oak tabletops plus marble and stone. Divided into two parts: formal room with white tablecloths, and the closed terrace.",
+        "confidence": "high"
+      },
+      {
+        "label": "Events — business, weddings, sacraments",
+        "value": "The restaurant markets itself for \"poslovna druženja, svadbe, pričesti, krizme i krštenja\" (business gatherings, weddings, first communions, confirmations, christenings). Also runs themed dinners and days devoted to local seasonal ingredients (\"tematske večere i dane posvećene domaćim sezonskim namirnicama\").",
+        "confidence": "high"
+      },
+      {
+        "label": "Business lunches",
+        "value": "On weekdays the clientele skews to business people and travellers in transit due to airport proximity; weekends it becomes a family destination. The 10-seat separe is explicitly for closed business meetings.",
+        "confidence": "medium"
+      },
+      {
+        "label": "Parking",
+        "value": "Parking available. Okusi.hr lists parking capacity as 5 and 15 (two lots/figures). Restaurant Guru lists Parking: yes. Reviews note ample parking space; nearby are the bus station, the municipality building, Muzej Turopolja, Zagrebačka banka and Fina. A park with a playground sits in front of the restaurant.",
+        "confidence": "medium"
+      },
+      {
+        "label": "Zagreb Airport proximity",
+        "value": "Located in central Velika Gorica in the immediate vicinity of Franjo Tuđman International Airport (Pleso). The restaurant's own text positions it for everyone \"od usputnog prolaznika do putnika koji između dva leta želi nešto dobro pojesti\" — from the passer-by to the traveller who wants something good to eat between two flights. Tjedan restorana describes it as being on the road toward Sisak or Zračna luka «Pleso».",
+        "confidence": "high"
+      },
+      {
+        "label": "Address",
+        "value": "Trg kralja Tomislava 26, 10410 Velika Gorica, Croatia",
+        "confidence": "high"
+      },
+      {
+        "label": "Coordinates",
+        "value": "45.711390, 16.079993",
+        "confidence": "high"
+      },
+      {
+        "label": "Phone",
+        "value": "+385 1 6213 333 (written locally as 01 6213 333)",
+        "confidence": "high"
+      },
+      {
+        "label": "Email",
+        "value": "monamihr@gmail.com",
+        "confidence": "high"
+      },
+      {
+        "label": "Website and socials",
+        "value": "https://www.monami.hr/ ; Facebook /monamihr ; Instagram /restoranmonami",
+        "confidence": "high"
+      },
+      {
+        "label": "Opening hours",
+        "value": "Monday 11:00-16:30; Tuesday-Saturday 11:00-23:00; Sunday closed. Gastronaut also notes annual closure 1-21 August.",
+        "confidence": "high"
+      },
+      {
+        "label": "Accessibility",
+        "value": "Accessible for people with disabilities (Gault&Millau amenity flag; okusi.hr confirms accessible entry). Air conditioning per MICHELIN. WiFi available per okusi.hr.",
+        "confidence": "high"
+      },
+      {
+        "label": "Payment",
+        "value": "Credit cards accepted — Maestro, Visa, MasterCard, Diners Club (Gastronaut). Okusi.hr lists cash and Maestro.",
+        "confidence": "medium"
+      },
+      {
+        "label": "House rules",
+        "value": "Reservations advised, advance notice for larger groups; no smoking; no pets (okusi.hr)",
+        "confidence": "medium"
+      },
+      {
+        "label": "Turopolje black truffle",
+        "value": "Fresh native black Turopolje truffle (crni turopoljski tartuf) served daily, year-round; white truffles used seasonally. Sourced through a truffle hunter trained in Istria. The restaurant switched from Istrian to local Turopolje truffles. Guests can order a day ahead to buy and grate fresh truffle themselves.",
+        "confidence": "high"
+      },
+      {
+        "label": "Local sourcing",
+        "value": "Most ingredients travel under 100 km — \"Sve što može biti lokalno koristimo u kuhinji.\" Named suppliers: honey from OPG Balić (Žumberak Highlands), hazelnuts and hazelnut paste from OPG Haha (Turopolje), Turopolje pears from OPG Goga. Menu changes seasonally (asparagus and strawberries, then pumpkin and porcini).",
+        "confidence": "high"
+      },
+      {
+        "label": "Made in-house",
+        "value": "Bread, gnocchi and croquettes are all made in-house",
+        "confidence": "high"
+      },
+      {
+        "label": "Motto / slogan",
+        "value": "\"Restoran Mon Ami, za vas...kao prijatelj prijatelju.\" (for you... as a friend to a friend)",
+        "confidence": "high"
+      },
+      {
+        "label": "Ratings aggregate",
+        "value": "TripAdvisor 4.7/5 from ~99-100 reviews, ranked #1 of 21 restaurants in Velika Gorica. Google 4.8/5 from ~1,445 reviews. Facebook 4.9/5 from 69 reviews. Restaurant Guru 4.8/5, #1 of 59 in Velika Gorica, 1,635 votes total.",
+        "confidence": "medium"
+      },
+      {
+        "label": "Price per person (informal)",
+        "value": "Restaurant Guru reports roughly €10-15 to €15-20 per person from reviewers; MICHELIN places it in the €€€ band. Not an official price list.",
+        "confidence": "low"
+      }
+    ],
+    "dishes": [
+      {
+        "nameHr": "Carpaccio od tune s crnim turopoljskim ljetnim tartufom",
+        "nameEn": "Tuna carpaccio with Turopolje black summer truffle",
+        "category": "predjelo",
+        "price": "€16",
+        "note": "Price from Eat Out Zagreb review, September 2023. One of chef Beus's three personal recommendations."
+      },
+      {
+        "nameHr": "Dimljene dagnje (s Paga), s maslinovim uljem i rukolom",
+        "nameEn": "Smoked mussels from Pag with olive oil and rocket",
+        "category": "predjelo",
+        "price": "€12",
+        "note": "Price from Eat Out Zagreb, Sept 2023. Southern Pag origin. Chef recommends them served on salad."
+      },
+      {
+        "nameHr": "Jadranski škampi s roštilja (4 velika komada)",
+        "nameEn": "Grilled Adriatic scampi, 4 large pieces",
+        "category": "glavno",
+        "price": "€80/kg",
+        "note": "Kvarner scampi. Price per kilo, Eat Out Zagreb Sept 2023."
+      },
+      {
+        "nameHr": "Jadranska lignja s roštilja, s krumpirom i blitvom",
+        "nameEn": "Grilled Adriatic squid with potato and Swiss chard",
+        "category": "glavno",
+        "price": "€53/kg",
+        "note": "Price per kilo, Eat Out Zagreb Sept 2023."
+      },
+      {
+        "nameHr": "Biftek s roštilja (medium rare), s krumpirom na ružmarinu",
+        "nameEn": "Grilled beef tenderloin, medium rare, with rosemary potatoes",
+        "category": "glavno",
+        "price": "€29",
+        "note": "Eat Out Zagreb Sept 2023. Sliced tableside by the waiter. Sauces sold separately: zeleni papar, tartufata, gljive, vrganji, tartar."
+      },
+      {
+        "nameHr": "Crni rižoto od sipe",
+        "nameEn": "Black cuttlefish risotto",
+        "category": "glavno",
+        "note": "The restaurant's best-known signature dish. Gault&Millau notes the portion is large enough to work as a main."
+      },
+      {
+        "nameHr": "Hobotnica na salatu",
+        "nameEn": "Octopus salad",
+        "category": "predjelo",
+        "note": "Signature dish; one of the chef's three recommendations"
+      },
+      {
+        "nameHr": "Beefsteak s roštilja u umaku od tartufate i crnog tartufa",
+        "nameEn": "Grilled beefsteak in truffata and black truffle sauce",
+        "category": "glavno",
+        "note": "The headline continental dish, cited on the restaurant's own site and Visit Zagreb County. Tjedan restorana lists a green-pepper version instead."
+      },
+      {
+        "nameHr": "Gavuni prženi na maslinovom ulju",
+        "nameEn": "Sand smelts fried in olive oil",
+        "category": "predjelo",
+        "note": "Fried in their own Skradin olive oil"
+      },
+      {
+        "nameHr": "Kvarnerski škampi, jastog, školjke",
+        "nameEn": "Kvarner scampi, lobster, shellfish",
+        "category": "predjelo",
+        "note": "Listed together on the restaurant's own About page"
+      },
+      {
+        "nameHr": "Dnevno svježa i divlja bijela riba",
+        "nameEn": "Daily fresh and wild white fish",
+        "category": "glavno",
+        "note": "Gault&Millau 2026 names the daily catch as grouper, sea bass, black sea bream, dentex and shrimp. Eat Out Zagreb saw škrpina, brancin, kovač (John Dory) and swordfish fillets on the day. MICHELIN highlights fish from the Prokljan area where river meets sea."
+      },
+      {
+        "nameHr": "File brancina sa ražnjićima od škampa, cherry rajčicama i grilanim tikvicama, uz blitvu i kuhani krumpir",
+        "nameEn": "Sea bass fillet with shrimp skewers, cherry tomatoes and grilled zucchini, with Swiss chard and boiled potatoes",
+        "category": "glavno",
+        "note": "Gault&Millau 2026 calls it \"simple and delicious\""
+      },
+      {
+        "nameHr": "Odrezak lososa s roštilja uz teriyaki umak i pire od celera",
+        "nameEn": "Grilled salmon steak with teriyaki sauce and celery purée",
+        "category": "glavno",
+        "note": "Singled out by the MICHELIN inspector as a standout"
+      },
+      {
+        "nameHr": "Dagnje na buzaru",
+        "nameEn": "Mussels buzara-style",
+        "category": "predjelo",
+        "note": "Gault&Millau recommends it, served with excellent homemade bread"
+      },
+      {
+        "nameHr": "Tagliatelle sa sitnim kozicama u bisqueu od škampa",
+        "nameEn": "Tagliatelle with tiny prawns in shrimp bisque",
+        "category": "predjelo",
+        "note": "Gault&Millau notes the portion is large enough to serve as a main"
+      },
+      {
+        "nameHr": "Domaći ravioli sa sipom u umaku od jadranskih kozica",
+        "nameEn": "Homemade ravioli with cuttlefish in Adriatic prawn sauce",
+        "category": "glavno",
+        "note": "Featured recipe listed on Gastronaut.hr"
+      },
+      {
+        "nameHr": "Turopoljski odrezak",
+        "nameEn": "Turopolje steak",
+        "category": "glavno",
+        "note": "House continental signature, featured on Gastronaut.hr"
+      },
+      {
+        "nameHr": "Svinjski file s roštilja u umaku od vrhnja i vrganja, s domaćim kroketima",
+        "nameEn": "Grilled pork tenderloin in cream and porcini sauce with homemade croquettes",
+        "category": "glavno",
+        "note": "Listed as a house traditional speciality on okusi.hr"
+      },
+      {
+        "nameHr": "Medaljoni od bifteka s crnim turopoljskim tartufom",
+        "nameEn": "Beef tenderloin medallions with Turopolje black truffle",
+        "category": "glavno",
+        "note": "House traditional speciality, okusi.hr"
+      },
+      {
+        "nameHr": "Domaća patka u umaku od brusnica i meda, s pireom od krumpira i mrkve",
+        "nameEn": "Homemade duck in cranberry and honey sauce with potato and carrot purée",
+        "category": "glavno",
+        "note": "House traditional speciality, okusi.hr"
+      },
+      {
+        "nameHr": "Pačji batak s pireom od celera / češnjaka",
+        "nameEn": "Duck leg with celery (or garlic) purée",
+        "category": "glavno",
+        "note": "Cited by PutniKofer and Gastronaut"
+      },
+      {
+        "nameHr": "T-bone steak, 45 dana suho zrio, iz Posavine",
+        "nameEn": "45-day dry-aged T-bone from Posavina",
+        "category": "glavno",
+        "note": "Chef Beus's personal recommendation alongside the carpaccio, Pag mussels and octopus"
+      },
+      {
+        "nameHr": "Juha od šumskih gljiva",
+        "nameEn": "Forest mushroom soup",
+        "category": "predjelo",
+        "note": "Traditional highlight cited by MICHELIN"
+      },
+      {
+        "nameHr": "Domaća tjestenina s crnim tartufom",
+        "nameEn": "House-made pasta with black truffle",
+        "category": "glavno",
+        "note": "Traditional highlight cited by MICHELIN"
+      },
+      {
+        "nameHr": "Skradinska torta (s bademima, narančom i orasima)",
+        "nameEn": "Skradin cake with almonds, orange and walnuts",
+        "category": "desert",
+        "note": "Nods to the founder's Skradin origins. A gluten-free version exists."
+      },
+      {
+        "nameHr": "Semifreddo od lješnjaka, bijele čokolade i karamele",
+        "nameEn": "Hazelnut, white chocolate and caramel semifreddo",
+        "category": "desert",
+        "note": "Highlighted by Gault&Millau 2026. MICHELIN describes a vanilla-and-honey semifreddo with salted local hazelnut cream and pear coulis, made in seasonal variations (strawberry, pumpkin seed), of which the chef says this version \"remains the most popular\"."
+      },
+      {
+        "nameHr": "Rožata s koricom svježeg limuna u karamel sirupu i tučenim vrhnjem",
+        "nameEn": "Rožata with fresh lemon zest in caramel syrup and whipped cream",
+        "category": "desert",
+        "note": "Singled out by Gault&Millau 2026"
+      },
+      {
+        "nameHr": "Primorska torta s maslinovim uljem",
+        "nameEn": "Coastal olive oil cake",
+        "category": "desert",
+        "note": "Featured recipe on Gastronaut.hr — made with their own Skradin oil"
+      },
+      {
+        "nameHr": "Desert od jagoda",
+        "nameEn": "Strawberry dessert",
+        "category": "desert",
+        "note": "Seasonal, cited by PutniKofer"
+      },
+      {
+        "nameHr": "Vegetarijanska, veganska i jela bez glutena",
+        "nameEn": "Vegetarian, vegan and gluten-free dishes",
+        "category": "ostalo",
+        "note": "Explicitly advertised on the restaurant's own site, Visit Zagreb County and okusi.hr"
+      },
+      {
+        "nameHr": "Vino kuće: cuvée Chardonnay Graševina, podregija Pokuplje, vinogorje Vukomeričke gorice",
+        "nameEn": "House wine: cuvée Chardonnay Graševina from Pokuplje sub-region, Vukomeričke gorice",
+        "category": "vino",
+        "note": "Produced by the restaurant itself"
+      },
+      {
+        "nameHr": "Krauthaker Graševina Mitrovac (na čašu)",
+        "nameEn": "Krauthaker Graševina Mitrovac by the glass",
+        "category": "vino",
+        "note": "Noted in the Eat Out Zagreb review as fruity with firm character and good freshness"
+      },
+      {
+        "nameHr": "Pjenušac Poy, vinarija Mladina, Plešivica",
+        "nameEn": "Poy sparkling wine, Mladina winery, Plešivica",
+        "category": "vino",
+        "note": "Served in the Eat Out Zagreb visit"
+      }
+    ],
+    "verbatimCroatian": [
+      "Neka Vaša nepca dožive jedinstveni gastronomski užitak mediteranskih specijaliteta u srcu Turopolja.",
+      "Kušajte naše delicije poput kvarnerskih škampi, jastoga, školjki, carpaccia od tune s crnim tartufom ili gavuna prženih na maslinovom ulju.",
+      "U Mon Amiju vas očekuje dnevno svježa i divlja bijela riba, crni rižoto od sipe, jadranska lignja i hobotnica na salatu, dimljene dagnje.",
+      "Uz morska jela možete uživati i u beefsteaku s roštilja u umaku od tartufate i crnog tartufa. Također, nudimo vegetarijanska i jela bez glutena.",
+      "Kušajte naše extra djevičansko maslinovo ulje iz vlastitog maslinika u Skradinu, nagrađivano zlatnim medaljama. Shodno tome u ponudi imamo hrvatske zelene masline, te čaj od maslina.",
+      "Imamo vinsku kartu od 60 etiketa, poglavito vina hrvatskih proizvođača. Također proizvodimo svoje vino kuće cuvee Chardonnay Graševina iz podregije Pokuplje, vinogorje Vukomeričke gorice.",
+      "Organiziramo tematske večere i dane posvećene domaćim sezonskim namirnicama. Restoran ima 70 sjedećih mjesta. Odvojeni „separe“ za 10 osoba namijenjen je poslovnim sastancima zatvorenog tipa. Interijer je sadržan od prirodnih materijala koji predstavljaju naš pristup življenju i poslovanju.",
+      "Imamo preporuku od Croatia Michelin Restaurants – The Michelin Guide i Trip Advisora, a naša najvažnija preporuka su naši gosti.",
+      "Prepustite se našem osoblju koje će vas oduševiti svojom kreativnošću i ljubaznošću.",
+      "Restoran Mon Ami na putu prema Sisku ili Zračnoj luci «Pleso» u centru Velike Gorice na adresi Trg kralja Tomislava 26 nudi svoj bogati opus jela i pića od 1997. godine.",
+      "Tijekom godine u mogućnosti ste doživjeti ugođaj Prokljana i Jadranskog akvatorija poput kvarnerskih škampi, jastoga, školjki, carpaccia od tune s crnim tartufom ili gavuna prženih na maslinovom ulju.",
+      "Restoran Mon Ami omogućuje 70 sjedećih mjesta, od toga 10 u zasebnom «separeu» prikladnom za druženja ili sastanke zatvorenog tipa.",
+      "Restoran Mon Ami, za vas...kao prijatelj prijatelju.",
+      "Ne biste očekivali kvalitetan riblji restoran starog kova u Velikoj Gorici, ali upravo to dobit ćete u elegantnom restoranu Mon Ami.",
+      "Osim jadranskih, tu su i klasični kontinentalni specijaliteti, a dugu tradiciju i kvalitetu vodič Michelin nagradio je preporukom.",
+      "U ponudi imaju extra djevičansko maslinovo ulje iz vlastitog maslinika u Skradinu, nagrađivano zlatnim medaljama, hrvatske zelene masline te čaj od maslina. Također, proizvode i svoje vino kuće cuvee Chardonnay Graševina iz podregije Pokuplje i imaju vinsku kartu od 60 etiketa, poglavito hrvatskih proizvođača.",
+      "Neka vaša nepca dožive jedinstveni gastronomski užitak mediteranskih specijaliteta u srcu Turopolja.",
+      "Tradicija duga 25 godina.",
+      "Tri godine zaredom Restoran Mon Ami ima Michelinovu preporuku.",
+      "Restoran Mon Ami idealno je mjesto za poslovna druženja, svadbe, pričesti, krizme i krštenja.",
+      "od usputnog prolaznika do putnika koji između dva leta želi nešto dobro pojesti"
+    ],
+    "quotes": [
+      {
+        "text": "Restoran Mon Ami, za vas...kao prijatelj prijatelju.",
+        "attribution": "Restaurant's own motto, Tjedan restorana HR / monami.hr",
+        "lang": "hr"
+      },
+      {
+        "text": "dvije kuhinje pod istim krovom, onu mediteransku i kontinentalnu",
+        "attribution": "Bruno Ceronja, owner/manager, on his parents' founding idea — PutniKofer.hr",
+        "lang": "hr"
+      },
+      {
+        "text": "prava mala revolucija",
+        "attribution": "Bruno Ceronja, on his father's decision to put fish on the menu in 1990s Velika Gorica — PutniKofer.hr",
+        "lang": "hr"
+      },
+      {
+        "text": "Sve što može biti lokalno koristimo u kuhinji.",
+        "attribution": "Bruno Ceronja, on sourcing within 100 km — PutniKofer.hr",
+        "lang": "hr"
+      },
+      {
+        "text": "Imamo Green Destination certifikat i nagradu Zagrebačke županije za održivi restoran.",
+        "attribution": "Bruno Ceronja — PutniKofer.hr",
+        "lang": "hr"
+      },
+      {
+        "text": "Prvenstveno je to nagrada nama, zaposlenicima, za dugogodišnji rad jer postojimo već 25 godina.",
+        "attribution": "Bruno Ceronja, on the Michelin recommendation — Kronike Velike Gorice, 28 May 2020",
+        "lang": "hr"
+      },
+      {
+        "text": "I danas se vodimo time da nam je najvažnija kvaliteta namirnice i njena izvornost.",
+        "attribution": "Bruno Ceronja — Kronike Velike Gorice, 28 May 2020",
+        "lang": "hr"
+      },
+      {
+        "text": "Naša kuhinja se bazira na svježim tartufima",
+        "attribution": "Bruno Ceronja — Kronike Velike Gorice, 28 May 2020",
+        "lang": "hr"
+      },
+      {
+        "text": "ljudi nas više prepoznaju iako to postavlja nove i više ljestvice nama",
+        "attribution": "Bruno Ceronja, on the effect of the Michelin recommendation — Kronike Velike Gorice, 2020",
+        "lang": "hr"
+      },
+      {
+        "text": "Standardi su svakim danom sve viši, a mi se trudimo pratiti ih.",
+        "attribution": "Bruno Ceronja — velikagorica.com, 13 October 2021",
+        "lang": "hr"
+      },
+      {
+        "text": "Inzistira se na zdravim, svježim i domaćim namirnicama, kvaliteti pripreme i posluživanja",
+        "attribution": "Bruno Ceronja — velikagorica.com, 13 October 2021",
+        "lang": "hr"
+      },
+      {
+        "text": "Ne znaš tko ti sjedi za stolom.",
+        "attribution": "Chef Goran Marko Beus, on the pressure of cooking for anonymous inspectors — PutniKofer.hr",
+        "lang": "hr"
+      },
+      {
+        "text": "izazovno",
+        "attribution": "Chef Goran Marko Beus, on blending coastal and inland cooking — PutniKofer.hr",
+        "lang": "hr"
+      },
+      {
+        "text": "još jedno priznanje da se i u našem gradu njeguje vrhunska gastronomija",
+        "attribution": "Turistička zajednica grada Velike Gorice, on the Restaurant Croatica 2024 award — rvg.hr, 27 September 2025",
+        "lang": "hr"
+      },
+      {
+        "text": "nezaobilazna adresa za sve ljubitelje dobre hrane",
+        "attribution": "Turistička zajednica grada Velike Gorice, describing Mon Ami — rvg.hr, 27 September 2025",
+        "lang": "hr"
+      },
+      {
+        "text": "Perfektna usluga, čestitamo.",
+        "attribution": "Eat Out Zagreb review, 10 September 2023 — rating the service at five-star hotel level",
+        "lang": "hr"
+      },
+      {
+        "text": "restoran Mon Ami iz Velike Gorice, zadržao je Michelinovu preporuku",
+        "attribution": "01Portal.hr, 9 July 2025, on the MICHELIN Guide Croatia 2025 ceremony in Šibenik",
+        "lang": "hr"
+      },
+      {
+        "text": "The restaurant's strongest asset is the fish from the daily catch: grouper, sea bass, black sea bream, dentex and shrimp, and everything grilled perfectly.",
+        "attribution": "Gault&Millau Croatia 2026 review",
+        "lang": "en"
+      },
+      {
+        "text": "The wine list offers selected labels from Croatian vineyards, and the service deserves special praise.",
+        "attribution": "Gault&Millau Croatia 2026 review",
+        "lang": "en"
+      },
+      {
+        "text": "an excellent grilled salmon steak accompanied by teriyaki sauce and celery purée",
+        "attribution": "MICHELIN Guide inspector's note",
+        "lang": "en"
+      },
+      {
+        "text": "a true celebration of the land around us",
+        "attribution": "Chef Goran Marko Beus, on his ingredient sourcing — MICHELIN Guide feature, 6 October 2025",
+        "lang": "en"
+      }
+    ],
+    "imageUrls": [
+      {
+        "url": "https://assets.gaultmillau.com/assets/eb9ae4c9-c9d0-4c87-83c9-7e00f91e4288/restaurant-mon-ami-seafood-in-velika-gorica-gault-millau-1e4288.jpg?format=jpg",
+        "shows": "Gault&Millau hero image of Mon Ami, 1296x600. Photo credit Jakob Goldstein."
+      },
+      {
+        "url": "https://assets.gaultmillau.com/assets/3573fecb-0d20-44db-80a7-d942f07bfc3b/restaurant-mon-ami-seafood-in-velika-gorica-gault-millau-7bfc3b.jpg?format=jpg",
+        "shows": "Second Gault&Millau image of Mon Ami, 1296x600. Photo credit Jakob Goldstein."
+      },
+      {
+        "url": "https://visitzagrebcounty.hr/wp-content/uploads/2022/04/Mon-Ami-1-1024x682.jpg",
+        "shows": "Visit Zagreb County main listing image of the restaurant"
+      },
+      {
+        "url": "https://visitzagrebcounty.hr/wp-content/uploads/2022/04/Mon-Ami-2.jpg",
+        "shows": "Visit Zagreb County gallery — restaurant interior/dishes"
+      },
+      {
+        "url": "https://visitzagrebcounty.hr/wp-content/uploads/2022/04/Mon-Ami-3.jpg",
+        "shows": "Visit Zagreb County gallery — restaurant interior/dishes"
+      },
+      {
+        "url": "https://visitzagrebcounty.hr/wp-content/uploads/2022/04/Mon-Ami-4.jpg",
+        "shows": "Visit Zagreb County gallery — restaurant interior/dishes"
+      },
+      {
+        "url": "https://visitzagrebcounty.hr/wp-content/uploads/2022/04/Mon-Ami-5.jpg",
+        "shows": "Visit Zagreb County gallery — restaurant interior/dishes"
+      },
+      {
+        "url": "https://visitzagrebcounty.hr/wp-content/uploads/2022/04/Mon-Ami-6.jpg",
+        "shows": "Visit Zagreb County gallery — restaurant interior/dishes"
+      },
+      {
+        "url": "https://visitzagrebcounty.hr/wp-content/uploads/2022/04/Mon-Ami-7.jpg",
+        "shows": "Visit Zagreb County gallery — restaurant interior/dishes"
+      },
+      {
+        "url": "https://visitzagrebcounty.hr/wp-content/uploads/2022/04/Mon-Ami-8.jpg",
+        "shows": "Visit Zagreb County gallery — restaurant interior/dishes"
+      },
+      {
+        "url": "https://visitzagrebcounty.hr/wp-content/uploads/2022/04/Mon-Ami-9.jpg",
+        "shows": "Visit Zagreb County gallery — restaurant interior/dishes"
+      },
+      {
+        "url": "https://visitzagrebcounty.hr/wp-content/uploads/2022/04/Mon-Ami-10.jpg",
+        "shows": "Visit Zagreb County gallery — restaurant interior/dishes"
+      },
+      {
+        "url": "https://tjedanrestorana.com/wp-content/uploads/2018/02/16-FB7A1674-copy.jpeg",
+        "shows": "Tjedan restorana hero image, full resolution (1280x854) — restaurant/dish shot"
+      },
+      {
+        "url": "https://tjedanrestorana.com/wp-content/uploads/2018/02/1-5.jpeg",
+        "shows": "Tjedan restorana gallery image 1"
+      },
+      {
+        "url": "https://tjedanrestorana.com/wp-content/uploads/2018/02/2-3.jpeg",
+        "shows": "Tjedan restorana gallery image 2"
+      },
+      {
+        "url": "https://tjedanrestorana.com/wp-content/uploads/2018/02/3-5.jpeg",
+        "shows": "Tjedan restorana gallery image 3"
+      },
+      {
+        "url": "https://tjedanrestorana.com/wp-content/uploads/2018/02/4-4.jpeg",
+        "shows": "Tjedan restorana gallery image 4"
+      },
+      {
+        "url": "https://putnikofer.hr/wp-content/uploads/2025/05/restoran-mon-ami-1200x800.jpg",
+        "shows": "PutniKofer hero — the restaurant. Credit Krešimir Čižmek / Putni Kofer; permission needed for reuse."
+      },
+      {
+        "url": "https://putnikofer.hr/wp-content/uploads/2025/05/bruno-ceronja.jpg",
+        "shows": "Portrait of owner Bruno Ceronja. Credit Krešimir Čižmek / Putni Kofer."
+      },
+      {
+        "url": "https://putnikofer.hr/wp-content/uploads/2025/05/bruno-ceronja-1.jpg",
+        "shows": "Second portrait of Bruno Ceronja"
+      },
+      {
+        "url": "https://putnikofer.hr/wp-content/uploads/2025/05/marko-baus.jpg",
+        "shows": "Chef Goran Marko Beus in the kitchen"
+      },
+      {
+        "url": "https://putnikofer.hr/wp-content/uploads/2025/05/marko-baus-1.jpg",
+        "shows": "Second portrait of chef Goran Marko Beus"
+      },
+      {
+        "url": "https://putnikofer.hr/wp-content/uploads/2025/05/crni-rizoto.jpg",
+        "shows": "Crni rižoto od sipe — black cuttlefish risotto, the signature dish"
+      },
+      {
+        "url": "https://putnikofer.hr/wp-content/uploads/2025/05/biftek-mon-ami.jpg",
+        "shows": "Beef tenderloin / biftek plated"
+      },
+      {
+        "url": "https://putnikofer.hr/wp-content/uploads/2025/05/losos-mon-ami.jpg",
+        "shows": "Salmon with teriyaki and celery purée — the MICHELIN-highlighted dish"
+      },
+      {
+        "url": "https://putnikofer.hr/wp-content/uploads/2025/05/carpaccio-mom-ami.jpg",
+        "shows": "Tuna carpaccio with Turopolje black truffle"
+      },
+      {
+        "url": "https://putnikofer.hr/wp-content/uploads/2025/05/dimnjene-dagnje-mon-ami.jpg",
+        "shows": "Smoked Pag mussels"
+      },
+      {
+        "url": "https://putnikofer.hr/wp-content/uploads/2025/05/mon-ami-desert-jagode.jpg",
+        "shows": "Strawberry dessert"
+      },
+      {
+        "url": "https://putnikofer.hr/wp-content/uploads/2025/05/skradinska-torta-mon-ami.jpg",
+        "shows": "Skradinska torta — Skradin cake"
+      },
+      {
+        "url": "https://putnikofer.hr/wp-content/uploads/2025/05/mon-ami-ulje.jpg",
+        "shows": "The restaurant's own Skradin extra virgin olive oil"
+      },
+      {
+        "url": "https://putnikofer.hr/wp-content/uploads/2025/05/michelin-mon-ami.jpg",
+        "shows": "The Michelin recommendation plaque/certificate displayed at the restaurant"
+      },
+      {
+        "url": "https://putnikofer.hr/wp-content/uploads/2025/05/mon-ami-ekipa.jpg",
+        "shows": "The Mon Ami team"
+      },
+      {
+        "url": "https://putnikofer.hr/wp-content/uploads/2025/05/mon-ami-ekipa-1.jpg",
+        "shows": "The Mon Ami team, second shot"
+      },
+      {
+        "url": "https://putnikofer.hr/wp-content/uploads/2025/05/restoran-mon-ami-1.jpg",
+        "shows": "Restaurant interior/exterior, second shot"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/Restoran-Mon-Ami-1-COpy-scaled.jpg",
+        "shows": "Eat Out Zagreb featured image of the restaurant. All rights reserved by Eat Out Zagreb."
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175118_761-1024x768.jpg",
+        "shows": "Bruno Ceronja serving"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175128_810-1024x768.jpg",
+        "shows": "Tuna carpaccio (€16 at the time)"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175126_291-1024x768.jpg",
+        "shows": "Smoked mussels (€12 at the time)"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175111_910-1024x768.jpg",
+        "shows": "The Michelin recommendation display"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175145_103-1024x768.jpg",
+        "shows": "Grilled scampi (€80/kg)"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175147_619-1024x768.jpg",
+        "shows": "Grilled squid (€53/kg)"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175152_045-1024x768.jpg",
+        "shows": "Beef tenderloin with porcini sauce"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175154_841-1024x768.jpg",
+        "shows": "Beef tenderloin, sliced (€29)"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175730_627-1024x768.jpg",
+        "shows": "The day's fresh fish selection — škrpina, brancin, kovač, swordfish"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175733_453-1024x768.jpg",
+        "shows": "Desserts — skradinska torta / rožata"
+      },
+      {
+        "url": "https://www.eatoutzagreb.com/wp-content/uploads/2023/09/IMG_20230908_175735_641-1024x768.jpg",
+        "shows": "Desserts, second shot"
+      },
+      {
+        "url": "https://www.okusi.hr/media/k2/galleries/158/002.JPG",
+        "shows": "Okusi hrvatske tradicije gallery — restaurant"
+      },
+      {
+        "url": "https://www.okusi.hr/media/k2/galleries/158/003.JPG",
+        "shows": "Okusi hrvatske tradicije gallery — restaurant"
+      },
+      {
+        "url": "https://www.okusi.hr/media/k2/galleries/158/004.JPG",
+        "shows": "Okusi hrvatske tradicije gallery — restaurant"
+      },
+      {
+        "url": "https://www.okusi.hr/media/k2/galleries/158/005.JPG",
+        "shows": "Okusi hrvatske tradicije gallery — restaurant"
+      },
+      {
+        "url": "https://www.okusi.hr/media/k2/galleries/158/006.JPG",
+        "shows": "Okusi hrvatske tradicije gallery — restaurant"
+      },
+      {
+        "url": "https://www.okusi.hr/media/k2/galleries/158/IMG-20210120-WA0006.jpg",
+        "shows": "Okusi gallery — dish, Jan 2021"
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/sp.png",
+        "shows": "Mon Ami logo (PNG, from the restaurant's own site)"
+      }
+    ],
+    "gaps": [
+      "NO Tjedan restorana fixed menu exists. I scraped the raw HTML of both the Croatian and English Tjedan restorana pages — the 'JELOVNIK' section is structurally present but completely empty: 'Cijena ručka: €' and 'Cijena večere: €' have no values, and the 'PRINT VERZIJA' PDF link has an empty href (href=\"\"). There are no courses, no predjelo/glavno/desert breakdown, and no prices. The only usable data is the participation window: 21.3.-30.3.2025, with lunch and dinner. Do not expect a Tjedan restorana tasting menu for this restaurant.",
+      "The only dish prices I could verify anywhere are from the Eat Out Zagreb review of September 2023 (carpaccio €16, smoked mussels €12, scampi €80/kg, squid €53/kg, tenderloin €29). These are three years old and should be treated as indicative, not current. No current official price list is published online.",
+      "Gault&Millau: I confirmed 13.5/20 and 2 toques for the 2026 edition from the page's JSON-LD, but only the ENGLISH review text is published. The Croatian-language version of the Gault&Millau review returns HTTP 404 at both /hr/restorani/mon-ami and /restorani/mon-ami — so the Gault&Millau review cannot be quoted in Croatian.",
+      "Founding year conflict: nearly all sources say 1997, but a Kronike Velike Gorice article from May 2020 states the family restaurant opened in 1994 and had been running 25 years. I could not resolve which is correct; 1997 is far better attested and appears in the restaurant's own copy.",
+      "Michelin consecutive-year count is not stated as a single authoritative number. I could verify: first recommendation 2018, '3rd year running' (2020), '4th year running' (2021), '6th consecutive' (2023), retained 2025, listed again 2026. Nobody publishes an explicit 'eighth year in a row' claim, so avoid asserting a specific ordinal for 2026.",
+      "Wine list size conflicts: the restaurant's own site, Visit Zagreb County and okusi.hr all say 60 labels; Gastronaut.hr says 65. The 60 figure is what the restaurant itself publishes.",
+      "Capacity figures conflict mildly: restaurant's own site and Tjedan say 70 total (10 in the separe); MICHELIN says ~60 indoors plus ~20 on the terrace (i.e. ~80); okusi.hr says 60 indoor + 10 meeting room. Likely 70 indoors including the separe, plus ~20 on the enclosed terrace.",
+      "Chef's tenure conflicts: 15 years (2023), 16 years (2025 PutniKofer), 17 years (2025 MICHELIN). Implies he started around 2008-2010.",
+      "Owner's first name conflicts: Gastronaut and most sources say Barica Ceronja; the Eat Out Zagreb review calls her Barbara and names the late founder Božo. Bruno Ceronja's name is consistent everywhere.",
+      "Parking is confirmed to exist (Restaurant Guru flag, okusi.hr lists capacities '5' and '15', reviews mention ample space) but there is no authoritative statement of how many spaces are reserved for the restaurant, or whether parking is free or dedicated.",
+      "No confirmation of a dedicated wedding/banquet menu, maximum wedding party size, or event pricing. The restaurant advertises 'svadbe, pričesti, krizme i krštenja' but with only 70 seats, large weddings would need direct confirmation.",
+      "The exact year of the Zagreb County 'sustainable restaurant' award is not published — only Bruno Ceronja's statement that they hold it. Similarly, the year of the 'Okusi tradicije Zagrebačkog kraja' plaque is unstated.",
+      "The olive oil's specific gold-medal competition results beyond the Vodice 'Dani mladih maslinovih ulja' result (10th place, 96.42 points, gold) are not detailed anywhere — sources only say 'nagrađivano zlatnim medaljama' in the plural.",
+      "Image licensing: the PutniKofer photos are credited to Krešimir Čižmek / Putni Kofer and the restaurant's private archive; the Eat Out Zagreb photos are marked all rights reserved; the Gault&Millau photos are credited to Jakob Goldstein. None of these are free to reuse on a commercial website without permission. The Visit Zagreb County and the restaurant's own monami.hr images are the more defensible sources, but still require clearance.",
+      "Michelin's editorial feature was published as SPONSORED content in collaboration with the Croatian National Tourist Board — worth knowing before citing it as independent critical judgement.",
+      "The monami.hr homepage is essentially empty (navigation and footer only) and the site footer still reads 'Copyright © 2020', suggesting the site is not actively maintained; the 'Tradicija duga 25 godina' line on the About page is therefore stale (it would be ~29 years as of 2026)."
+    ]
+  }
+}

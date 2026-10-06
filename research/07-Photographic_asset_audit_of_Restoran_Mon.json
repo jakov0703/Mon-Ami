@@ -1,0 +1,680 @@
+{
+  "type": "result",
+  "key": "v2:c32ffcd4d61ce2bb66e779cfeecdc81a62f43f7f28bb59728e19db4b14d23ee7",
+  "agentId": "aa9d277a9506ba47b",
+  "result": {
+    "source": "Photographic asset audit of Restoran Mon Ami, Velika Gorica (monami.hr). Investigated: the WordPress REST media library (/wp-json/wp/v2/media, two offset pages covering the full library), /wp-json/wp/v2/pages, the homepage, /o-nama/, /kontakt/ and /galerija/ HTML, the NextGEN gallery directory /wp-content/gallery/monami/, plus the MICHELIN Guide, Gault&Millau Croatia and Instagram listings. Verified ~20 image URLs individually by fetching them, decoding the binary and visually inspecting the rendered photographs; probed the gallery numbering to establish its exact upper bound (01-40 resolve, 41+ return HTTP 404).",
+    "summary": "Mon Ami has an unusually strong body of professional, self-owned photography — far better than its current website presents. The main asset is a NextGEN gallery at https://www.monami.hr/wp-content/gallery/monami/NN.jpg where NN runs 01 through 40 (41 and above 404). These are full-resolution originals, mostly 1920x1080, ranging 240 KB to 1.1 MB each, encoded at JPEG quality 94-98 with Photoshop and Exif metadata intact. Crucially, the gallery page only ever links 20 thumbnails; images 21-40 exist on disk but are effectively invisible on the live site — a large untapped reserve for a redesign.\n\nContent breaks down into four clear buckets. Dark-background hero food photography on black reflective surfaces (beef carpaccio with rocket, orange and pink peppercorns; grilled steak with rosemary and sautéed potatoes in a twin gravy boat; chocolate-glazed nut torte with ice cream; rolled veal with sauce and chives) — these are dramatic, editorial-grade and ideal for full-bleed hero sections. Kitchen and craft documentary shots (a chef holding up a whole octopus; a female chef plating grilled octopus; scorpionfish going into a pot over open flame; fish steaks on a charcoal grill; a live blue lobster close-up). Interior and atmosphere (an empty dining room with pendant lamps, grey leather chairs and wood beams; waiters in white gloves serving a full room; guests toasting with champagne; a sommelier in a suit behind a wall of wine bottles). And brand/product shots (the restaurant's own Ekstra Djevičansko Maslinovo Ulje bottles with Mon Ami labels, and oil being poured over a plate beside a lobster and scorpionfish).\n\nThe real logo is https://www.monami.hr/wp-content/uploads/2019/11/logo-monami.png (576x298, ~103 KB): the wordmark MON AMI where the O is a stylised plate, over the word RESTAURANT, in warm grey on cream. Note the site's visible header image sp.png is a 115-byte transparent spacer, not a logo — do not use it.",
+    "facts": [
+      {
+        "label": "LOGO — primary, use this one",
+        "value": "https://www.monami.hr/wp-content/uploads/2019/11/logo-monami.png — 576x298 PNG, ~103 KB. Wordmark 'MON AMI' with the O rendered as a stylised plate/circle, 'RESTAURANT' beneath in letterspaced caps. Warm grey/taupe type on a cream wood-grain background (not transparent). Verified by fetching and viewing.",
+        "confidence": "high"
+      },
+      {
+        "label": "LOGO — identical duplicate",
+        "value": "https://www.monami.hr/wp-content/uploads/2019/11/cropped-logo-monami.png — also 576x298, same artwork.",
+        "confidence": "high"
+      },
+      {
+        "label": "LOGO — small/dark variants",
+        "value": "logo-tamni-200.png (200x85), logo-tamni-200b.png (200x80), logo-tamni-195x64.png (195x64), logo-monami200.png (200x103), logo-monami64.png (124x64), cropped-logo-monami-1.png (494x250), cropped-logo-tamni-200.png (200x85) — all under /wp-content/uploads/2019/11/",
+        "confidence": "high"
+      },
+      {
+        "label": "FAVICON / app icon",
+        "value": "https://www.monami.hr/wp-content/uploads/2019/11/fav.png (32x32); https://www.monami.hr/wp-content/uploads/2020/02/monami_icon.png and cropped-monami_icon.png (both 512x512)",
+        "confidence": "high"
+      },
+      {
+        "label": "WARNING — header 'logo' is a spacer, not a logo",
+        "value": "https://www.monami.hr/wp-content/uploads/2019/11/sp.png carries alt='Monami' in the site header but is a 115-byte transparent PNG spacer. Verified by fetch. Do not use it as a logo.",
+        "confidence": "high"
+      },
+      {
+        "label": "Main photo gallery — exact range",
+        "value": "https://www.monami.hr/wp-content/gallery/monami/01.jpg through /40.jpg. 01-40 all return HTTP 200; 41, 42, 43, 44, 45, 50 and 60 all return HTTP 404. Exactly 40 originals.",
+        "confidence": "high"
+      },
+      {
+        "label": "Gallery images 21-40 are unpublished",
+        "value": "The /galerija/ page links only thumbnails 01-20. Images 21 through 40 exist and resolve but appear nowhere on the live site — roughly half the library is unused.",
+        "confidence": "high"
+      },
+      {
+        "label": "Gallery original resolution and weight",
+        "value": "Predominantly 1920x1080 (16:9). File sizes 240 KB to 1.1 MB. JPEG quality 94-98, re-encoded by GD, with Photoshop 8BIM and Exif blocks retained. Print/hero quality.",
+        "confidence": "high"
+      },
+      {
+        "label": "Thumbnail path (avoid for layout)",
+        "value": "https://www.monami.hr/wp-content/gallery/monami/thumbs/thumbs_NN.jpg — small crops only. Always prefer the parent /monami/NN.jpg original.",
+        "confidence": "high"
+      },
+      {
+        "label": "Photography credits",
+        "value": "MICHELIN Guide lists 17 photo credits for Mon Ami attributed to Josip Škof/Mon Ami, Mario Žilec/Mon Ami and Jakob Goldstein/Mon Ami. Gault&Millau credits its two Mon Ami photos to Jakob Goldstein. Images are credited to named photographers on behalf of the restaurant.",
+        "confidence": "high"
+      },
+      {
+        "label": "Camera / provenance evidence",
+        "value": "0014.jpg carries Exif: Canon EOS 550D, EF 16-35mm f/2.8L II USM, shot 2015-05-15, from raw IMG_3256.CR2, edited in Photoshop CC 2019, sRGB. Confirms genuine original commissioned photography, not stock.",
+        "confidence": "high"
+      },
+      {
+        "label": "Chef (named on site)",
+        "value": "Goran Marko Beus — named on the o-nama page as leading the kitchen.",
+        "confidence": "high"
+      },
+      {
+        "label": "Chef (named by Gault&Millau)",
+        "value": "Marko Beus, with head sommelier Zlatko Šimac. Gault&Millau 2026 score 13.5/20, listed as 'Chef's Restaurant'.",
+        "confidence": "high"
+      },
+      {
+        "label": "MICHELIN Guide listing",
+        "value": "Listed (not starred). Cuisine: Mediterranean. Price: EUR EUR EUR. Tagged Family Friendly. Signature dish cited: grilled salmon steak with teriyaki sauce and celery purée. Small outdoor area in warmer months.",
+        "confidence": "high"
+      },
+      {
+        "label": "Address",
+        "value": "Trg kralja Tomislava 26, 10410 Velika Gorica",
+        "confidence": "high"
+      },
+      {
+        "label": "Phone / mobile / email",
+        "value": "Tel +385 1 6213 333 (local: 01 6213 333); Mob 091 5444 715; monamihr@gmail.com",
+        "confidence": "high"
+      },
+      {
+        "label": "Opening hours",
+        "value": "11:00-23:00 every day except Sunday and public holidays; Mondays 11:00-16:30; closed Sunday.",
+        "confidence": "high"
+      },
+      {
+        "label": "Capacity",
+        "value": "70 seats plus a separate 'separe' room for 10 for private business meetings.",
+        "confidence": "high"
+      },
+      {
+        "label": "Own-brand product for a website section",
+        "value": "Award-winning extra virgin olive oil from the restaurant's own grove in Skradin, bottled under a Mon Ami label ('Ekstra Djevičansko Maslinovo Ulje', Oblica variety, OPG Ceronja). Photographed in gallery images 03 and 14.",
+        "confidence": "high"
+      },
+      {
+        "label": "Wine programme",
+        "value": "Roughly 60 labels with an emphasis on Croatian producers, plus a house cuvée Chardonnay-Graševina from the Pokuplje subregion.",
+        "confidence": "high"
+      },
+      {
+        "label": "Social",
+        "value": "Facebook https://www.facebook.com/monamihr/ (linked from site). Instagram https://www.instagram.com/monami.hr/ exists but is behind a login wall.",
+        "confidence": "high"
+      },
+      {
+        "label": "Site navigation structure",
+        "value": "Naslovnica, Online naručivanje, O nama, Novosti, Galerija, Kontakt",
+        "confidence": "high"
+      },
+      {
+        "label": "Menu PDFs on the server",
+        "value": "https://www.monami.hr/wp-content/uploads/2024/05/jelovnik-11.05.2024.b.pdf and https://www.monami.hr/wp-content/uploads/2023/12/jelovnik-12.12.2023.B.pdf — the most recent published menus.",
+        "confidence": "high"
+      }
+    ],
+    "imageUrls": [
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/logo-monami.png",
+        "shows": "LOGO (primary). 576x298, ~103 KB PNG. 'MON AMI' wordmark, the O drawn as a stylised plate, 'RESTAURANT' letterspaced beneath, warm grey on cream wood-grain. Verified visually. Note: background is cream, not transparent."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/cropped-logo-monami.png",
+        "shows": "LOGO duplicate, identical artwork, 576x298 PNG."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/cropped-logo-monami-1.png",
+        "shows": "LOGO, 494x250 PNG."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/logo-tamni-200.png",
+        "shows": "LOGO dark variant, 200x85 PNG. Small — header use only."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/logo-tamni-200b.png",
+        "shows": "LOGO dark variant, 200x80 PNG."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/cropped-logo-tamni-200.png",
+        "shows": "LOGO dark variant, 200x85 PNG."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/logo-tamni-195x64.png",
+        "shows": "LOGO dark variant, 195x64 PNG."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/logo-monami200.png",
+        "shows": "LOGO, 200x103 PNG."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/logo-monami64.png",
+        "shows": "LOGO, 124x64 PNG."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/monami_icon.png",
+        "shows": "ICON / app mark, 512x512 PNG. Best square logo mark available."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/cropped-monami_icon.png",
+        "shows": "ICON, 512x512 PNG, duplicate."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/fav.png",
+        "shows": "FAVICON, 32x32 PNG."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/01.jpg",
+        "shows": "INTERIOR — verified visually. Empty dining room, wide 16:9. White pendant lamps over wood beams, grey leather high-back chairs, wood tables with glass tops, grey and cream curtains, tropical plants in white planters, gin-and-tonic display trolley, black-draped cocktail table with candelabra and lilies. 1920x1080, 753 KB. The single best hero shot for an 'ambijent' section."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/02.jpg",
+        "shows": "DISH — verified visually. Grilled squid (lignje) with blitva/potato greens and a radish rosette, on a white oval plate, olive oil being poured from a dark bottle by a black-gloved hand; near-black background. 1920x1080, 825 KB. Excellent hero/menu image."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/03.jpg",
+        "shows": "PRODUCT / BRAND — verified visually. Two bottles of the restaurant's own 'Ekstra Djevičansko Maslinovo Ulje' with Mon Ami labels (Oblica, OPG Ceronja, tel. 01 6213 333) against an exposed brick wall and antique wooden cabinet. 1920x1080, 399 KB. Ideal for an own-products section."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/04.jpg",
+        "shows": "Gallery original, resolves 200. Unviewed — likely food or interior."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/05.jpg",
+        "shows": "RAW SEAFOOD — verified visually. Platter of whole fresh fish (gilt-head bream, dentex, red mullet) with langoustines/scampi, lemon, courgette and a carved carrot rose, on a white platter over pale wood. 1920x1080, 888 KB. Strong 'fresh catch' storytelling image."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/06.jpg",
+        "shows": "Gallery original, resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/07.jpg",
+        "shows": "Gallery original, resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/08.jpg",
+        "shows": "DISH — verified visually. Sliced pork/veal medallions in a creamy peppercorn sauce (green, pink and black peppercorns) with golden croquettes, lamb's lettuce and a cherry tomato, on a white plate. 1920x1080, 690 KB. Bright, appetising, good for a menu grid."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/09.jpg",
+        "shows": "Gallery original, resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/10.jpg",
+        "shows": "Gallery original, resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/11.jpg",
+        "shows": "Gallery original, resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/12.jpg",
+        "shows": "DISH — verified visually. Large white oval platter of grilled whole squid with blitva (Swiss chard and potato), lemon wedges and a carved tomato rose, held in white-gloved hands. 1920x1080, 669 KB. Signature Adriatic dish, service-in-action framing."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/13.jpg",
+        "shows": "Gallery original, resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/14.jpg",
+        "shows": "PRODUCT / SEAFOOD — verified visually. Mon Ami own-label olive oil in a dark ceramic amphora being poured onto a white plate, with a whole lobster and a large scorpionfish (škrpina) on a silver platter behind, plus bread and the labelled bottle. 1920x1080, ~1.5 MB. Rich, premium — excellent for an 'our olive oil' or 'fresh fish' feature."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/15.jpg",
+        "shows": "Gallery original, resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/16.jpg",
+        "shows": "Gallery original, resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/17.jpg",
+        "shows": "Gallery original, resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/18.jpg",
+        "shows": "DISH — verified visually. Rolled veal/pork stuffed with cheese, sliced into three, on a black reflective plate with a pale sauce, glazed sweet potato slices, a cherry tomato and three chive spears. 1920x1080, 243 KB. Refined fine-dining plating on black."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/19.jpg",
+        "shows": "Gallery original, resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/20.jpg",
+        "shows": "Gallery original, resolves 200. Unviewed. Last image linked on the public /galerija/ page."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/21.jpg",
+        "shows": "DISH (unpublished on site) — verified visually. Beef carpaccio cone topped with rocket, draped in balsamic reduction, with shaved cheese batons, orange segments and scattered pink/black peppercorns on a black reflective plate. 1920x1080, 764 KB. The most striking editorial hero image in the whole library."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/22.jpg",
+        "shows": "Gallery original (unpublished), resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/23.jpg",
+        "shows": "Gallery original (unpublished), resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/24.jpg",
+        "shows": "Gallery original (unpublished), resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/25.jpg",
+        "shows": "TEAM / KITCHEN (unpublished) — verified visually. Young female chef in black jacket, cap and black gloves plating grilled octopus with a carving fork onto a white plate; pot of potatoes and a garnish plate beside her on the pass. 1920x1080, 541 KB. Best available team-at-work photo."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/26.jpg",
+        "shows": "Gallery original (unpublished), resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/27.jpg",
+        "shows": "Gallery original (unpublished), resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/28.jpg",
+        "shows": "KITCHEN / GRILL (unpublished) — verified visually. Fish steaks and cutlets on a charcoal grill with flames visible beneath and smoke rising. 1920x1080, 517 KB. Great atmospheric texture image for a section divider."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/29.jpg",
+        "shows": "Gallery original (unpublished), resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/30.jpg",
+        "shows": "TEAM / KITCHEN (unpublished) — verified visually. PORTRAIT ORIENTATION (approx. 675x1200). Chef in black jacket and toque holding up a whole octopus at arm's length in the kitchen, smiling. ~355 KB. Charismatic team portrait; note the vertical aspect ratio, unlike the rest of the gallery."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/31.jpg",
+        "shows": "Gallery original (unpublished), resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/32.jpg",
+        "shows": "Gallery original (unpublished), resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/33.jpg",
+        "shows": "KITCHEN DIPTYCH (unpublished) — verified visually. Two-panel image: left, a hand lowering a whole scorpionfish (škrpina) into a pot; right, the same fish simmering in oil and herbs over an open gas flame. 1920x1080, 1.1 MB. Strong 'craft/provenance' storytelling."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/34.jpg",
+        "shows": "Gallery original (unpublished), resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/35.jpg",
+        "shows": "Gallery original (unpublished), resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/36.jpg",
+        "shows": "Gallery original (unpublished), resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/37.jpg",
+        "shows": "INGREDIENT (unpublished) — verified visually. Extreme close-up of a live blue lobster on green lettuce, deep cobalt shell with cream and orange markings, shallow depth of field. 1920x1080, 643 KB. Vivid colour accent; good for a 'fresh shellfish' callout."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/38.jpg",
+        "shows": "Gallery original (unpublished), resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/39.jpg",
+        "shows": "Gallery original (unpublished), resolves 200. Unviewed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/gallery/monami/40.jpg",
+        "shows": "DESSERT (unpublished) — verified visually. Wedge of chocolate-glazed nut/carrot torte with orange segments and a scoop of ice cream drizzled with caramel, topped with pistachios, on a dark glossy plate. 1920x1080, 523 KB. The only confirmed dessert shot — essential for a menu section. Last image in the gallery."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/onama1.jpg",
+        "shows": "TEAM / WINE — verified visually. Sommelier in a dark suit and striped tie standing behind a white-clothed table of Champagne (Collard-Picard, Moët, Dom Pérignon) in a glass ice bowl, with a long wooden shelf of ~30 wine bottles behind him (Tomac, Misal, Sembea). 1920x1080, ~1.3 MB. Best image for the wine-programme section. NOTE: present in the media library but NOT used on the current o-nama page."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/onama2.jpg",
+        "shows": "INTERIOR WITH GUESTS — verified visually. Busy dining room; a waiter in a white shirt and white gloves serving two plates, a smiling woman in a blue shirt toasting rosé wine with a companion, other guests and a second waiter in the background. Croatian 'VATROGASNI APARAT' sign visible on a pillar. 1920x1080, ~1 MB. The warmest, most human 'full restaurant' shot. Used on o-nama."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/onama3.jpg",
+        "shows": "BAR / DRINKS — verified visually. Close, bright, high-key shot of a waiter pouring spirit into balloon gin glasses containing botanicals, with a presentation box of botanicals, ice bucket and 1724 Tonic Water bottles on a wooden bar. 1920x1080, ~1.6 MB. Ideal for a gin-and-tonic or bar section. Used on o-nama."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2021/01/0035.jpg",
+        "shows": "INTERIOR WITH GUESTS — verified visually. Near-identical frame to onama2 (same waiter, same toasting couple) but a slightly wider crop showing more of the room, more tables and an extra guest at right. 1920x1080, ~1 MB. Used on o-nama. Choose this or onama2, not both."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/0010.jpg",
+        "shows": "GUESTS / EVENT — verified visually. Tight, shallow-focus shot along a long communal table: many hands, sparkling wine flutes, water glasses and small tasting plates of bread. 1920x1080, ~1.2 MB. Good abstract 'shared table / events' texture image, no identifiable faces."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/0014.jpg",
+        "shows": "GUESTS / GROUP — verified visually. Three men at a set table raising sparkling wine glasses to camera, wine bottles and framed artwork on the walls behind, staff and other guests in the background. 1920x1080, ~1.5 MB. Shot on a Canon EOS 550D in 2015. Dated styling — use with care; contains recognisable faces."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/0003.jpg",
+        "shows": "1920x1080 JPEG in the media library, Photoshop CC 2019, sRGB. Resolves 200. Content unviewed — same numbered series as 0010/0014, so most likely another interior/guests frame."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/IMG_1935bbb.jpg",
+        "shows": "DISH — verified visually. Grilled steak with rosemary sprigs, sautéed potatoes, cherry tomatoes on the vine and onion, on a white plate with a twin-compartment gravy boat of mushroom and cream sauces, on a black reflective surface. 2000x1200, ~1.2 MB. The single largest original on the site and the current homepage hero. Excellent wide hero crop."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/cropped-IMG_1935bbb.jpg",
+        "shows": "Same steak hero image, 2000x1200 crop."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/cropped-IMG_1935bbb-1.jpg",
+        "shows": "Same steak hero image, 1920x1080 crop, ~241 KB. Verified visually. Lighter file — good for a web hero."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2024/08/bg3D3-08-24.jpg",
+        "shows": "PROMO BANNER / CHEF PORTRAIT — verified visually. 1920x1080, ~581 KB. Chef in black jacket and toque against black, holding a white platter of grilled sea bass, squid, prawns and green purée. Overlaid with the Mon Ami roundel logo, an 'Upoznaj Turopolje / I love VG' QR code, the OKUSI tradicije Zagrebačkoga kraja logo, and dated Croatian text about a 2024 collective holiday. Useful as a CHEF PORTRAIT SOURCE but the text overlay and QR must be cropped or removed."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2024/03/bg3D3-03-24.jpg",
+        "shows": "PROMO BANNER — verified visually. 1920x1080, ~579 KB. Same chef-with-fish-platter portrait on black, overlaid instead with 'Radno vrijeme 11:00-23:00 svaki dan osim nedjelje i blagdana / Ponedjeljkom 11:00-16:30 / 01 6213 333', plus logo and QR. Same crop caveat."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2023/12/bg3D3-12-23.jpg",
+        "shows": "PROMO BANNER, 1920x1080. Same chef/platter template with a December 2023 message. Resolves; overlay text present."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2023/08/bg3D3-08-23.jpg",
+        "shows": "PROMO BANNER, 1920x1080, August 2023 variant of the same template."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2022/12/bg3D3-12-22.jpg",
+        "shows": "PROMO BANNER, 1920x1080, December 2022 variant."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2022/11/bg3D3-10-22.jpg",
+        "shows": "PROMO BANNER, 1920x1080, autumn 2022 variant."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/onama.png",
+        "shows": "650x650 PNG in the media library, caption placeholder 'fgfdgfdg'. Old theme decoration — low value."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/a.png",
+        "shows": "400x260 PNG, legacy theme tile."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/b-1.png",
+        "shows": "400x260 PNG, legacy theme tile."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/c.png",
+        "shows": "400x260 PNG, legacy theme tile, caption placeholder 'fsfs'."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/d.png",
+        "shows": "400x260 PNG, legacy theme tile, caption placeholder 'gfgfdghf'."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/cropped-a.png",
+        "shows": "260x260 PNG, legacy theme tile."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/cropped-a-1.png",
+        "shows": "400x260 PNG, legacy theme tile."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/1.png",
+        "shows": "400x480 PNG, legacy theme graphic."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/2.png",
+        "shows": "400x480 PNG, legacy theme graphic."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/3.png",
+        "shows": "400x480 PNG, legacy theme graphic."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/4.png",
+        "shows": "600x360 PNG, legacy theme graphic."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/black.jpg",
+        "shows": "1920x200 JPEG — a plain black divider strip, not a photograph."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2024/03/bolt.png",
+        "shows": "231x231 PNG — Bolt e-scooter partner icon on the Kontakt page. Third-party mark, not Mon Ami imagery."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/on2-150x150.png",
+        "shows": "150x150 PNG floating nav button, 'Online naručivanje'. UI chrome only."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/o-nama_bt-150x150-1.png",
+        "shows": "150x150 PNG floating nav button, 'O nama'. UI chrome only."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/novosti_bt-150x150.png",
+        "shows": "150x150 PNG floating nav button, 'Novosti'. UI chrome only."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2020/02/galerija_bt-150x150.png",
+        "shows": "150x150 PNG floating nav button, 'Galerija'. UI chrome only."
+      },
+      {
+        "url": "https://www.monami.hr/wp-content/uploads/2019/11/sp.png",
+        "shows": "115-byte transparent spacer PNG. Carries alt='Monami' in the header but contains NO logo artwork. Listed here only so it is not mistaken for the logo."
+      },
+      {
+        "url": "https://assets.gaultmillau.com/assets/eb9ae4c9-c9d0-4c87-83c9-7e00f91e4288/mon-ami-1e4288.webp?width=1000&height=666&fit=contain&format=webp",
+        "shows": "Gault&Millau gallery photo 1 of Mon Ami, credited to Jakob Goldstein. WebP, max 1000x666 via their image proxy. Third-party CDN — see gaps re: hotlinking and licensing."
+      },
+      {
+        "url": "https://assets.gaultmillau.com/assets/3573fecb-0d20-44db-80a7-d942f07bfc3b/mon-ami-7bfc3b.webp?width=1000&height=666&fit=contain&format=webp",
+        "shows": "Gault&Millau gallery photo 2 of Mon Ami, credited to Jakob Goldstein. WebP, max 1000x666. Third-party CDN."
+      },
+      {
+        "url": "https://assets.gaultmillau.com/assets/57908c20-aaca-4091-b483-40ab62917258?width=666&height=444&fit=cover&format=webp",
+        "shows": "Gault&Millau third gallery tile for Mon Ami. WebP thumbnail crop, 666x444. Third-party CDN."
+      }
+    ],
+    "verbatimCroatian": [
+      "Neka Vaša nepca dožive jedinstveni gastronomski užitak mediteranskih specijaliteta u srcu Turopolja.",
+      "Mon Ami je idealno mjesto za poslovna druženja, svadbe, pričesti, krizme i krštenja.",
+      "Nalazimo se u središtu Velike Gorice, ali i u blizini Međunarodne zračne luke Zagreb.",
+      "Tradicija duga 25 godina",
+      "Ugodan ambijent",
+      "Vaše zadovoljstvo nama je na prvom mjestu",
+      "Kontaktirajte nas ukoliko vas zanimaju bilo kakve informacije.",
+      "U neposrednoj blizini restorana postoji mogućnost korištenja gradskih električnih romobila.",
+      "Trg kralja Tomislava 26, 10410 Velika Gorica",
+      "11:00 – 23:00 svaki dan osim nedjelje i blagdana",
+      "11:00 – 16:30 ponedjeljkom",
+      "Radno vrijeme",
+      "Sva prava pridržana",
+      "Ekstra Djevičansko Maslinovo Ulje",
+      "Oblica • OPG CERONJA",
+      "Velika Gorica Restoran MON AMI tel. 01 6213 333"
+    ],
+    "dishes": [
+      {
+        "nameHr": "Kvarnerski škampi",
+        "category": "Plodovi mora",
+        "note": "Listed among the house specialities on the o-nama page."
+      },
+      {
+        "nameHr": "Jastog",
+        "nameEn": "Lobster",
+        "category": "Plodovi mora",
+        "note": "Named on o-nama; a live blue lobster is photographed in gallery image 37 and a whole lobster appears in image 14."
+      },
+      {
+        "nameHr": "Školjke",
+        "nameEn": "Shellfish",
+        "category": "Plodovi mora"
+      },
+      {
+        "nameHr": "Carpaccio od tune s crnim tartufom",
+        "nameEn": "Tuna carpaccio with black truffle",
+        "category": "Predjela",
+        "note": "Named on o-nama. Gallery image 21 shows a beef carpaccio plated in the same dramatic style."
+      },
+      {
+        "nameHr": "Pohani gavuni",
+        "nameEn": "Fried gavuni (sand smelt)",
+        "category": "Predjela"
+      },
+      {
+        "nameHr": "Svježa divlja bijela riba",
+        "nameEn": "Fresh wild white fish",
+        "category": "Riba",
+        "note": "Described as available fresh daily. Gault&Millau names grouper, sea bass, black sea bream and dentex as the daily catch."
+      },
+      {
+        "nameHr": "Crni rižot od sipe",
+        "nameEn": "Black cuttlefish ink risotto",
+        "category": "Rižoti",
+        "note": "Gault&Millau notes the portion is generous enough to serve as a main."
+      },
+      {
+        "nameHr": "Jadranske lignje",
+        "nameEn": "Adriatic squid",
+        "category": "Riba",
+        "note": "Photographed in gallery images 02 and 12, grilled and served with blitva."
+      },
+      {
+        "nameHr": "Salata od hobotnice",
+        "nameEn": "Octopus salad",
+        "category": "Predjela",
+        "note": "Octopus also appears being grilled and plated in gallery images 25 and 30."
+      },
+      {
+        "nameHr": "Dimljene dagnje",
+        "nameEn": "Smoked mussels",
+        "category": "Predjela"
+      },
+      {
+        "nameHr": "Dagnje na buzaru",
+        "nameEn": "Mussels buzara",
+        "category": "Predjela",
+        "note": "Recommended as a starter by Gault&Millau."
+      },
+      {
+        "nameHr": "Biftek s gradela u umaku od tartufa",
+        "nameEn": "Grilled beefsteak in truffle sauce",
+        "category": "Meso",
+        "note": "Named on o-nama. A grilled steak with rosemary and potatoes is the current homepage hero (IMG_1935bbb.jpg)."
+      },
+      {
+        "nameHr": "File lososa s teriyaki umakom i pireom od celera",
+        "nameEn": "Grilled salmon steak with teriyaki sauce and celery purée",
+        "category": "Riba",
+        "note": "Singled out by the MICHELIN Guide as a signature dish."
+      },
+      {
+        "nameHr": "File brancina sa ražnjićima od škampa",
+        "nameEn": "Sea bass fillet with shrimp skewers",
+        "category": "Riba",
+        "note": "Gault&Millau: served with cherry tomatoes, grilled courgette, blitva and boiled potatoes; described as simple and delicious."
+      },
+      {
+        "nameHr": "Tagliatelle sa škampima i bisqueom",
+        "nameEn": "Tagliatelle with small prawns and shrimp bisque",
+        "category": "Tjestenina",
+        "note": "Noted by Gault&Millau as generously portioned."
+      },
+      {
+        "nameHr": "Riblja plata za dvoje",
+        "nameEn": "Shared fish platter for two",
+        "category": "Riba",
+        "note": "Noted by Gault&Millau. A mixed grilled fish platter is held by the chef in the bg3D3 promo images."
+      },
+      {
+        "nameHr": "Rožata",
+        "category": "Deserti",
+        "note": "Gault&Millau: with lemon zest in caramel syrup and cream."
+      },
+      {
+        "nameHr": "Semifreddo od lješnjaka, bijele čokolade i karamele",
+        "nameEn": "Hazelnut, white chocolate and caramel semifreddo",
+        "category": "Deserti",
+        "note": "Recommended by Gault&Millau."
+      },
+      {
+        "nameHr": "Vegetarijanska i bezglutenska jela",
+        "nameEn": "Vegetarian and gluten-free dishes",
+        "category": "Posebno",
+        "note": "Explicitly offered per o-nama; Gault&Millau adds vegan options."
+      },
+      {
+        "nameHr": "Ekstra djevičansko maslinovo ulje",
+        "nameEn": "Extra virgin olive oil",
+        "category": "Vlastiti proizvod",
+        "note": "Award-winning, from the restaurant's own grove in Skradin, bottled under the Mon Ami label. Photographed in gallery images 03 and 14."
+      },
+      {
+        "nameHr": "Kućni cuvée Chardonnay-Graševina",
+        "category": "Vina",
+        "note": "House cuvée from the Pokuplje subregion; part of a ~60-label list favouring Croatian producers."
+      }
+    ],
+    "quotes": [
+      {
+        "text": "Neka Vaša nepca dožive jedinstveni gastronomski užitak mediteranskih specijaliteta u srcu Turopolja.",
+        "attribution": "Mon Ami, o-nama page (monami.hr)",
+        "lang": "hr"
+      },
+      {
+        "text": "Mon Ami je idealno mjesto za poslovna druženja, svadbe, pričesti, krizme i krštenja.",
+        "attribution": "Mon Ami, o-nama page (monami.hr)",
+        "lang": "hr"
+      },
+      {
+        "text": "Nalazimo se u središtu Velike Gorice, ali i u blizini Međunarodne zračne luke Zagreb.",
+        "attribution": "Mon Ami, o-nama page (monami.hr)",
+        "lang": "hr"
+      },
+      {
+        "text": "an excellent grilled salmon steak accompanied by teriyaki sauce and celery purée",
+        "attribution": "MICHELIN Guide, Mon Ami listing",
+        "lang": "en"
+      },
+      {
+        "text": "A small, welcoming outdoor area.",
+        "attribution": "MICHELIN Guide, Mon Ami listing",
+        "lang": "en"
+      },
+      {
+        "text": "the service deserves special praise",
+        "attribution": "Gault&Millau Croatia 2026, Mon Ami review",
+        "lang": "en"
+      },
+      {
+        "text": "grilled perfectly",
+        "attribution": "Gault&Millau Croatia 2026, on the daily catch at Mon Ami",
+        "lang": "en"
+      },
+      {
+        "text": "excellent homemade bread",
+        "attribution": "Gault&Millau Croatia 2026, Mon Ami review",
+        "lang": "en"
+      }
+    ],
+    "gaps": [
+      "Bash/curl has no network egress in this environment, so I could not run HEAD requests to read Content-Length or Content-Type headers in bulk. All sizes reported come from the fetch tool's own byte counts, and all dimensions from the WordPress REST media_details. Both are reliable but were confirmed per-URL rather than en masse.",
+      "I visually inspected only 20 of the 40 gallery originals. Images 04, 06, 07, 09, 10, 11, 13, 15, 16, 17, 19, 20, 22, 23, 24, 26, 27, 29, 31, 32, 34, 35, 36, 38 and 39 are confirmed to resolve with HTTP 200 but their subject matter is unverified. Given the pattern of those sampled they are almost certainly more food, kitchen and interior frames, but do not treat my guesses as confirmed.",
+      "No confirmed EXTERIOR / street-facing / facade photograph was found anywhere. The MICHELIN Guide mentions a small outdoor terrace and Gault&Millau mentions an enclosed terrace, but no image of either the building exterior, the entrance, the signage or the terrace was located on monami.hr. One of the 20 unviewed gallery images may contain one. This is the most significant gap for a redesign and will likely need a new photo shoot or a Google Business Profile image.",
+      "Instagram (https://www.instagram.com/monami.hr/) is behind a login wall. Only the page title 'Mon Ami (@monami.hr) • Instagram photos and videos' was retrievable — no bio, no follower count, no cdninstagram/fbcdn media URLs. Confirming the account is active and scraping its imagery would require authentication, which I did not attempt.",
+      "The MICHELIN Guide page lists 17 photo credits for Mon Ami (Josip Škof, Mario Žilec, Jakob Goldstein) but serves the actual photographs through a JavaScript-rendered carousel. No MICHELIN-hosted image URLs were extractable from the server-rendered HTML — only site chrome icons and SVGs. Those 17 photos exist but I could not obtain their URLs.",
+      "The Gault&Millau images sit on assets.gaultmillau.com behind a resizing proxy (?width=&height=&fit=&format=webp). They are third-party CDN assets, may be hotlink-protected, are capped at 1000x666, and are credited to Jakob Goldstein rather than licensed to the restaurant. Do not hotlink them and do not assume reuse rights — source the equivalent originals from the restaurant instead.",
+      "I was unable to reach the Tripadvisor page for Mon Ami. Tripadvisor aggressively blocks automated fetches, and in any case its photos are largely user-generated and not the restaurant's own imagery, so they would not satisfy the 'their own photographs' requirement.",
+      "I could not retrieve the full verbatim Croatian body text of the o-nama page. The fetch tool declined to reproduce the complete content.rendered field, so I obtained only the three headings and opening sentences. The remaining prose in verbatimCroatian is therefore incomplete — pull the rest directly from https://www.monami.hr/wp-json/wp/v2/pages/3269 if you need full site copy.",
+      "The dish list is assembled from the o-nama prose plus MICHELIN and Gault&Millau reviews, NOT from the actual menu. No prices were obtainable. The current menu PDFs (jelovnik-11.05.2024.b.pdf, jelovnik-12.12.2023.B.pdf) are on the server but I did not parse them; the most recent is from May 2024 and may be stale. All price fields are therefore empty.",
+      "The chef's name is inconsistent across sources: the restaurant's own site says 'Goran Marko Beus' while Gault&Millau says 'Marko Beus'. Confirm the preferred form with the client before putting it on a page.",
+      "The primary logo PNG has a cream wood-grain background rather than transparency. For a redesign on any non-cream background you will need either a transparent-background export or a vector original from the restaurant; none was found on the server.",
+      "Reusing these images is a licensing question I cannot settle. The photographs are credited to three named photographers 'on behalf of Mon Ami'. Being publicly reachable on the restaurant's own server is not the same as being cleared for a redesign. Confirm rights with the client before publishing."
+    ]
+  }
+}

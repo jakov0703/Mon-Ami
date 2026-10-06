@@ -1,0 +1,91 @@
+{
+  "type": "result",
+  "key": "v2:403638f306053a071f4d759634102c9f16379aeb23bddf4f519bfed47c342d0c",
+  "agentId": "af4833745698498e0",
+  "result": {
+    "lens": "Art direction — typographic craft, colour discipline, compositional rhythm, restraint, originality vs. template-ness, and whether the motion is tasteful or cheap. Judged as if this were sitting in an Awwwards/CSSDA jury queue against the best restaurant work of the year. Conversion logic, SEO and accessibility only count here insofar as they force or ruin a design decision.",
+    "scores": [
+      {
+        "conceptName": "CONCEPT 1 — Dvije Obale / Mon Ami kao tiskani list",
+        "score": 8.5,
+        "strengths": [
+          "Genuine typographic authorship. Bodoni Moda with a real opsz axis (96 at the masthead, 24 at caption) plus hard rules — never below 20px, never running copy, weight 500 in dark mode to stop light-on-dark hairline thinning — is the difference between a designer and a font-picker. Almost nobody writes those rules down, and they are exactly what stops a Didone page collapsing into a 2019 Playfair deck.",
+          "Ruthless colour discipline: two paper grounds, one ink, one stone, ONE accent (claret dropped in lightness and chroma until it stops shouting), and a gold that is explicitly forbidden as text on paper and only promoted to text in dark mode. Six functional roles, not six hues. That is the single clearest signal of a trained eye in the whole set.",
+          "'Type before photograph' — 34vh of bare paper with the masthead and a 120px claret rule before any image — is the one compositional decision in the whole brief that a Wix theme structurally cannot make. Every competitor opens with a scrim over a face.",
+          "Absence as composition. No truffle photograph exists, so the TARTUF panel has no image and the word is set at display size in gold at 18% behind the copy. Turning a hole in the archive into the strongest panel on the page is art direction, not decoration.",
+          "Awards as letterspaced type on a full-bleed ink band, with 'Selected' glossed as 'preporuka, bez zvjezdice'. Refusing the badge is more confident than any badge, and the honesty reads as taste rather than legal caution.",
+          "The menu set as a wine list — subgrid so name, leader dots and price lock across every row regardless of description length — is invisible craft of exactly the kind juries reward.",
+          "Motion is correctly scaled to the register: a 6% object-position settle (not parallax), hairlines drawing on scaleX, a 180ms @property underline sweep, a 220ms cross-fade on language. Nothing moves that a printed page would not allow.",
+          "Deliberately unequal portrait sizing in Ljudi (large / medium offset 6rem / wide strip) instead of the inevitable three-card row."
+        ],
+        "weaknesses": [
+          "Didone-on-warm-paper IS a genre now. Broadsheet masthead, hairline rule, claret accent, editorial photo grid — this is the most-imitated luxury restaurant idiom of the last three years. The execution is top decile; the premise is not original, and a jury will have seen four of these before lunch.",
+          "Rhythm is over-declared and under-edited. Thirteen sections with three separate full-bleed ink bands (Priznanja, Dnevni ulov, Podnožje) plus alternating inverts in dark mode. The stated 'editorial rhythm' becomes a metronome. Concept 2's 'exactly one tonal event' is the more disciplined instinct.",
+          "The fixed hairline at the 5/12 boundary is a beautiful idea that is load-bearing for only one section and is 'just the page's spine' everywhere else — and it disappears entirely below 64rem, which is where most of the traffic is. The signature move does not survive the primary viewport.",
+          "The plate-O roundel beside MON AMI in Bodoni is an unresolved lockup — a raster-derived mark next to a typeset wordmark, acknowledged in the risks but not designed around.",
+          "Dark mode is intellectually elaborate (role changes, photo filters, section inversions) to the point of being a second design to maintain rather than a mode."
+        ]
+      },
+      {
+        "conceptName": "CONCEPT 2 — Dvije obale / Two Shores",
+        "score": 6.5,
+        "strengths": [
+          "The bravest single argument in the set, and it is correct: the photography is already shot on black, so the page must be cream and the images become the dark objects. That is a real art-direction thesis derived from the actual assets rather than from a mood board.",
+          "'Exactly one tonal event' — one dark band in the whole document, and it inverts in dark mode so the rule holds either way — is more disciplined compositional thinking than the winner manages.",
+          "Fraunces with SOFT/WONK is a less obvious display choice than Bodoni and is argued from the material (oak, marble, stone, 'prirodni materijali') rather than from prestige.",
+          "The interlocking diptych offset by 4rem, connected by a hairline with two labelled nodes, is a genuinely good piece of page-making.",
+          "Specificity as luxury: naming OPG Balić, OPG Haha, OPG Goga in a typographic supplier grid with a section that deliberately carries no photograph to rest the eye between two image-heavy bands. That restraint beat is well placed.",
+          "The inline SVG mini-map instead of an embedded iframe is on-brand, weightless and more designed than a static tile."
+        ],
+        "weaknesses": [
+          "The palette is the failure. Sol, Kamen, Kamen-meko, Ulje, Ulje-tamni, Jadran, Jadran-plitko, Kupa, Kupa-svijetli, Maslina — that is gold AND deep blue AND shallow blue AND claret AND olive. Lovely names cannot disguise a five-hue scheme. It will read as a Mediterranean-themed template, which is precisely the Squarespace accusation.",
+          "The meridian with latitude labels (43,81° N SKRADIN) is a coordinates-as-branding device that has been on every hotel, surf and coastal-restaurant site since about 2019. Rendering the concept literally as a map line is the least sophisticated way to express a two-shores idea — and it is also a progress bar, which cheapens it further.",
+          "A 4%-opacity tiled salt-grain SVG over the whole page is texture-as-alibi. Warm paper does not need noise; if the colour is right, the grain is an admission that it is not.",
+          "Fraunces at 7rem with WONK 1 flares and wobbles. It is charming, bakery-ish, Substack-adjacent — it is not the voice of a €96/kg langoustine and two Gault&Millau toques.",
+          "Pull-quote in a claret-tint block with a 2px left border is blog-post furniture. So are the 999px CTA pills, which fight the 2px 'stone' radius stated everywhere else — the radius language is internally inconsistent.",
+          "'DARK MODE: n/a' while the palette defines a full Sol-noc ground and the footer ships a dark-mode toggle. That contradiction is exactly the kind of unfinished thinking a jury smells immediately."
+        ]
+      },
+      {
+        "conceptName": "CONCEPT 3 — Otvoreno",
+        "score": 5.5,
+        "strengths": [
+          "The cream menu island in a local light color-scheme, with 48px corners so it reads as a sheet laid on the dark page, is the one real formal idea here — and it is defended with a legibility argument rather than a decorative one.",
+          "Three faces, three jobs, zero overlap is a legitimate system and it is stated as a system. The discipline of 'Instrument Serif never touches UI, Schibsted never goes above 26px' is the right kind of rule.",
+          "The per-kilogram defuser (claret /kg suffix, pill, weight slider, live estimate) turns the ugliest number on the menu into the most confident moment. Conceptually superb.",
+          "One hours object driving chip, footer table, reservation dropdown and JSON-LD is the most complete version of that idea in the set.",
+          "Restraint on the award marks: gold text with a 1px border and explicitly no fill, because the restaurant is Selected and not starred. Right instinct, correctly reasoned.",
+          "A 6% parallax instead of 30% shows the author knows the difference between depth and 2014."
+        ],
+        "weaknesses": [
+          "Geist Mono for every number is a category error. It is a developer-tool face; it says Vercel dashboard, not 29-year family restaurant on a town square. The claim that mono numerals make the page 'feel engineered' is precisely the problem — nobody wants their fish priced by a terminal.",
+          "The hero is the template it claims to be escaping: full-bleed photo, three-stop gradient scrim, a row of badge pills, headline, two buttons, a status chip. That is the default of every delivery, hotel and restaurant landing page. Concepts 1 and 2 both refuse it; this one leans in.",
+          "Surface / surface-raised / 4px radii / hairline rings / chip rails / toggle chips / amenity chips / negative chips / a 'Kopirano' toast / a hide-on-scroll sticky action bar — the entire vocabulary is app UI. It is competent app UI, and it is the opposite of a restaurant with oak, marble and white gloves.",
+          "Thirteen palette tokens including an ok-green, a warn-amber, a desaturated closed-grey, gold, olive, claret and claret-deep. Status-semantic green and amber on a fine-dining page is the single most Wix-adjacent decision in all three concepts.",
+          "Compositional rhythm is essentially absent: a utility strip, a card grid, a card grid, a masonry grid, a two-column, a two-column. Everything is a module. There is no moment of scale, no held silence, no page-making.",
+          "Motion is mostly interface feedback — press physics, chip cross-fades, a pulsing box-shadow, a hiding bar. Useful, but there is no motion idea with any taste content in it.",
+          "'It looks 2026 because the surface is precise' is the tell. Precision is hygiene, not art direction."
+        ]
+      }
+    ],
+    "winner": "CONCEPT 1 — Dvije Obale / Mon Ami kao tiskani list",
+    "bestIdeasToGraft": [
+      "From C2: the 'exactly one tonal event' rule. Cut Concept 1's three full-bleed ink bands to ONE (keep Dnevni ulov — the sea is the honest place for the page to go dark). Set the awards band as ink-on-paper with the persistent hairline doing the dividing instead of an inverted ground. The page gains a climax instead of a metronome.",
+      "From C2: the photography-inversion argument stated explicitly as the design's defence. C1 arrives at warm paper by way of 'printed editorial'; C2's reasoning — the food is already shot on black, so a black page swallows it and a cream page makes every plate a dark object — is the stronger argument and the one that wins the client meeting. Steal the reasoning, keep C1's paper.",
+      "From C2: geography as page structure, not just one section. C1 confines Skradin/Turopolje to [dvije-obale]; C2 alternates shores across the whole document (sea → coast → interior). Let the 5/12 hairline's side allocation carry that alternation through Ulov, Vlastito and Kopno so the spine is load-bearing everywhere, not decorative in ten sections out of thirteen.",
+      "From C2: the named-supplier typographic grid — OPG Balić / med / Žumberak, OPG Haha / lješnjaci, OPG Goga / kruške — with numerals 01–03 and hairline tops, placed in a section that deliberately carries no photograph. It is the same 'absence as composition' logic as the TARTUF panel and it earns C1 a second rest beat.",
+      "From C2: the boxed caveat separating the restaurant's own claims (grove, medals, oil) from the MICHELIN listing. C1 states the attribution rule in its brief but never puts it on the page; as a small set line it reads as confidence and it is legally bulletproof.",
+      "From C2: the inline SVG mini-map showing the square, the bus station and a three-minute walk line. Better than C1's static AVIF tile — weightless, on-brand, and it is drawn rather than screenshotted.",
+      "From C2: the house-wine card that publishes the three documented labels behind a <details> and refuses to invent a list. Honest, and the disclosure keeps the section from looking thin.",
+      "From C3: the three-state hours logic — open / 'Otvoreno još 45 min' / 'Zatvoreno — otvaramo u utorak u 11:00'. C1 has only open/closed. The closing-soon state is the detail that makes the chip feel alive rather than computed.",
+      "From C3: extend C1's single hours function to drive FOUR outputs, not two — masthead chip, hours table, the reservation dialog's time select (so Monday never offers 19:00), and the JSON-LD openingHoursSpecification. C1 already has the dialog and the schema; wiring them to the same object costs nothing and removes the last way the page can contradict itself.",
+      "From C3: the per-kilogram weight popover with a 0,2–1,2 kg slider and a live tabular readout. C1's 'po kg' pill states the fact; C3's slider lets the guest answer their own question. Set the readout in Instrument Sans with tabular-nums — never import a mono face for it.",
+      "From C3: diet filtering as checkboxes plus :has() on the list container. Zero JS, zero INP, and it slots straight into C1's existing category rail without adding a scroll-spy.",
+      "From C3: the lightbox with real previous/next BUTTONS rather than swipe-only, plus Escape and arrow keys. C1's gallery has no lightbox navigation model at all.",
+      "From C3: the mobile sticky action bar carrying exactly two actions (Rezerviraj / Nazovi) with padding-block-end: max(…, env(safe-area-inset-bottom)) and matching body padding. C1 hides its CTA behind a text 'Izbornik' button below 64rem — on the primary viewport that is a conversion hole in an otherwise immaculate page.",
+      "From C3: the visible 'Zadnji put ažurirano [datum]' stamp on the menu and the photographer credit line under the gallery. C1 has both in its copy notes; C3 treats them as designed elements, which is what they should be.",
+      "From C3: 'Od 1997. — gotovo trideset godina' as a computed line rather than a hard-set numeral. It sidesteps C1's own risk of setting a possibly-wrong 29 in 132px Bodoni."
+    ],
+    "verdict": "Concept 1 wins, and it is not close on craft — but it wins in a category (warm-paper Didone editorial) that is now crowded enough that only the execution saves it, and the execution does: the optical-size discipline, the single-accent palette with a colour explicitly banned from being text, type before photograph, and TARTUF set in gold behind copy because no photograph exists. That last move is the only genuinely original image in all three concepts, and it comes from the archive's gap rather than from a reference board. Grafting C2's one-tonal-event rule and its photography-inversion argument fixes Concept 1's real fault — too many ink bands, a spine that does no work below 64rem — without touching its voice.\n\nConcept 2 has the better strategic thesis and the worse eye. Five hues with poetic names is still five hues; a salt-grain overlay is still noise-as-alibi; WONK-on at 7rem is charming where the restaurant needs composed. It loses on colour and on type register, not on thinking. Its structural instincts are sharper than the winner's and must be taken.\n\nConcept 3 is a very good product page for a restaurant and a weak restaurant page. Geist Mono pricing the fish, status-semantic green and amber, chip rails, toasts and a hide-on-scroll bar add up to a delivery app with excellent typography rules. Its ideas are worth more than its art direction: take the hours state machine, the per-kg slider, the :has() filters and the mobile action bar; leave the mono face, the badge-pill hero and the app vocabulary behind."
+  }
+}
