@@ -139,6 +139,7 @@ const STRUCTURE = () => {
     if (hs[i].lvl - hs[i - 1].lvl > 1) jumps.push(hs[i - 1].text + ' -> ' + hs[i].text);
   }
   const imgs = Array.from(document.images);
+  const populatedImgs = imgs.filter(i => i.getAttribute('src'));
   let jsonLd = 'MISSING';
   const s = document.querySelector('script[type="application/ld+json"]');
   if (s) { try { jsonLd = JSON.parse(s.textContent)['@type'] + ' ok'; }
@@ -146,8 +147,9 @@ const STRUCTURE = () => {
   return {
     h1Count: hs.filter(h => h.lvl === 1).length,
     headingJumps: jumps,
-    imgsMissingAlt: imgs.filter(i => !i.hasAttribute('alt')).length,
-    imgsNoDims: imgs.filter(i => !i.getAttribute('width') || !i.getAttribute('height')).length,
+    imgsMissingAlt: populatedImgs.filter(i => !i.hasAttribute('alt')).length,
+    // Ignore the empty lightbox image template; it receives its source after a gallery click.
+    imgsNoDims: populatedImgs.filter(i => !i.getAttribute('width') || !i.getAttribute('height')).length,
     landmarks: { header: !!document.querySelector('header'), main: !!document.querySelector('main'),
                  footer: !!document.querySelector('footer'), nav: document.querySelectorAll('nav').length },
     lang: document.documentElement.lang,
