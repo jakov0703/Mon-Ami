@@ -648,16 +648,6 @@ a { color:inherit; }
 .dish__price { grid-column:price; text-align:end; color:var(--claret-ink);
   font-variant-numeric:tabular-nums lining-nums; white-space:nowrap; font-weight:500; }
 .dish__unit { color:var(--claret-ink); font-size:var(--step-micro); }
-/* A chef's recommendation is marked by a claret rule at the start of the row,
-   not a filled background. Ten filled rows read as stripes; a rule reads as
-   a mark of emphasis and keeps the price column scanning cleanly. */
-.dish[data-tag="chef"] .dish__name {
-  box-shadow:-0.75rem 0 0 -0.6875rem var(--claret);
-}
-@media (min-width:48rem) {
-  .dish[data-tag="chef"] .dish__name { box-shadow:-1rem 0 0 -0.9375rem var(--claret); }
-}
-
 .badge {
   display:inline-flex; align-items:center; min-height:22px;
   margin-inline-start:var(--s-2); padding:.1rem .4rem;
